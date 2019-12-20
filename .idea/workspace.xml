@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1UTRmUrd4xQ6iyl4FPeKbsiqpmj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="" />
+      <created>1575378757895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575378757895</updated>
+      <workItem from="1575378759451" duration="4220000" />
+      <workItem from="1575446262304" duration="599000" />
+      <workItem from="1575526716228" duration="599000" />
+      <workItem from="1575804068634" duration="19283000" />
+      <workItem from="1575879422388" duration="181000" />
+      <workItem from="1575906814695" duration="6844000" />
+      <workItem from="1575964661602" duration="8391000" />
+      <workItem from="1576052014388" duration="13000" />
+      <workItem from="1576070281014" duration="4397000" />
+      <workItem from="1576137568833" duration="599000" />
+      <workItem from="1576155727605" duration="1338000" />
+      <workItem from="1576159064057" duration="10229000" />
+      <workItem from="1576225800798" duration="1214000" />
+      <workItem from="1576230574898" duration="524000" />
+      <workItem from="1576231118872" duration="631000" />
+      <workItem from="1576248206914" duration="407000" />
+      <workItem from="1576335318339" duration="10567000" />
+      <workItem from="1576429082759" duration="5588000" />
+      <workItem from="1576500952476" duration="16000" />
+      <workItem from="1576672311588" duration="16308000" />
+      <workItem from="1576741864222" duration="4449000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576742922825">
+      <screen x="59" y="27" width="1861" height="1053" />
+    </state>
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1576742922825" />
+    <state x="785" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1576677943752">
+      <screen x="59" y="27" width="1861" height="1053" />
+    </state>
+    <state x="785" y="478" width="399" height="149" key="NewPhpFileDialog/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1576677943752" />
+    <state x="652" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576686433899">
+      <screen x="59" y="27" width="1861" height="1053" />
+    </state>
+    <state x="652" y="257" width="672" height="678" key="search.everywhere.popup/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1576686433899" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/video.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/termoplastavtomaty.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
