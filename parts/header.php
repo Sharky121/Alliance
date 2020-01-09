@@ -1,6 +1,13 @@
 <?php
+  include ('parts/data.php');
 
-include ('parts/data.php')
+  if (isset($_GET['cat'])) {
+      $category_url = $_GET['cat'];
+  }
+
+  $category_sql = 'SELECT id, title FROM category ORDER BY id ASC';
+  $category_list_res = mysqli_query($link, $category_sql);
+  $category_list = mysqli_fetch_all($category_list_res, MYSQLI_ASSOC);
 
 ?>
 
@@ -44,29 +51,30 @@ include ('parts/data.php')
                 </li>
 
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="service.php" >Услуги</a>
+                    <a class="main-menu__link" href="?view=service">Услуги</a>
                 </li>
 
                 <li class="main-menu__item main-menu__item--active">
-                    <a class="main-menu__link" href="news.php">Новости</a>
+                    <a class="main-menu__link" href="?view=news">Новости</a>
                 </li>
 
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="video.php" >Наши работы</a>
+                    <a class="main-menu__link" href="?view=video" >Наши работы</a>
                 </li>
 
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="contacts.php" >Контакты</a>
+                    <a class="main-menu__link" href="?view=contacts" >Контакты</a>
                 </li>
             </ul>
 
             <ul class="sub-menu">
-                <?php foreach ($cat as $key => $val): ?>
+                <?php foreach ($category_list as $key => $val): ?>
                 <li class="sub-menu__item">
-                    <a href="<?= $val['url']; ?>" class="sub-menu__link"><?= $val['title']; ?></a>
+                    <a href="?view=catalog&cat=<?= $val['id'] ?>" class="sub-menu__link"><?= $val['title']; ?></a>
                 </li>
                 <?php endforeach; ?>
             </ul>
+
         </nav>
     </div>
 </header>
