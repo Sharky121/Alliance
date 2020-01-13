@@ -160,6 +160,30 @@ input { box-sizing: border-box; }
 
 .button:active::before { color: rgba(0, 0, 0, 0.3); }
 
+
+.btn {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 12px 30px;
+
+  color: #fff;
+
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  background-color: #4db6ac;
+
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #4db6ac;
+
+  border: 1px solid #4db6ac;
+  background-color: transparent;
+}
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -1139,4 +1163,94 @@ input { box-sizing: border-box; }
 .product-list__title {
   color: #000000;
   font-weight: 300;
+}
+
+/* ==========================================================================
+   PRODUCT ITEM
+   ========================================================================== */
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__column {
+  width: 48%;
+  margin-bottom: 2%;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.product-small_desc {
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 1.4;
+  color: #777777;
+}
+
+/* tabs
+   ========================================================================== */
+.tab-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.tab-header__item {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  font-size: 14px;
+  color: #4db6ac;
+
+  border: 1px solid #4db6ac;
+
+  transition: all .3s;
+  cursor: pointer;
+}
+.tab-header__item.active {
+  color: white;
+
+  background-color: #4db6ac;
+}
+
+.tab-content__item {
+  display: none;
+}
+
+.tab-content__item.active {
+  display: block;
+}
+
+.spec-title {
+  font-weight: 400;
+  text-align: center;
+}
+
+/* spec-table
+   ========================================================================== */
+.specification table {
+  border-collapse: collapse;
+}
+.spec-table {
+
+}
+
+.specification table th,
+.specification table td {
+  padding: 5px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #777777;
+
+  border: 1px solid #999;
 }

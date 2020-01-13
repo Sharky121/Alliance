@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parts/init.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layouts/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/catalog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/news.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pages/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/contacts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/periferijnoe-oborudovanie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/termoplastavtomaty.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/titan.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsvetnoe-lite-metallov.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alliance.sql" beforeDir="false" afterPath="$PROJECT_DIR$/alliance.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/prod1_big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/catalog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/product.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +107,11 @@
       <workItem from="1578425329132" duration="9742000" />
       <workItem from="1578493849046" duration="13624000" />
       <workItem from="1578556933716" duration="185000" />
-      <workItem from="1578587657562" duration="711000" />
+      <workItem from="1578587657562" duration="1981000" />
+      <workItem from="1578644704279" duration="608000" />
+      <workItem from="1578754083868" duration="19213000" />
+      <workItem from="1578829000181" duration="16671000" />
+      <workItem from="1578902971782" duration="199000" />
     </task>
     <servers />
   </component>
@@ -131,10 +123,14 @@
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="584" y="214" width="800" height="677" key="#SQL_Dialects/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578495196712" />
-    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1578557115536">
+    <state x="584" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578829177017">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578557115536" />
+    <state x="584" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578829177017" />
+    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1578903168412">
+      <screen x="59" y="27" width="1861" height="1053" />
+    </state>
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578903168412" />
     <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl/59.27.1861.1053@59.27.1861.1053" timestamp="1578440796127" />
     <state x="785" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1578438038166">
       <screen x="59" y="27" width="1861" height="1053" />

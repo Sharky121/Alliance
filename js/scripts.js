@@ -5,21 +5,35 @@ $(document).ready(function () {
         }
     });
 
-    $(".owl-carousel").owlCarousel({
-        responsive: {
-            0: {
-                items: 1
+    if ($(".owl-carousel").length) {
+        $(".owl-carousel").owlCarousel({
+            responsive: {
+                0: {
+                    items: 1
+                },
+                991: {
+                    items: 3
+                }
             },
-            991: {
-                items: 3
-            }
-        },
-        loop: true,
-        center: true,
-        dots: true,
-        nav: true,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        autoplay: false
+            loop: true,
+            center: true,
+            dots: true,
+            nav: true,
+            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+            autoplay: false
+        });
+    }
+
+
+    $('.js-tab-trigger').click(function() {
+        var id = $(this).attr('data-tab');
+        var content = $('.js-tab-content[data-tab="'+ id +'"]');
+
+        $('.js-tab-trigger.active').removeClass('active');
+        $(this).addClass('active');
+
+        $('.js-tab-content.active').removeClass('active');
+        content.addClass('active');
     });
 
     // $('a[data-rel^=lightcase]').lightcase({

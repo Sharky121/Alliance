@@ -21,7 +21,7 @@
 
         <ul class="product-list">
             <?php
-                $catalog_sql = "SELECT id, title FROM products WHERE category_id = '$category_url'";
+                $catalog_sql = "SELECT id, title,image_path FROM products WHERE category_id = '$category_url'";
                 $catalog_list_res = mysqli_query($link, $catalog_sql);
                 $catalog_list = mysqli_fetch_all($catalog_list_res, MYSQLI_ASSOC);
             ?>
@@ -29,7 +29,7 @@
             <?php foreach ($catalog_list as $key => $val): ?>
                 <li class="product-list__item peripheral">
                     <a class="product-list__link" href="?view=product&id=<?= $val['id'] ?>">
-                        <img class="product-list__img" src="<?= $val['img']; ?>" alt="<?= $val['title']; ?>">
+                        <img class="product-list__img" src="<?= $val['image_path']; ?>" alt="<?= $val['title']; ?>">
                         <h4 class="product-list__title"><?= $val['title']; ?></h4>
                     </a>
                 </li>
@@ -37,3 +37,6 @@
         </ul>
     </div>
 </main>
+
+
+
