@@ -6,7 +6,7 @@
     $link = @mysqli_connect(
         'localhost',
         'root',
-        '12345678',
+        '123456',
         'alliance'
     ) or die('Ошибка: Невозможно подключиться к MySQL '. mysqli_connect_error());
 
