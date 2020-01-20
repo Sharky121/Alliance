@@ -29,7 +29,10 @@
             <?php foreach ($catalog_list as $key => $val): ?>
                 <li class="product-list__item peripheral">
                     <a class="product-list__link" href="?view=product&id=<?= $val['id'] ?>">
-                        <img class="product-list__img" src="<?= $val['image_path']; ?>" alt="<?= $val['title']; ?>">
+                        <div class="product-list__box">
+                            <img class="product-list__img" src="<?= $val['image_path']; ?>" alt="<?= $val['title']; ?>">
+                        </div>
+
                         <h4 class="product-list__title"><?= $val['title']; ?></h4>
                     </a>
                 </li>

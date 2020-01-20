@@ -78,7 +78,7 @@
 
     <div class="main-footer__copyright">
         <div class="container">
-            <span> © ООО «Альянс-Пром», 2006−2019</span>
+            <span> © ООО «Альянс-Пром», 2006−2020</span>
         </div>
     </div>
 
@@ -362,12 +362,9 @@
 <script src="/js/owl.carousel.min.js"></script>
 <script src="js/lite-yt-embed.js"></script>
 <script src="js/slick.min.js"></script>
-<!--<script src="https://api-maps.yandex.ru/2.1/?apikey=<3fe62757-4b7d-4e2d-a29d-8ae84937c4fb>&lang=ru_RU" type="text/javascript"></script>-->
+<script src="/js/lightcase.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=<3fe62757-4b7d-4e2d-a29d-8ae84937c4fb>&lang=ru_RU" type="text/javascript"></script>
 <script src="js/scripts.js"></script>
 <script>
-    $('#catalog').on('click', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('active');
-        $('.sub-menu').slideToggle();
-    });
+
 </script>

@@ -388,6 +388,8 @@ input { box-sizing: border-box; }
 /* slider
    ========================================================================== */
 
+ .slider { margin-bottom: 50px; }
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -867,6 +869,14 @@ input { box-sizing: border-box; }
 .section-about__content,
 .section-about__img { width: 50%; }
 
+.section-about__content {
+  font-weight: 300;
+}
+
+.section-about__img img {
+  width: 80%;
+}
+
 .about-list {
   padding: 0;
   margin: 0;
@@ -891,7 +901,11 @@ input { box-sizing: border-box; }
    SECTION VIDEO WORKS
    ========================================================================== */
 
-.section-works { text-align: center; }
+.section-works { 
+  margin-bottom: 50px;
+
+  text-align: center; 
+}
 
 .owl-carousel--works .owl-item {
   transform: scale(.82, .8);
@@ -918,6 +932,10 @@ input { box-sizing: border-box; }
   overflow: hidden;
 }
 
+@keyframes spin {
+  to { transform: rotate(360deg); } 
+}
+
 .item__ico {
   cursor: pointer;
   position: absolute;
@@ -929,38 +947,38 @@ input { box-sizing: border-box; }
   width: 60px;
 }
 
-.item__ico .stroke-dotted {
-  opacity: 0;
-  stroke-dasharray: 4,5;
-  stroke-width: 1px;
-  transform-origin: 50% 50%;
-  animation: spin 4s infinite linear;
-  transition: opacity 1s ease, stroke-width 1s ease;
-}
+ .item__ico .stroke-dotted {
+    opacity: 0;
+    stroke-dasharray: 4,5;
+    stroke-width: 1px;
+    transform-origin: 50% 50%;
+    animation: spin 4s infinite linear;
+    transition: opacity 1s ease, stroke-width 1s ease; 
+  }
 
-.item__ico.stroke-solid {
-  stroke-dashoffset: 0;
-  stroke-dashArray: 300;
-  stroke-width: 4px;
-  transition: stroke-dashoffset 1s ease, opacity 1s ease;
-}
+  .item__ico .stroke-solid {
+    stroke-dashoffset: 0;
+    stroke-dashArray: 300;
+    stroke-width: 4px;
+    transition: stroke-dashoffset 1s ease, opacity 1s ease; 
+  }
 
-.item__ico .icon {
-  transform-origin: 50% 50%;
-  transition: transform 200ms ease-out;
-}
+  .item__ico .icon {
+    transform-origin: 50% 50%;
+    transition: transform 200ms ease-out; 
+  }
 
-.item__ico #ico-play:hover .stroke-dotted {
-  stroke-width: 4px;
-  opacity: 1;
-}
+  .item__ico:hover .stroke-dotted {
+    stroke-width: 4px;
+    opacity: 1; 
+  }
 
-.item__ico #ico-play:hover .stroke-solid {
-  opacity: 0;
-  stroke-dashoffset: 300;
-}
+  .item__ico:hover .stroke-solid {
+    opacity: 0;
+    stroke-dashoffset: 300; 
+  }
 
-.item__ico #ico-play:hover .icon { transform: scale(1.05); }
+  .item__ico:hover .icon { transform: scale(1.05); }
 
 /* ==========================================================================
    SECTION MAP
@@ -1146,7 +1164,7 @@ input { box-sizing: border-box; }
 
 .product-list__item {
   width: 50%;
-  padding: 20px 20px;
+  padding: 20px 10px;
 
   margin-bottom: 1%;
 
@@ -1156,14 +1174,38 @@ input { box-sizing: border-box; }
   transition: all .3s;
 }
 
-.peripheral.product-list__item {
-  width: 25%;
+.product-list__box {
+  padding: 20px;
+
+  border: 1px solid rgba(119, 119, 119, 0.5);
+
+  overflow: hidden;
 }
+
+.peripheral.product-list__item { width: 25%; }
 
 .product-list__title {
   color: #000000;
   font-weight: 300;
 }
+
+.product-list__img { 
+  /*transition: all .5s ease;*/
+  transition: transform .25s, visibility .25s ease-in;
+}
+
+.product-list__item:hover .product-list__box { border: 1px solid #4db6ac; }
+
+.product-list__item:hover .product-list__title { color: #4db6ac; }
+
+.product-list__item:hover .product-list__img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+
 
 /* ==========================================================================
    PRODUCT ITEM
