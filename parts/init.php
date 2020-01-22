@@ -7,7 +7,7 @@
         'localhost',
         'root',
         '123456',
-        'alliance'
+        'plastprom'
     ) or die('Ошибка: Невозможно подключиться к MySQL '. mysqli_connect_error());
 
     @mysqli_set_charset($link, "utf8") or die('mysqli: невозможно устновить кодировку '. mysqli_connect_error());
