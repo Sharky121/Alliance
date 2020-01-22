@@ -1278,10 +1278,10 @@ input { box-sizing: border-box; }
 /* spec-table
    ========================================================================== */
 .specification table {
-  border-collapse: collapse;
-}
-.spec-table {
+  width: 100%;
+  margin-bottom: 20px;
 
+  border-collapse: collapse;
 }
 
 .specification table th,

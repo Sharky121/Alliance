@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alliance.sql" beforeDir="false" afterPath="$PROJECT_DIR$/alliance.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/prod1_big.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/Вертикальные термопластавтоматы стандартной серии.ods" beforeDir="false" afterPath="$PROJECT_DIR$/sources/Вертикальные термопластавтоматы стандартной серии.ods" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/catalog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/product.php" afterDir="false" />
     </list>
@@ -49,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../torgi_rf" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -64,7 +63,12 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Docker" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -112,6 +116,11 @@
       <workItem from="1578754083868" duration="19213000" />
       <workItem from="1578829000181" duration="16671000" />
       <workItem from="1578902971782" duration="199000" />
+      <workItem from="1578988910008" duration="473000" />
+      <workItem from="1579248489330" duration="558000" />
+      <workItem from="1579378364120" duration="3678000" />
+      <workItem from="1579432805496" duration="21274000" />
+      <workItem from="1579506465949" duration="11093000" />
     </task>
     <servers />
   </component>
@@ -127,16 +136,20 @@
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="584" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578829177017" />
-    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1578903168412">
+    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1579507287069">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578903168412" />
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1579507287069" />
     <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl/59.27.1861.1053@59.27.1861.1053" timestamp="1578440796127" />
     <state x="785" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1578438038166">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="785" y="478" width="399" height="149" key="NewPhpFileDialog/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1576677943752" />
     <state x="785" y="478" key="NewPhpFileDialog/59.27.1861.1053@59.27.1861.1053" timestamp="1578438038166" />
+    <state x="653" y="253" key="run.anything.popup" timestamp="1579528041975">
+      <screen x="59" y="27" width="1861" height="1053" />
+    </state>
+    <state x="653" y="253" key="run.anything.popup/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1579528041975" />
     <state x="652" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1578439129049">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
