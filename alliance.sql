@@ -7862,7 +7862,7 @@ SET title = 'Печи',
                   <table>
                     <tbody>
                     <tr>
-                      <td><strong>Ед.имз.</strong></td>
+                      <td><strong>Ед.изм.</strong></td>
                       <td><strong>500кг</strong></td>
                       <td><strong>1000кг</strong></td>
                       <td><strong>1500кг</strong></td>
