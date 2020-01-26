@@ -10,6 +10,14 @@ CREATE TABLE category (
   image_path VARCHAR(255)
 );
 
+
+CREATE TABLE video (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(64) NOT NULL UNIQUE,
+  video_url VARCHAR(255),
+  category_id INT NOT NULL
+);
+
 CREATE TABLE products (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(128) NOT NULL UNIQUE,
@@ -25,7 +33,6 @@ CREATE TABLE products (
 INSERT INTO category SET title = 'Литье пластмасс';
 INSERT INTO category SET title = 'Литье цветных металлов';
 INSERT INTO category SET title = 'Периферийное оборудование';
-INSERT INTO category SET title = 'Экструдеры';
 INSERT INTO category SET title = 'Пресс-формы';
 INSERT INTO category SET title = 'Запасные части';
 
@@ -4476,8 +4483,8 @@ SET title = 'Серия ТПА с сервоприводом',
     image_path ='/img/catalog/prod1.png',
     big_image_path ='',
     category_id = '1',
-    small_desc = '',
-    content = '          <p>Выберите серию: </p>
+    small_desc = 'Больше производительности при меньшем потреблении энергии. Эта серия литьевых машин показывает большую энергоэффективность, отличается высокой надежностью и точностью производства',
+    content = '<p>Выберите серию: </p>
           <div class="tabs">
 
             <!--  Контейнер с вкладками   -->
@@ -6121,8 +6128,9 @@ SET title = 'Машины для литья цветных металлов по
     image_path ='/img/catalog/lanson.jpg',
     big_image_path ='',
     category_id = '2',
-    small_desc = '',
-    content ='          <p>Выберите серию: </p>
+    small_desc = 'Используются для производства отливок из алюминиевых, цинковых, магниевых сплавов и сплавов на основе меди . Обеспечивают возможность получения тонкостенных отливок сложной конфигурации с высокой чистотой поверхности и точностью размеров.
+Машины серии LS cконструированы в расчете на длительную эффективную работу с высокой производительностью, оснащены интеллектуальной системой контроля качества литьевого процесса.',
+    content ='<p>Выберите серию: </p>
           <div class="tabs">
 
             <!--  Контейнер с вкладками   -->
@@ -6621,8 +6629,8 @@ SET title = 'Машины для литья цветных металлов по
     image_path ='/img/catalog/aliance.jpg',
     big_image_path ='',
     category_id = '2',
-    small_desc = '',
-    content = '          <p>Выберите серию: </p>
+    small_desc = 'Используются для производства отливок из сплавов имеющих низкую температуру плавления (300—400° С), например, на оловянной, свинцовой и цинковой основах. Серия ACM удовлетворяет самым высоким требованиям производительности и качества получаемых отливок',
+    content = '<p>Выберите серию: </p>
           <div class="tabs">
 
             <!--  Контейнер с вкладками   -->
@@ -6996,7 +7004,7 @@ SET title = 'Периферия и роботизация',
     big_image_path ='',
     category_id = '2',
     small_desc = '',
-    content = '         <p>Выберите вес: </p>
+    content = '<p>Выберите вес: </p>
           <div class="tabs">
 
             <!--  Контейнер с вкладками   -->
@@ -7917,7 +7925,553 @@ SET title = 'Дробилки',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '          <p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">V</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">WSGP</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="3">WSGE</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="4">WSGJ</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="5">WSGO</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="6">WSGM</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="7">WSGI</li>
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+                <!---------------------------------------------------------->
+                <!---------------------------------------------------------->
+                <!-- V -->
+                <li class="tab-content__item js-tab-content active" data-tab="1">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>VGY-10HP</td>
+                      <td>VGD-10HP</td>
+                      <td>VGY-15HP</td>
+                      <td>VGD-15HP</td>
+                      <td>VGY-20HP</td>
+                      <td>VGD-20HP</td>
+                      <td>VGY-30HP</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность, кВт</td>
+                      <td>7,5</td>
+                      <td>7,5</td>
+                      <td>11</td>
+                      <td>11</td>
+                      <td>15</td>
+                      <td>15</td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность, л.с.</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>15</td>
+                      <td>15</td>
+                      <td>20</td>
+                      <td>20</td>
+                      <td>30</td>
+                    </tr>
+                    <tr>
+                      <td>Производительность</td>
+                      <td>200~400</td>
+                      <td>170~340</td>
+                      <td>300~500</td>
+                      <td>255~420</td>
+                      <td>350~550</td>
+                      <td>300~460</td>
+                      <td>500~800</td>
+                    </tr>
+                    <tr>
+                      <td>Неподвижная режущая пластина (шт.)</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>Дисковая режущая пластина (шт.)</td>
+                      <td>18</td>
+                      <td>6</td>
+                      <td>21</td>
+                      <td>6</td>
+                      <td>24</td>
+                      <td>6</td>
+                      <td>27</td>
+                    </tr>
+                    <tr>
+                      <td>Размер загрузочного окна</td>
+                      <td>360x260</td>
+                      <td>360x260</td>
+                      <td>420x280</td>
+                      <td>420x280</td>
+                      <td>480x330</td>
+                      <td>480x330</td>
+                      <td>660x350</td>
+                    </tr>
+                    <tr>
+                      <td>Габариты дробилки</td>
+                      <td>106x83x144</td>
+                      <td>106x83x144</td>
+                      <td>127x90x160</td>
+                      <td>127x90x160</td>
+                      <td>137x96x179</td>
+                      <td>137x96x179</td>
+                      <td>157x126x200</td>
+                    </tr>
+                    <tr>
+                      <td>Вес нетто</td>
+                      <td>540</td>
+                      <td>525</td>
+                      <td>795</td>
+                      <td>765</td>
+                      <td>1040</td>
+                      <td>980</td>
+                      <td>1700</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>VGD-30HP</td>
+                      <td>VGY-50HP</td>
+                      <td>VGD-50HP</td>
+                      <td>VGY-75HP</td>
+                      <td>VGD-75HP</td>
+                      <td>VGY-100HP</td>
+                      <td>VGD-100HP</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность, кВт</td>
+                      <td>22</td>
+                      <td>37</td>
+                      <td>37</td>
+                      <td>55</td>
+                      <td>55</td>
+                      <td>75</td>
+                      <td>75</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность, л.с.</td>
+                      <td>30</td>
+                      <td>50</td>
+                      <td>50</td>
+                      <td>75</td>
+                      <td>75</td>
+                      <td>100</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>Производительность</td>
+                      <td>420~680</td>
+                      <td>800~1200</td>
+                      <td>680~1000</td>
+                      <td>850~1300</td>
+                      <td>700~1200</td>
+                      <td>1000~1500</td>
+                      <td>850~1400</td>
+                    </tr>
+                    <tr>
+                      <td>Неподвижная режущая пластина (шт.)</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>6</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>Дисковая режущая пластина (шт.)</td>
+                      <td>9</td>
+                      <td>27</td>
+                      <td>9</td>
+                      <td>30</td>
+                      <td>12</td>
+                      <td>33</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>Размер загрузочного окна</td>
+                      <td>660x350</td>
+                      <td>720x500</td>
+                      <td>720x500</td>
+                      <td>910x820</td>
+                      <td>910x820</td>
+                      <td>1050x820</td>
+                      <td>1050x820</td>
+                    </tr>
+                    <tr>
+                      <td>Габариты дробилки</td>
+                      <td>157x126x200</td>
+                      <td>187x139x248</td>
+                      <td>187x139x248</td>
+                      <td>236x192x370</td>
+                      <td>236x192x370</td>
+                      <td>251x206x370</td>
+                      <td>251x206x370</td>
+                    </tr>
+                    <tr>
+                      <td>Вес нетто</td>
+                      <td>1640</td>
+                      <td>2750</td>
+                      <td>2700</td>
+                      <td>5400</td>
+                      <td>4980</td>
+                      <td>6250</td>
+                      <td>5800</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSGP -->
+                <li class="tab-content__item js-tab-content" data-tab="2">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>WSGP230</td>
+                      <td>WSGP300</td>
+                      <td>WSGP400</td>
+                      <td>WSGP500</td>
+                      <td>WSGP600</td>
+                      <td>WSGP800</td>
+                    </tr>
+                    <tr>
+                      <td>Приемное окно (мм)</td>
+                      <td>230x200</td>
+                      <td>310x200</td>
+                      <td>410x235</td>
+                      <td>515x290</td>
+                      <td>610x320</td>
+                      <td>815x470</td>
+                    </tr>
+                    <tr>
+                      <td>Производительность (кг/ч)</td>
+                      <td>100-150</td>
+                      <td>150-200</td>
+                      <td>200-250</td>
+                      <td>300-350</td>
+                      <td>350-450</td>
+                      <td>450-600</td>
+                    </tr>
+                    <tr>
+                      <td>Стационарные лезвия</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>4</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>Подвижные лезвия</td>
+                      <td>6</td>
+                      <td>9</td>
+                      <td>12</td>
+                      <td>15</td>
+                      <td>18</td>
+                      <td>24</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность, кВт</td>
+                      <td>4</td>
+                      <td>5,5</td>
+                      <td>7,5</td>
+                      <td>11</td>
+                      <td>15</td>
+                      <td>22/30</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность, л.с.</td>
+                      <td>5</td>
+                      <td>7,5</td>
+                      <td>10</td>
+                      <td>15</td>
+                      <td>20</td>
+                      <td>30/40</td>
+                    </tr>
+                    <tr>
+                      <td>Габариты (ДхШхВ см)</td>
+                      <td>97x61x120</td>
+                      <td>100x72x129</td>
+                      <td>103x84x139</td>
+                      <td>123x101x163</td>
+                      <td>132x111x183</td>
+                      <td>173x149x230</td>
+                    </tr>
+                    <tr>
+                      <td>Вес нетто (кг)</td>
+                      <td>290</td>
+                      <td>435</td>
+                      <td>500</td>
+                      <td>900</td>
+                      <td>970</td>
+                      <td>2000</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSGE -->
+                <li class="tab-content__item js-tab-content" data-tab="3">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Размер загрузочного окна (мм)</td>
+                      <td>Производительность (кг/ч)</td>
+                      <td>Неподвижная режущая пластина</td>
+                      <td>Дисковая режущая пластина</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Габариты</td>
+                      <td>Вес нетто</td>
+                      <td>Вентилятор</td>
+                    </tr>
+                    <tr>
+                      <td>WSGE400</td>
+                      <td>410x235</td>
+                      <td>80-120</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>7,5</td>
+                      <td>10</td>
+                      <td>103x84x139</td>
+                      <td>520</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>WSGE600</td>
+                      <td>610x320</td>
+                      <td>130-230</td>
+                      <td>4</td>
+                      <td>6</td>
+                      <td>15</td>
+                      <td>20</td>
+                      <td>132x111x183</td>
+                      <td>1100</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>WSGE800</td>
+                      <td>815x470</td>
+                      <td>180-280</td>
+                      <td>4</td>
+                      <td>6</td>
+                      <td>22</td>
+                      <td>30</td>
+                      <td>173x149x230</td>
+                      <td>2000</td>
+                      <td>4</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSGJ -->
+                <li class="tab-content__item js-tab-content" data-tab="4">
+                  <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Размер загрузочного окна (мм)</td>
+                    <td>Производительность (кг/ч)</td>
+                    <td>Неподвижная режущая пластина</td>
+                    <td>Дисковая режущая пластина</td>
+                    <td>Мощность, кВт</td>
+                    <td>Мощность, л.с.</td>
+                    <td>Габариты</td>
+                    <td>Вес нетто</td>
+                  </tr>
+                  <tr>
+                    <td>WSGJ230</td>
+                    <td>230x215</td>
+                    <td>100-150</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>100x72x149</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>WSGJ400</td>
+                    <td>410x270</td>
+                    <td>200-250</td>
+                    <td>2</td>
+                    <td>12</td>
+                    <td>7,5</td>
+                    <td>10</td>
+                    <td>118x93x170</td>
+                    <td>800</td>
+                  </tr>
+                  <tr>
+                    <td>WSGJ500</td>
+                    <td>520x320</td>
+                    <td>300-350</td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>11</td>
+                    <td>15</td>
+                    <td>130x106x196</td>
+                    <td>1100</td>
+                  </tr>
+                  <tr>
+                    <td>WSGJ600</td>
+                    <td>620x340</td>
+                    <td>350-450</td>
+                    <td>4</td>
+                    <td>18</td>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>136x116x213</td>
+                    <td>1350</td>
+                  </tr>
+                  <tr>
+                    <td>WSGJ800</td>
+                    <td>815x480</td>
+                    <td>450-600</td>
+                    <td>4</td>
+                    <td>24</td>
+                    <td>22</td>
+                    <td>30</td>
+                    <td>185x154x268</td>
+                    <td>2250</td>
+                  </tr>
+                  </tbody>
+                </table>
+                </li>
+
+                <!-- WSGO -->
+                <li class="tab-content__item js-tab-content" data-tab="5">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Размер загрузочного окна (мм)</td>
+                      <td>Производительность (кг/ч)</td>
+                      <td>Число оборотов</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Габариты</td>
+                      <td>Вес нетто</td>
+                    </tr>
+                    <tr>
+                      <td>WSGO240</td>
+                      <td>256x240</td>
+                      <td>15-25</td>
+                      <td>25</td>
+                      <td>1,5</td>
+                      <td>2</td>
+                      <td>76x52x123</td>
+                      <td>260</td>
+                    </tr>
+                    <tr>
+                      <td>WSGO370</td>
+                      <td>375x270</td>
+                      <td>30-50</td>
+                      <td>25</td>
+                      <td>2,2</td>
+                      <td>3</td>
+                      <td>94x54x137</td>
+                      <td>380</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSGM -->
+                <li class="tab-content__item js-tab-content" data-tab="6">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Размер загрузочного окна (мм)</td>
+                      <td>Производительность (кг/ч)</td>
+                      <td>Число оборотов</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Габариты</td>
+                      <td>Вес нетто</td>
+                      <td>Неподвижная режущая пластина</td>
+                      <td>Дисковая режущая пластина</td>
+                      <td>Suction Blower</td>
+                    </tr>
+                    <tr>
+                      <td>WSGM250</td>
+                      <td>250x200</td>
+                      <td>100-150</td>
+                      <td>300</td>
+                      <td>2,2/4</td>
+                      <td>3/5</td>
+                      <td>87x63x134</td>
+                      <td>365</td>
+                      <td>2</td>
+                      <td>12</td>
+                      <td>1,5</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSGI -->
+                <li class="tab-content__item js-tab-content" data-tab="7">
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Размер загрузочного окна (мм)</td>
+                      <td>Производительность (кг/ч)</td>
+                      <td>Число оборотов</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Габариты</td>
+                      <td>Вес нетто</td>
+                      <td>Неподвижная режущая пластина</td>
+                      <td>Дисковая режущая пластина</td>
+                    </tr>
+                    <tr>
+                      <td>WSGI-180</td>
+                      <td>180x170</td>
+                      <td>40-70</td>
+                      <td>380</td>
+                      <td>1,1</td>
+                      <td>1,5</td>
+                      <td>69x42x113</td>
+                      <td>135</td>
+                      <td>2</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td>WSGI-210</td>
+                      <td>210-200</td>
+                      <td>50-90</td>
+                      <td>250</td>
+                      <td>1,5</td>
+                      <td>2</td>
+                      <td>93x49x140</td>
+                      <td>220</td>
+                      <td>2</td>
+                      <td>9</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+            </ul>
+          </div>';
 
 INSERT INTO products
 SET title = 'Миксеры',
@@ -7925,7 +8479,511 @@ SET title = 'Миксеры',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '          <p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">WSQA</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">WSQB</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="3">VCM</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="4">WSPM</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="5">WSQE</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="6">WSQD</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="7">WSQC</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="8">WSQF</li>
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+                <!---------------------------------------------------------->
+                <!---------------------------------------------------------->
+                <!-- WSQA -->
+                <li class="tab-content__item js-tab-content active" data-tab="1">
+                  <h3>Горизонтальные миксеры</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Напряжение питания, В</td>
+                      <td>Габариты, см</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSQA-100</td>
+                      <td>2,2</td>
+                      <td>3</td>
+                      <td>47</td>
+                      <td>380 3ф</td>
+                      <td>110x85x130</td>
+                      <td>285</td>
+                    </tr>
+                    <tr>
+                      <td>WSQA-150</td>
+                      <td>4</td>
+                      <td>5,5</td>
+                      <td>47</td>
+                      <td>380 3ф</td>
+                      <td>142x85x130</td>
+                      <td>358</td>
+                    </tr>
+                    <tr>
+                      <td>WSQA-200</td>
+                      <td>4</td>
+                      <td>5,5</td>
+                      <td>47</td>
+                      <td>380 3ф</td>
+                      <td>160x100x138</td>
+                      <td>530</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSQB -->
+                <li class="tab-content__item js-tab-content" data-tab="2">
+                  <h3>Вертикальные миксеры</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Вместимость, кг</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Напряжение питания, В</td>
+                      <td>Габариты, см</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSQB-50</td>
+                      <td>1,5</td>
+                      <td>2</td>
+                      <td>50</td>
+                      <td>85</td>
+                      <td>380 3ф</td>
+                      <td>85x83x112</td>
+                      <td>125</td>
+                    </tr>
+                    <tr>
+                      <td>WSQB-100</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>100</td>
+                      <td>85</td>
+                      <td>380 3ф</td>
+                      <td>100x100x129</td>
+                      <td>180</td>
+                    </tr>
+                    <tr>
+                      <td>WSQB-150</td>
+                      <td>4</td>
+                      <td>5,5</td>
+                      <td>150</td>
+                      <td>85</td>
+                      <td>380 3ф</td>
+                      <td>113x113x121</td>
+                      <td>270</td>
+                    </tr>
+                    <tr>
+                      <td>WSQB-200</td>
+                      <td>7,5</td>
+                      <td>10</td>
+                      <td>200</td>
+                      <td>85</td>
+                      <td>380 3ф</td>
+                      <td>125x125x139</td>
+                      <td>313</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- VCM -->
+                <li class="tab-content__item js-tab-content" data-tab="3">
+                  <h3>Шнековый дозатор красителя</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Емкость бункера, л</td>
+                      <td>Пропорции</td>
+                      <td>Диаметр шнека, мм</td>
+                      <td>Производительность, кг/час</td>
+                      <td>Дозировка по массе, кг</td>
+                    </tr>
+                    <tr>
+                      <td>VCM75-16</td>
+                      <td>60</td>
+                      <td>0~3000</td>
+                      <td>10</td>
+                      <td>75:1</td>
+                      <td>16</td>
+                      <td>0~5,5</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td>VCM75-20</td>
+                      <td>60</td>
+                      <td>0~3000</td>
+                      <td>10</td>
+                      <td>75:1</td>
+                      <td>20</td>
+                      <td>0~7</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td>VCM30-16</td>
+                      <td>60</td>
+                      <td>0~3000</td>
+                      <td>10</td>
+                      <td>30:1</td>
+                      <td>16</td>
+                      <td>0~14</td>
+                      <td>28</td>
+                    </tr>
+                    <tr>
+                      <td>VCM30-20</td>
+                      <td>60</td>
+                      <td>0~3000</td>
+                      <td>10</td>
+                      <td>30:1</td>
+                      <td>20</td>
+                      <td>0~16</td>
+                      <td>28</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Емкость бункера, л</td>
+                      <td>Пропорции</td>
+                      <td>Диаметр шнека, мм</td>
+                      <td>Производительность, кг/час</td>
+                      <td>Дозировка по массе, кг</td>
+                    </tr>
+                    <tr>
+                      <td>VCM200-16</td>
+                      <td>50</td>
+                      <td>50~3000</td>
+                      <td>10</td>
+                      <td>200:1</td>
+                      <td>16</td>
+                      <td>0,03~1,2</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>VCM200-20</td>
+                      <td>50</td>
+                      <td>50~3000</td>
+                      <td>10</td>
+                      <td>200:1</td>
+                      <td>20</td>
+                      <td>0,3~2,8</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>VCM100-16</td>
+                      <td>50</td>
+                      <td>50~3000</td>
+                      <td>10</td>
+                      <td>100:1</td>
+                      <td>16</td>
+                      <td>0,22~2,3</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>VCM100-20</td>
+                      <td>50</td>
+                      <td>50~3000</td>
+                      <td>10</td>
+                      <td>100:1</td>
+                      <td>20</td>
+                      <td>0,5~5,1</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>VCM50-16</td>
+                      <td>50</td>
+                      <td>50~3000</td>
+                      <td>10</td>
+                      <td>50:1</td>
+                      <td>16</td>
+                      <td>0,75~9,5</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>VCM50-20</td>
+                      <td>50</td>
+                      <td>50~3000</td>
+                      <td>10</td>
+                      <td>50:1</td>
+                      <td>20</td>
+                      <td>1,3~20</td>
+                      <td>19</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSPM -->
+                <li class="tab-content__item js-tab-content" data-tab="4">
+                  <h3>Пропорциональный клапан</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Производительность контейнера, кг/час</td>
+                      <td>Размер трубки, мм</td>
+                      <td>Давление воздуха, кг, сил/м</td>
+                      <td>Габариты, мм</td>
+                    </tr>
+                    <tr>
+                      <td>WSPM-500</td>
+                      <td>500</td>
+                      <td>38</td>
+                      <td>&gt;3</td>
+                      <td>260x150x180</td>
+                    </tr>
+                    <tr>
+                      <td>WSPM-800</td>
+                      <td>800</td>
+                      <td>50</td>
+                      <td>&gt;3</td>
+                      <td>305x170x220</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSQE -->
+                <li class="tab-content__item js-tab-content" data-tab="5">
+                  <h3>Вращающийся миксер</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Вместимость, кг</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Напряжение питания, В</td>
+                      <td>Габариты, см</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSQE-50</td>
+                      <td>0,75</td>
+                      <td>1</td>
+                      <td>50</td>
+                      <td>46</td>
+                      <td>380 3ф</td>
+                      <td>90x89x140</td>
+                      <td>120</td>
+                    </tr>
+                    <tr>
+                      <td>WSQE-100</td>
+                      <td>1,5</td>
+                      <td>2</td>
+                      <td>100</td>
+                      <td>46</td>
+                      <td>380 3ф</td>
+                      <td>102x110x150</td>
+                      <td>147</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSQD -->
+                <li class="tab-content__item js-tab-content" data-tab="6">
+                  <h3>Сухие миксеры-смесители красителя</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Вместимость, кг</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Напряжение питания, В</td>
+                      <td>Габариты, см</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSQD-50</td>
+                      <td>7,5</td>
+                      <td>10</td>
+                      <td>50</td>
+                      <td>480</td>
+                      <td>380 3ф</td>
+                      <td>117x83x135</td>
+                      <td>230</td>
+                    </tr>
+                    <tr>
+                      <td>WSQD-100</td>
+                      <td>15</td>
+                      <td>20</td>
+                      <td>100</td>
+                      <td>480</td>
+                      <td>380 3ф</td>
+                      <td>134x98x152</td>
+                      <td>270</td>
+                    </tr>
+                    <tr>
+                      <td>WSQD-200</td>
+                      <td>30</td>
+                      <td>40</td>
+                      <td>200</td>
+                      <td>480</td>
+                      <td>380 3ф</td>
+                      <td>171x120x171</td>
+                      <td>700</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSQC -->
+                <li class="tab-content__item js-tab-content" data-tab="7">
+                  <h3>Миксеры с горизонтальной мешалкой</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Вместимость, кг</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Напряжение питания, В</td>
+                      <td>Габариты, см</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSQC-300</td>
+                      <td>5,5</td>
+                      <td>7,5</td>
+                      <td>300</td>
+                      <td>23</td>
+                      <td>380 3ф</td>
+                      <td>214x101x148</td>
+                      <td>730</td>
+                    </tr>
+                    <tr>
+                      <td>WSQC-500</td>
+                      <td>7,5</td>
+                      <td>10</td>
+                      <td>500</td>
+                      <td>23</td>
+                      <td>380 3ф</td>
+                      <td>231x119x175</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td>WSQC-1000</td>
+                      <td>15</td>
+                      <td>20</td>
+                      <td>1000</td>
+                      <td>15</td>
+                      <td>380 3ф</td>
+                      <td>306x128x227</td>
+                      <td>1500</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- WSQF -->
+                <li class="tab-content__item js-tab-content" data-tab="8">
+                  <h3>Миксеры с вертикальной мешалкой</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Мощность, л.с.</td>
+                      <td>Вместимость, кг</td>
+                      <td>Скорость вращения, об/мин</td>
+                      <td>Напряжение питания, В</td>
+                      <td>Габариты, см</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSQF-500</td>
+                      <td>2,2</td>
+                      <td>3</td>
+                      <td>500</td>
+                      <td>300</td>
+                      <td>380 3ф</td>
+                      <td>145x110x200</td>
+                      <td>450</td>
+                    </tr>
+                    <tr>
+                      <td>WSQF-1000</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>1000</td>
+                      <td>300</td>
+                      <td>380 3ф</td>
+                      <td>178x138x310</td>
+                      <td>630</td>
+                    </tr>
+                    <tr>
+                      <td>WSQF-2000</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>2000</td>
+                      <td>300</td>
+                      <td>380 3ф</td>
+                      <td>198x168x361</td>
+                      <td>1050</td>
+                    </tr>
+                    <tr>
+                      <td>WSQF-3000</td>
+                      <td>5,5</td>
+                      <td>7,5</td>
+                      <td>3000</td>
+                      <td>300</td>
+                      <td>380 3ф</td>
+                      <td>245x213x370</td>
+                      <td>1250</td>
+                    </tr>
+                    <tr>
+                      <td>WSQF-1000H</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>1000</td>
+                      <td>300</td>
+                      <td>380 3ф</td>
+                      <td>178x170x210</td>
+                      <td>710</td>
+                    </tr>
+                    <tr>
+                      <td>WSQF-2000H</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>2000</td>
+                      <td>300</td>
+                      <td>380 3ф</td>
+                      <td>198x200x361</td>
+                      <td>1150</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+            </ul>
+          </div>';
 
 INSERT INTO products
 SET title = 'Осушители полимерного сырья',
@@ -7933,7 +8991,761 @@ SET title = 'Осушители полимерного сырья',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '          <p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">Сушильные шкафы</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">Осушители Honeycle</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="3">Серия VMD (3 в 1)</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="4">Серия WSDB</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="5">Серия WSDH, VDB</li>
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+                <!-- Сушильные шкафа -->
+                <li class="tab-content__item js-tab-content active" data-tab="1">
+                  <h3>Сушильные шкафы</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мощность, кВт</td>
+                      <td>Вентилятор, кВт</td>
+                      <td>Температурный диапазон</td>
+                      <td>Количество лотков</td>
+                      <td>Емкость, кг</td>
+                      <td>Габариты, см</td>
+                      <td>Вес, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSDA-5</td>
+                      <td>6</td>
+                      <td>0,75</td>
+                      <td>200</td>
+                      <td>5</td>
+                      <td>45</td>
+                      <td>92x69x138</td>
+                      <td>154</td>
+                    </tr>
+                    <tr>
+                      <td>WSDA-9</td>
+                      <td>6</td>
+                      <td>0,75</td>
+                      <td>200</td>
+                      <td>9</td>
+                      <td>80</td>
+                      <td>92x69x175</td>
+                      <td>190</td>
+                    </tr>
+                    <tr>
+                      <td>WSDA-20</td>
+                      <td>12</td>
+                      <td>1,5</td>
+                      <td>200</td>
+                      <td>20</td>
+                      <td>180</td>
+                      <td>166x69x195</td>
+                      <td>315</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- Осушители Honeycle -->
+                <li class="tab-content__item js-tab-content" data-tab="2">
+                  <h3>Осушители Honeycle</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Воздушный поток, м/час</td>
+                      <td>Вентилятор, кВт</td>
+                      <td>Размер трубки, дюйм</td>
+                      <td>Габариты влагоотделителя, см</td>
+                      <td>Вес, кг</td>
+                      <td>Мощность вентилятора рекуперации, кВт</td>
+                      <td>Мощность рекуперации, кВт</td>
+                    </tr>
+                    <tr>
+                      <td>VD80H</td>
+                      <td>80</td>
+                      <td>0,75</td>
+                      <td>2</td>
+                      <td>82x55x128</td>
+                      <td>120</td>
+                      <td>0,25</td>
+                      <td>3,9</td>
+                    </tr>
+                    <tr>
+                      <td>VD130H</td>
+                      <td>130</td>
+                      <td>1,1</td>
+                      <td>2</td>
+                      <td>82x55x128</td>
+                      <td>140</td>
+                      <td>0,25</td>
+                      <td>3,9</td>
+                    </tr>
+                    <tr>
+                      <td>VD160H</td>
+                      <td>160</td>
+                      <td>1,5</td>
+                      <td>2,5</td>
+                      <td>105x66x153</td>
+                      <td>215</td>
+                      <td>0,55</td>
+                      <td>5,4</td>
+                    </tr>
+                    <tr>
+                      <td>VD220H</td>
+                      <td>220</td>
+                      <td>2,2</td>
+                      <td>2,5</td>
+                      <td>105x66x153</td>
+                      <td>225</td>
+                      <td>0,55</td>
+                      <td>5,4</td>
+                    </tr>
+                    <tr>
+                      <td>VD300H</td>
+                      <td>300</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>126x70x170</td>
+                      <td>240</td>
+                      <td>0,75</td>
+                      <td>7,2</td>
+                    </tr>
+                    <tr>
+                      <td>VD400H</td>
+                      <td>400</td>
+                      <td>5,5</td>
+                      <td>3</td>
+                      <td>126x70x170</td>
+                      <td>280</td>
+                      <td>0,75</td>
+                      <td>7,2</td>
+                    </tr>
+                    <tr>
+                      <td>VD500H</td>
+                      <td>500</td>
+                      <td>5,5</td>
+                      <td>4</td>
+                      <td>130x90x180</td>
+                      <td>290</td>
+                      <td>2,2</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>VD800H</td>
+                      <td>800</td>
+                      <td>7,5</td>
+                      <td>4</td>
+                      <td>130x90x180</td>
+                      <td>320</td>
+                      <td>2,2</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>VD1000H</td>
+                      <td>1000</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>168x126x191</td>
+                      <td>400</td>
+                      <td>3</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>VD1200H</td>
+                      <td>1200</td>
+                      <td>13</td>
+                      <td>5</td>
+                      <td>168x126x191</td>
+                      <td>600</td>
+                      <td>3</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>VD1500H</td>
+                      <td>1500</td>
+                      <td>18</td>
+                      <td>6</td>
+                      <td>210x141x196</td>
+                      <td>540</td>
+                      <td>5,5</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>VD2000H</td>
+                      <td>2000</td>
+                      <td>18</td>
+                      <td>6</td>
+                      <td>210x141x196</td>
+                      <td>760</td>
+                      <td>5,5</td>
+                      <td>20</td>
+                    </tr>
+                    <tr>
+                      <td>VD3000H</td>
+                      <td>3000</td>
+                      <td>27</td>
+                      <td>8</td>
+                      <td>224x214x196</td>
+                      <td>1140</td>
+                      <td>7,7</td>
+                      <td>36</td>
+                    </tr>
+                    <tr>
+                      <td>VD4000H</td>
+                      <td>4000</td>
+                      <td>36</td>
+                      <td>8</td>
+                      <td>275x200x245</td>
+                      <td>1350</td>
+                      <td>11</td>
+                      <td>40</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- Серия VMD (3 в 1) -->
+                <li class="tab-content__item js-tab-content" data-tab="3">
+                  <h3>Сушилки серии VMD (3 в 1)</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Загрузчик, объем, л</td>
+                      <td>Загрузчик материал теплоизоляции</td>
+                      <td>Точка росы, С</td>
+                      <td>Температура, С</td>
+                      <td>Поток воздуха, м3/час</td>
+                      <td>Мощность вентилятора, кВт</td>
+                      <td>Мощность вентилятора рекуперации, кВт</td>
+                      <td>Мощность сушки, кВт</td>
+                      <td>Мощность рекуперации, кВт</td>
+                    </tr>
+                    <tr>
+                      <td>VMD90L/80A</td>
+                      <td>90</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>80</td>
+                      <td>0,75</td>
+                      <td>0,25</td>
+                      <td>3,9</td>
+                      <td>3,9</td>
+                    </tr>
+                    <tr>
+                      <td>VMD120L/80A</td>
+                      <td>120</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>80</td>
+                      <td>0,75</td>
+                      <td>0,25</td>
+                      <td>5,4</td>
+                      <td>3,9</td>
+                    </tr>
+                    <tr>
+                      <td>VMD160L/130A</td>
+                      <td>160</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>130</td>
+                      <td>1,1</td>
+                      <td>0,25</td>
+                      <td>5,4</td>
+                      <td>3,9</td>
+                    </tr>
+                    <tr>
+                      <td>VMD230L/160A</td>
+                      <td>230</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>160</td>
+                      <td>1,5</td>
+                      <td>0,55</td>
+                      <td>7,2</td>
+                      <td>5,4</td>
+                    </tr>
+                    <tr>
+                      <td>VMD300L/220A</td>
+                      <td>300</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>220</td>
+                      <td>2,2</td>
+                      <td>0,55</td>
+                      <td>12</td>
+                      <td>5,4</td>
+                    </tr>
+                    <tr>
+                      <td>VMD450L/300A</td>
+                      <td>450</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>300</td>
+                      <td>300</td>
+                      <td>0,75</td>
+                      <td>15</td>
+                      <td>7,2</td>
+                    </tr>
+                    <tr>
+                      <td>VMD750L/400A</td>
+                      <td>750</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>400</td>
+                      <td>5,5</td>
+                      <td>0,75</td>
+                      <td>18</td>
+                      <td>7,2</td>
+                    </tr>
+                    <tr>
+                      <td>VMD900L/500A</td>
+                      <td>900</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>500</td>
+                      <td>7,5</td>
+                      <td>2,2</td>
+                      <td>21</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>VMD1200L/700A</td>
+                      <td>1200</td>
+                      <td>Стекловолокно</td>
+                      <td>-40 С</td>
+                      <td>80-160</td>
+                      <td>700</td>
+                      <td>7,5</td>
+                      <td>2,2</td>
+                      <td>21</td>
+                      <td>10</td>
+                    </tr>
+                    </tbody>
+                  </table>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Размеры трубок(сушка), мм</td>
+                      <td>Размеры трубок(охлаждение) дюйм</td>
+                      <td>Размеры трубок(рекуперация), мм</td>
+                      <td>Циркуляционный вентилятор, кВт</td>
+                      <td>Длина транспортировки в сушилку, м</td>
+                      <td>Размер трубок, дюйм</td>
+                      <td>Объем ресивера загрузчика, л</td>
+                      <td>Объем вакуумного загрузчика, л</td>
+                      <td>Габариты сушилки, см</td>
+                      <td>Масса нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>VMD90L/80A</td>
+                      <td>51</td>
+                      <td>&frac34;</td>
+                      <td>38</td>
+                      <td>1,1</td>
+                      <td>10</td>
+                      <td>1,5</td>
+                      <td>6</td>
+                      <td>6</td>
+                      <td>100x87x180</td>
+                      <td>310</td>
+                    </tr>
+                    <tr>
+                      <td>VMD120L/80A</td>
+                      <td>51</td>
+                      <td>&frac34;</td>
+                      <td>38</td>
+                      <td>1,1</td>
+                      <td>10</td>
+                      <td>1,5</td>
+                      <td>6</td>
+                      <td>6</td>
+                      <td>100x87x180</td>
+                      <td>340</td>
+                    </tr>
+                    <tr>
+                      <td>VMD160L/130A</td>
+                      <td>51</td>
+                      <td>&frac34;</td>
+                      <td>38</td>
+                      <td>1,1</td>
+                      <td>10</td>
+                      <td>1,5</td>
+                      <td>6</td>
+                      <td>6</td>
+                      <td>100x87x180</td>
+                      <td>360</td>
+                    </tr>
+                    <tr>
+                      <td>VMD230L/160A</td>
+                      <td>63</td>
+                      <td>&frac34;</td>
+                      <td>51</td>
+                      <td>1,5</td>
+                      <td>10</td>
+                      <td>1,5</td>
+                      <td>6</td>
+                      <td>6</td>
+                      <td>129x96x204</td>
+                      <td>420</td>
+                    </tr>
+                    <tr>
+                      <td>VMD300L/220A</td>
+                      <td>63</td>
+                      <td>&frac34;</td>
+                      <td>51</td>
+                      <td>1,5</td>
+                      <td>10</td>
+                      <td>1,5</td>
+                      <td>6</td>
+                      <td>6</td>
+                      <td>143x103x215</td>
+                      <td>550</td>
+                    </tr>
+                    <tr>
+                      <td>VMD450L/300A</td>
+                      <td>76</td>
+                      <td>&frac34;</td>
+                      <td>51</td>
+                      <td>1,5</td>
+                      <td>10</td>
+                      <td>1,5</td>
+                      <td>6</td>
+                      <td>6</td>
+                      <td>150x130x280</td>
+                      <td>600</td>
+                    </tr>
+                    <tr>
+                      <td>VMD750L/400A</td>
+                      <td>76</td>
+                      <td>&frac34;</td>
+                      <td>51</td>
+                      <td>2,2</td>
+                      <td>10</td>
+                      <td>1,5</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>178x130x286</td>
+                      <td>750</td>
+                    </tr>
+                    <tr>
+                      <td>VMD900L/500A</td>
+                      <td>100</td>
+                      <td>&frac34;</td>
+                      <td>63</td>
+                      <td>3,7</td>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>214x138x316</td>
+                      <td>830</td>
+                    </tr>
+                    <tr>
+                      <td>VMD1200L/700A</td>
+                      <td>100</td>
+                      <td>&frac34;</td>
+                      <td>63</td>
+                      <td>3,7</td>
+                      <td>10</td>
+                      <td>2</td>
+                      <td>10</td>
+                      <td>10</td>
+                      <td>225x138x349</td>
+                      <td>900</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- Серия WSDB -->
+                <li class="tab-content__item js-tab-content" data-tab="4">
+                  <h3>Стандартные сушилки горячим воздухом серии WSDB</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Вместимость, кг</td>
+                      <td>Нагрев, кВт</td>
+                      <td>Вентилятор, В</td>
+                      <td>Мощность, v</td>
+                      <td>Габариты сушилки</td>
+                      <td>Размер установки, см</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-12</td>
+                      <td>12</td>
+                      <td>1,6</td>
+                      <td>50</td>
+                      <td>380/3Ф</td>
+                      <td>64x44x76</td>
+                      <td>11x11xФ4</td>
+                      <td>22</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-25</td>
+                      <td>25</td>
+                      <td>3,0</td>
+                      <td>122</td>
+                      <td>380/3Ф</td>
+                      <td>76x50x104</td>
+                      <td>16х16Ф6,2</td>
+                      <td>34</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-50</td>
+                      <td>50</td>
+                      <td>4,5</td>
+                      <td>157</td>
+                      <td>380/3Ф</td>
+                      <td>87x54x121</td>
+                      <td>16х16хФ7</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-75</td>
+                      <td>75</td>
+                      <td>6,5</td>
+                      <td>246</td>
+                      <td>380/3Ф</td>
+                      <td>94x60x131</td>
+                      <td>16х16хФ7</td>
+                      <td>56</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-100</td>
+                      <td>100</td>
+                      <td>6,5</td>
+                      <td>246</td>
+                      <td>380/3Ф</td>
+                      <td>101x70x141</td>
+                      <td>18х18хФ8</td>
+                      <td>68</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-150</td>
+                      <td>150</td>
+                      <td>9</td>
+                      <td>350</td>
+                      <td>380/3Ф</td>
+                      <td>110x74x170</td>
+                      <td>20х20хФ8,8</td>
+                      <td>78</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-200</td>
+                      <td>200</td>
+                      <td>12</td>
+                      <td>350</td>
+                      <td>380/3Ф</td>
+                      <td>118x84x176</td>
+                      <td>23х23Ф11,5</td>
+                      <td>110</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-300</td>
+                      <td>300</td>
+                      <td>15</td>
+                      <td>400</td>
+                      <td>380/3Ф</td>
+                      <td>142x100x183</td>
+                      <td>27,5х27,5хФ12</td>
+                      <td>152</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-400</td>
+                      <td>400</td>
+                      <td>15</td>
+                      <td>400</td>
+                      <td>380/3Ф</td>
+                      <td>148x106x202</td>
+                      <td>27,5х27,5хФ12</td>
+                      <td>170</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-600</td>
+                      <td>600</td>
+                      <td>20</td>
+                      <td>1000</td>
+                      <td>380/3Ф</td>
+                      <td>158x116x240</td>
+                      <td>28х28хФ13,5</td>
+                      <td>280</td>
+                    </tr>
+                    <tr>
+                      <td>WSDB-800</td>
+                      <td>800</td>
+                      <td>30</td>
+                      <td>2200</td>
+                      <td>380/3Ф</td>
+                      <td>177x118x254</td>
+                      <td>28х28хФ13,5</td>
+                      <td>380</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- Серия WSDH, VDB -->
+                <li class="tab-content__item js-tab-content" data-tab="5">
+                  <h3>Большие бункер-сушилки серии WSDH</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Вместимость, кг</td>
+                      <td>Нагрев, кВт</td>
+                      <td>Вентилятор, В</td>
+                      <td>Мощность, В</td>
+                      <td>Габариты сушилки</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSDH1000</td>
+                      <td>1000</td>
+                      <td>40,8</td>
+                      <td>1100</td>
+                      <td>380/3Ф</td>
+                      <td>1470x1920x3280</td>
+                      <td>495</td>
+                    </tr>
+                    <tr>
+                      <td>WSDH1500</td>
+                      <td>1500</td>
+                      <td>51</td>
+                      <td>1500</td>
+                      <td>380/3Ф</td>
+                      <td>1540x2000x4030</td>
+                      <td>617</td>
+                    </tr>
+                    <tr>
+                      <td>WSDH2000</td>
+                      <td>2000</td>
+                      <td>61</td>
+                      <td>3000</td>
+                      <td>380/3Ф</td>
+                      <td>2400x1890x4100</td>
+                      <td>785</td>
+                    </tr>
+                    <tr>
+                      <td>WSDH3000</td>
+                      <td>3000</td>
+                      <td>68</td>
+                      <td>4000</td>
+                      <td>380/3Ф</td>
+                      <td>2500x1990x4680</td>
+                      <td>1050</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <h3>Большие бункер-сушилки серии VDB</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Вместимость, кг</td>
+                      <td>Нагрев, кВт</td>
+                      <td>Вентилятор, В</td>
+                      <td>Мощность, В</td>
+                      <td>Габариты сушилки</td>
+                    </tr>
+                    <tr>
+                      <td>VDB-50E</td>
+                      <td>50</td>
+                      <td>4,5</td>
+                      <td>157</td>
+                      <td>380/3Ф</td>
+                      <td>980х775х480</td>
+                    </tr>
+                    <tr>
+                      <td>VDB75E</td>
+                      <td>75</td>
+                      <td>6,5</td>
+                      <td>246</td>
+                      <td>380/3Ф</td>
+                      <td>1210х775х480</td>
+                    </tr>
+                    <tr>
+                      <td>VDB100E</td>
+                      <td>100</td>
+                      <td>6,5</td>
+                      <td>246</td>
+                      <td>380/3Ф</td>
+                      <td>1225х825х580</td>
+                    </tr>
+                    <tr>
+                      <td>VDB-150E</td>
+                      <td>150</td>
+                      <td>9</td>
+                      <td>350</td>
+                      <td>380/3Ф</td>
+                      <td>1550х825х580</td>
+                    </tr>
+                    <tr>
+                      <td>VDB-200E</td>
+                      <td>200</td>
+                      <td>12</td>
+                      <td>350</td>
+                      <td>380/3Ф</td>
+                      <td>1550х950х700</td>
+                    </tr>
+                    <tr>
+                      <td>VDB-300E</td>
+                      <td>300</td>
+                      <td>16,8</td>
+                      <td>400</td>
+                      <td>380/3Ф</td>
+                      <td>1860х950х700</td>
+                    </tr>
+                    <tr>
+                      <td>VDB-400E</td>
+                      <td>400</td>
+                      <td>18</td>
+                      <td>400</td>
+                      <td>380/3Ф</td>
+                      <td>1860х1180х920</td>
+                    </tr>
+                    <tr>
+                      <td>VDB-600E</td>
+                      <td>600</td>
+                      <td>19,2</td>
+                      <td>1000</td>
+                      <td>380/3Ф</td>
+                      <td>2135х1180х920</td>
+                    </tr>
+                    <tr>
+                      <td>VDB-800E</td>
+                      <td>800</td>
+                      <td>30</td>
+                      <td>2200</td>
+                      <td>380/3Ф</td>
+                      <td>2410х1300х1050</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+            </ul>
+          </div>';
 
 INSERT INTO products
 SET title = 'Загрузчики',
@@ -7941,15 +9753,734 @@ SET title = 'Загрузчики',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '          <p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">VAL-300G</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">Серия VPL</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="3">Серия  WSAL-300G, WSAL400G</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="4">Серия WSAL-700G, WSAL-800G, WSAL-800G2</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="5">Серия WSAL-900G</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="6">Серия WSAL-5HP, WSAL-7.5HP, WSAL-10HP</li>
+
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+                <!-- VAL-300G  -->
+                <li class="tab-content__item js-tab-content active" data-tab="1">
+                  <h3>Автозагрузчики серии VAL-300G. Автоматический вакуумный загрузчик</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td><strong>Модель</strong></td>
+                      <td><strong>VAL-300G</strong></td>
+                    </tr>
+                    <tr>
+                      <td>Мотор</td>
+                      <td>Угольная щетка, 1кВт/1.3л.с 1&phi;</td>
+                    </tr>
+                    <tr>
+                      <td>Производительность, кг/ч</td>
+                      <td>300</td>
+                    </tr>
+                    <tr>
+                      <td>Расстояние подачи, м</td>
+                      <td>3.5</td>
+                    </tr>
+                    <tr>
+                      <td>Постоянное давление воздуха, мм/стлб</td>
+                      <td>1300</td>
+                    </tr>
+                    <tr>
+                      <td>Объем резервуара, л</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>Входной диаметр трубы подачи, мм</td>
+                      <td>&Oslash;38</td>
+                    </tr>
+                    <tr>
+                      <td>Комплект шлангов, мм</td>
+                      <td>&Oslash;38мм&times;3.5м 1&nbsp;шт</td>
+                    </tr>
+                    <tr>
+                      <td>Габариты загрузчика, cм</td>
+                      <td>28&times;38&times;58</td>
+                    </tr>
+                    <tr>
+                      <td>Вес, кг</td>
+                      <td>12</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- Серия VPL -->
+                <li class="tab-content__item js-tab-content" data-tab="2">
+                  <h3>Автозагрузчики серии VPL. Загрузчики порошкового сырья</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Мотор, л.с.</td>
+                      <td>Производительность, кг/ч</td>
+                      <td>Дистанция загрузки, м</td>
+                      <td>Давление всасывания, мм/стлб</td>
+                      <td>Объем бака ресивера, л</td>
+                      <td>Диаметр патрубков ресивера, мм</td>
+                      <td>Подключаемые рукава, мм</td>
+                      <td>Размеры</td>
+                    </tr>
+                    <tr>
+                      <td>VPL-3HP</td>
+                      <td>3</td>
+                      <td>300</td>
+                      <td>4</td>
+                      <td>2900</td>
+                      <td>24</td>
+                      <td>&Oslash;51</td>
+                      <td>&Oslash;51мм&times;4м 2&nbsp;шт</td>
+                      <td>52x65x100</td>
+                    </tr>
+                    <tr>
+                      <td>VPL-5HP</td>
+                      <td>5</td>
+                      <td>500</td>
+                      <td>4</td>
+                      <td>3200</td>
+                      <td>24</td>
+                      <td>&Oslash;51</td>
+                      <td>&Oslash;51мм&times;4м 2&nbsp;шт</td>
+                      <td>62x76x119</td>
+                    </tr>
+                    <tr>
+                      <td>VPL-7,5HP</td>
+                      <td>7,5</td>
+                      <td>800</td>
+                      <td>4</td>
+                      <td>4200</td>
+                      <td>40</td>
+                      <td>&Oslash;51</td>
+                      <td>&Oslash;51мм&times;4м 1&nbsp;шт, &Oslash;63мм&times;4м 1&nbsp;шт</td>
+                      <td>67x80x125</td>
+                    </tr>
+                    <tr>
+                      <td>VPL-10HP</td>
+                      <td>10</td>
+                      <td>1100</td>
+                      <td>5</td>
+                      <td>4500</td>
+                      <td>40</td>
+                      <td>&Oslash;51</td>
+                      <td>&Oslash;51мм&times;4м 1&nbsp;шт, &Oslash;63мм&times;4м 1&nbsp;шт</td>
+                      <td>67x80x152</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+              <!-- Серия WSAL -->
+              <li class="tab-content__item js-tab-content" data-tab="3">
+                <h3>Автозагрузчики серии WSAL-700G, WSAL-800G, WSAL-800G2. Автоматические загрузчики раздельного исполнения.</h3>
+
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Мощность мотора, л.с</td>
+                    <td>Производительность, кг/ч</td>
+                    <td>Дистанция загрузки, м</td>
+                    <td><strong>Давление всасывания, бар</strong></td>
+                    <td><strong>Объем бака ресивера, л/бак</strong></td>
+                    <td><strong>Диаметр патрубков ресивера, мм</strong></td>
+                    <td><strong>Комплект шлангов, мм</strong></td>
+                    <td>Размеры основного блока, см</td>
+                    <td>Размеры бункера, см</td>
+                    <td>Вес основного блока, кг</td>
+                    <td>Вес бункера</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-700G</td>
+                    <td>1 кВт/1,3 л.с. угольные щётки</td>
+                    <td>310</td>
+                    <td>4</td>
+                    <td>1300</td>
+                    <td>6</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;4м 2&nbsp;шт.</td>
+                    <td>37*30*56</td>
+                    <td>28*34*43</td>
+                    <td>14</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-800G</td>
+                    <td>1,1 кВт/1,5 л.с. индуктор</td>
+                    <td>450</td>
+                    <td>4</td>
+                    <td>2100</td>
+                    <td>10</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;4м 2&nbsp;шт.</td>
+                    <td>42х38х64</td>
+                    <td>45х32х45</td>
+                    <td>47</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-800G2</td>
+                    <td>2,2 кВт/3 л.с. индуктор</td>
+                    <td>590</td>
+                    <td>5</td>
+                    <td>2900</td>
+                    <td>10</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;5м 2&nbsp;шт.</td>
+                    <td>50х40х72</td>
+                    <td>45х32х45</td>
+                    <td>66</td>
+                    <td>10</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+              <!-- Серия WSAL -->
+              <li class="tab-content__item js-tab-content" data-tab="4">
+                <h3>Автозагрузчики серии WSAL-700G, WSAL-800G, WSAL-800G2. Автоматические загрузчики раздельного исполнения</h3>
+
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Мощность мотора, л.с</td>
+                    <td>Производительность, кг/ч</td>
+                    <td>Дистанция загрузки, м</td>
+                    <td><strong>Давление всасывания, бар</strong></td>
+                    <td><strong>Объем бака ресивера, л/бак</strong></td>
+                    <td><strong>Диаметр патрубков ресивера, мм</strong></td>
+                    <td><strong>Комплект шлангов, мм</strong></td>
+                    <td>Размеры основного блока, см</td>
+                    <td>Размеры бункера, см</td>
+                    <td>Вес основного блока, кг</td>
+                    <td>Вес бункера</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-700G</td>
+                    <td>1 кВт/1,3 л.с. угольные щётки</td>
+                    <td>310</td>
+                    <td>4</td>
+                    <td>1300</td>
+                    <td>6</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;4м 2&nbsp;шт.</td>
+                    <td>37*30*56</td>
+                    <td>28*34*43</td>
+                    <td>14</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-800G</td>
+                    <td>1,1 кВт/1,5 л.с. индуктор</td>
+                    <td>450</td>
+                    <td>4</td>
+                    <td>2100</td>
+                    <td>10</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;4м 2&nbsp;шт.</td>
+                    <td>42х38х64</td>
+                    <td>45х32х45</td>
+                    <td>47</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-800G2</td>
+                    <td>2,2 кВт/3 л.с. индуктор</td>
+                    <td>590</td>
+                    <td>5</td>
+                    <td>2900</td>
+                    <td>10</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;5м 2&nbsp;шт.</td>
+                    <td>50х40х72</td>
+                    <td>45х32х45</td>
+                    <td>66</td>
+                    <td>10</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+              <!-- Серия WSAL -->
+              <li class="tab-content__item js-tab-content" data-tab="5">
+                <h3>Автозагрузчики серии WSAL-900G. Мультибункерные загрузчки сырья</h3>
+
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Мощность мотора, л.с</td>
+                    <td>Производительность, кг/ч</td>
+                    <td>Дистанция загрузки, м</td>
+                    <td>Давление всасывания, бар</td>
+                    <td>Объем бака ресивера, л/бак</td>
+                    <td>Диаметр патрубков ресивера, мм</td>
+                    <td>Комплект шлангов, мм</td>
+                    <td>Размеры, мм</td>
+                    <td>Вес, кг</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-900G2</td>
+                    <td>1,5</td>
+                    <td>440</td>
+                    <td>4</td>
+                    <td>2100</td>
+                    <td>6x2</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;4м 2&nbsp;шт.</td>
+                    <td>61x37x67</td>
+                    <td>55</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-900G3</td>
+                    <td>2</td>
+                    <td>500</td>
+                    <td>4</td>
+                    <td>2600</td>
+                    <td>6x3</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;4м 6&nbsp;шт.</td>
+                    <td>54x56x123</td>
+                    <td>58</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-900G4</td>
+                    <td>3</td>
+                    <td>590</td>
+                    <td>5</td>
+                    <td>2900</td>
+                    <td>6x4</td>
+                    <td>&Oslash;38</td>
+                    <td>&Oslash;38мм&times;5м 8&nbsp;шт.</td>
+                    <td>54x62x123</td>
+                    <td>66</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+              <!-- Серия WSAL -->
+              <li class="tab-content__item js-tab-content" data-tab="6">
+                <h3>Автозагрузчики серии WSAL-5HP, WSAL-7.5HP, WSAL-10HP. Загрузчики повышенной мощности</h3>
+
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Мощность мотора, л.с</td>
+                    <td>Производительность, кг/ч</td>
+                    <td>Дистанция загрузки, м</td>
+                    <td>Давление всасывания, бар</td>
+                    <td>Объем бака ресивера, л/бак</td>
+                    <td>Диаметр патрубков ресивера, мм</td>
+                    <td>Комплект шлангов, мм</td>
+                    <td>Размеры основного блока, см</td>
+                    <td>Размеры бункера, см</td>
+                    <td>Вес основного блока, кг</td>
+                    <td>Вес бункера</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-5HP</td>
+                    <td>5</td>
+                    <td>820</td>
+                    <td>6</td>
+                    <td>3200</td>
+                    <td>25</td>
+                    <td>&Oslash;51</td>
+                    <td>&Oslash;51мм&times;10м 1&nbsp;шт.</td>
+                    <td>50x45x123</td>
+                    <td>40x30x102</td>
+                    <td>90</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-7,5HP</td>
+                    <td>7,5</td>
+                    <td>1000</td>
+                    <td>6</td>
+                    <td>4200</td>
+                    <td>40</td>
+                    <td>&Oslash;63</td>
+                    <td>&Oslash;63мм&times;15м 1&nbsp;шт.</td>
+                    <td>58x60x170</td>
+                    <td>40x30x102</td>
+                    <td>135</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>WSAL-10HP</td>
+                    <td>10</td>
+                    <td>1300</td>
+                    <td>6</td>
+                    <td>4500</td>
+                    <td>40</td>
+                    <td>&Oslash;63</td>
+                    <td>&Oslash;63мм&times;15м 1&nbsp;шт.</td>
+                    <td>58x60x170</td>
+                    <td>40x30x102</td>
+                    <td>140</td>
+                    <td>12</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+            </ul>
+          </div>';
 
 INSERT INTO products
-SET title = 'Термостаты',
+SET title = 'Температурные контроллеры',
     image_path ='/img/catalog/tmpctrl.jpg',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '          <p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">Серия WSTW</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">Серия VTW</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="3">Серия WSTO</li>
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+                <!--   -->
+                <li class="tab-content__item js-tab-content active" data-tab="1">
+                  <h3>Микропроцессорные температурные контроллеры пресс-форм (2 в 1). Серия WSTW</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Способ передачи тепла</td>
+                      <td>Максимальная температура, &deg;С</td>
+                      <td>Мощность насоса, кВт</td>
+                      <td>Максимальная пропускная способность насоса, л/мин</td>
+                      <td>Высота нагнетания насоса, м</td>
+                      <td>Мощность нагрева, кВт</td>
+                      <td>Размеры впускного/выпускного устройства</td>
+                      <td>Охлаждающая способность, ккал/ч</td>
+                      <td>Габариты контроллера, мм</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSTW-06W</td>
+                      <td>Вода</td>
+                      <td>95&deg;</td>
+                      <td>0.37</td>
+                      <td>35</td>
+                      <td>30</td>
+                      <td>6</td>
+                      <td>12мм&times;6</td>
+                      <td>1000</td>
+                      <td>850&times;250&times;620</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>WSTW-09W</td>
+                      <td>Вода</td>
+                      <td>95&deg;</td>
+                      <td>0.75</td>
+                      <td>50</td>
+                      <td>30</td>
+                      <td>9</td>
+                      <td>12мм&times;6</td>
+                      <td>1000</td>
+                      <td>850&times;250&times;620</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>WSTW-12W</td>
+                      <td>Вода</td>
+                      <td>95&deg;</td>
+                      <td>1.5</td>
+                      <td>80</td>
+                      <td>45</td>
+                      <td>12</td>
+                      <td>12мм&times;6</td>
+                      <td>1000</td>
+                      <td>850&times;250&times;620</td>
+                      <td>60</td>
+                    </tr>
+                    <tr>
+                      <td>WSTW-24W</td>
+                      <td>Вода</td>
+                      <td>95&deg;</td>
+                      <td>2.2</td>
+                      <td>200</td>
+                      <td>30</td>
+                      <td>24</td>
+                      <td>1/5"&times;1</td>
+                      <td>15000</td>
+                      <td>900&times;350&times;900</td>
+                      <td>120</td>
+                    </tr>
+                    <tr>
+                      <td>WSTW-36W</td>
+                      <td>Вода</td>
+                      <td>95&deg;</td>
+                      <td>3.75</td>
+                      <td>380</td>
+                      <td>35</td>
+                      <td>36</td>
+                      <td>1/5"&times;1</td>
+                      <td>15000</td>
+                      <td>1100&times;400&times;1030</td>
+                      <td>130</td>
+                    </tr>
+                    <tr>
+                      <td>WSTW-60W</td>
+                      <td>Вода</td>
+                      <td>95&deg;</td>
+                      <td>3.75</td>
+                      <td>380</td>
+                      <td>35</td>
+                      <td>60</td>
+                      <td>1/5"&times;1</td>
+                      <td>15000</td>
+                      <td>1100&times;400&times;1030</td>
+                      <td>135</td>
+                    </tr>
+                    <tr>
+                      <td>WSTW-06W-D</td>
+                      <td>Вода</td>
+                      <td>95&deg;</td>
+                      <td>0.37&times;2</td>
+                      <td>35&times;2</td>
+                      <td>30</td>
+                      <td>6&times;2</td>
+                      <td>12мм&times;6</td>
+                      <td>10000&times;2</td>
+                      <td>880&times;500&times;680</td>
+                      <td>98</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!--  -->
+                <li class="tab-content__item js-tab-content" data-tab="2">
+                  <h3>Высокотемператцрные контроллеры. Серия VTW</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Максимальная температура, &deg;С</td>
+                      <td>Мощность нагрева, кВт</td>
+                      <td>Мощность насоса, кВт</td>
+                      <td>Максимальная пропускная способность насоса, л/мин</td>
+                      <td>Высота нагнетания насоса, м</td>
+                      <td>Размер соединительной трубы, дюйм</td>
+                      <td>Габариты контроллера, мм</td>
+                    </tr>
+                    <tr>
+                      <td>VTW-6</td>
+                      <td>120&deg;</td>
+                      <td>6</td>
+                      <td>0.37</td>
+                      <td>35</td>
+                      <td>30</td>
+                      <td>3/8&times;3</td>
+                      <td>880x310x740</td>
+                    </tr>
+                    <tr>
+                      <td>VTW-9</td>
+                      <td>120&deg;</td>
+                      <td>9</td>
+                      <td>0.75</td>
+                      <td>50</td>
+                      <td>30</td>
+                      <td>3/8&times;3</td>
+                      <td>880x310x740</td>
+                    </tr>
+                    <tr>
+                      <td>VTW-12</td>
+                      <td>120&deg;</td>
+                      <td>12</td>
+                      <td>1.5</td>
+                      <td>80</td>
+                      <td>45</td>
+                      <td>3/8&times;4</td>
+                      <td>880x310x740</td>
+                    </tr>
+                    <tr>
+                      <td>VTW-6H</td>
+                      <td>160&deg;</td>
+                      <td>24</td>
+                      <td>0,55</td>
+                      <td>30</td>
+                      <td>45</td>
+                      <td>3/8&times;3</td>
+                      <td>880x310x740</td>
+                    </tr>
+                    <tr>
+                      <td>VTW-9H</td>
+                      <td>160&deg;</td>
+                      <td>6</td>
+                      <td>0,75</td>
+                      <td>45</td>
+                      <td>60</td>
+                      <td>3/8&times;3</td>
+                      <td>880x310x740</td>
+                    </tr>
+                    <tr>
+                      <td>VTW-12H</td>
+                      <td>160&deg;</td>
+                      <td>9</td>
+                      <td>1,5</td>
+                      <td>90</td>
+                      <td>55</td>
+                      <td>3/8&times;4</td>
+                      <td>880x310x740</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!--  -->
+                <li class="tab-content__item js-tab-content" data-tab="3">
+                  <h3>Водяной температурный контроллер пресс-формы. Серия WSTO</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Модель</td>
+                      <td>Способ передачи тепла</td>
+                      <td>Максимальная температура, &deg;С</td>
+                      <td>Мощность насоса, кВт</td>
+                      <td>Максимальная пропускная способность насоса, л/мин</td>
+                      <td>Высота нагнетания насоса, м</td>
+                      <td>Емкость бака, л</td>
+                      <td>Мощность нагрева, кВт</td>
+                      <td>Размеры впускного/выпускного устройства</td>
+                      <td>Охлаждающая способность, ккал/ч</td>
+                      <td>Габариты контроллера, мм</td>
+                      <td>Вес нетто, кг</td>
+                    </tr>
+                    <tr>
+                      <td>WSTO-06-D</td>
+                      <td>Масляный теплоноситель</td>
+                      <td>200&deg;</td>
+                      <td>0.37&times;2</td>
+                      <td>35&times;2</td>
+                      <td>30</td>
+                      <td>8&times;2</td>
+                      <td>6&times;2</td>
+                      <td>12мм&times;6</td>
+                      <td>10000&times;2</td>
+                      <td>880&times;500&times;680</td>
+                      <td>102</td>
+                    </tr>
+                    <tr>
+                      <td>WSTO-06-R</td>
+                      <td>Масляный теплоноситель</td>
+                      <td>160&deg;</td>
+                      <td>0.55</td>
+                      <td>33</td>
+                      <td>40</td>
+                      <td>15</td>
+                      <td>6</td>
+                      <td>3/8"&times;3</td>
+                      <td>4000</td>
+                      <td>860&times;310&times;740</td>
+                      <td>80</td>
+                    </tr>
+                    <tr>
+                      <td>WSTO-09</td>
+                      <td>Масляный теплоноситель</td>
+                      <td>160&deg;</td>
+                      <td>0,75</td>
+                      <td>45</td>
+                      <td>40</td>
+                      <td>18</td>
+                      <td>9</td>
+                      <td>3/8"&times;3</td>
+                      <td>4000</td>
+                      <td>1005*350*840</td>
+                      <td>85</td>
+                    </tr>
+                    <tr>
+                      <td>WSTO-12</td>
+                      <td>Масляный теплоноситель</td>
+                      <td>140&deg; - 200&deg;</td>
+                      <td>1.5</td>
+                      <td>80</td>
+                      <td>45</td>
+                      <td>8</td>
+                      <td>12</td>
+                      <td>3/8"&times;4</td>
+                      <td>2000</td>
+                      <td>850&times;250&times;620</td>
+                      <td>75</td>
+                    </tr>
+                    <tr>
+                      <td>WSTO-24</td>
+                      <td>Масляный теплоноситель</td>
+                      <td>140&deg; - 200&deg;</td>
+                      <td>2.2</td>
+                      <td>200</td>
+                      <td>30</td>
+                      <td>25</td>
+                      <td>24</td>
+                      <td>3/8"&times;4</td>
+                      <td>8000</td>
+                      <td>900&times;350&times;900</td>
+                      <td>120</td>
+                    </tr>
+                    <tr>
+                      <td>WSTO-36</td>
+                      <td>Масляный теплоноситель</td>
+                      <td>140&deg; - 200&deg;</td>
+                      <td>3.75</td>
+                      <td>380</td>
+                      <td>35</td>
+                      <td>40</td>
+                      <td>36</td>
+                      <td>1/5"&times;1</td>
+                      <td>8000</td>
+                      <td>1100&times;400&times;1030</td>
+                      <td>130</td>
+                    </tr>
+                    <tr>
+                      <td>WSTO-60</td>
+                      <td>Масляный теплоноситель</td>
+                      <td>140&deg; - 200&deg;</td>
+                      <td>3.75</td>
+                      <td>380</td>
+                      <td>35</td>
+                      <td>40</td>
+                      <td>54</td>
+                      <td>1/5"&times;1</td>
+                      <td>10000</td>
+                      <td>1100&times;400&times;1030</td>
+                      <td>135</td>
+                    </tr>
+                    </tbody>
+                  </table>
+
+              </li>
+
+
+            </ul>
+          </div>';
 
 INSERT INTO products
 SET title = 'Чиллеры',
@@ -7957,7 +10488,467 @@ SET title = 'Чиллеры',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '          <p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">Серии WSIW и WSIA</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">Промышленные чиллеры шнекового типа</li>
+
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+                <!-- Серии WSIW и WSIA -->
+                <li class="tab-content__item js-tab-content active" data-tab="1">
+                  <h3>Серии WSIW и WSIA</h3>
+
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td><strong>Параметры</strong></td>
+                      <td>WSIW-04, WSIA-04</td>
+                      <td>WSIW-05, WSIA-05</td>
+                      <td>WSIW-08, WSIA-08</td>
+                      <td>WSIW-10, WSIA-10</td>
+                      <td>WSIW-12, WSIA-12</td>
+                      <td>WSIW-15, WSIA-15</td>
+                      <td>WSIW-20, WSIA-20</td>
+                      <td>WSIW-25, WSIA-25</td>
+                      <td>WSIW-30, WSIA-30</td>
+                      <td>WSIW-40, WSIA-40</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность охлаждения, кВт</td>
+                      <td>11,9</td>
+                      <td>15</td>
+                      <td>23,8</td>
+                      <td>30,5</td>
+                      <td>34,3</td>
+                      <td>45</td>
+                      <td>61</td>
+                      <td>69</td>
+                      <td>92</td>
+                      <td>122</td>
+                    </tr>
+                    <tr>
+                      <td>Мощность охлаждения, Ккал/ч</td>
+                      <td>10234</td>
+                      <td>12900</td>
+                      <td>20468</td>
+                      <td>26230</td>
+                      <td>29498</td>
+                      <td>38700</td>
+                      <td>52460</td>
+                      <td>59340</td>
+                      <td>79120</td>
+                      <td>104920</td>
+                    </tr>
+                    <tr>
+                      <td>Компрессор (входная мощность), кВт</td>
+                      <td>300</td>
+                      <td>4,5</td>
+                      <td>3x2</td>
+                      <td>4,5x2</td>
+                      <td>10</td>
+                      <td>4,5x3</td>
+                      <td>9x2</td>
+                      <td>10x2</td>
+                      <td>9x3</td>
+                      <td>10x3</td>
+                    </tr>
+                    <tr>
+                      <td>Компрессор (номинальная мощность), л.с</td>
+                      <td>4000</td>
+                      <td>5</td>
+                      <td>4x2</td>
+                      <td>5x2</td>
+                      <td>12</td>
+                      <td>5x3</td>
+                      <td>10x2</td>
+                      <td>12x2</td>
+                      <td>10x3</td>
+                      <td>12x3</td>
+                    </tr>
+                    <tr>
+                      <td>Испаритель (тип)</td>
+                      <td>Трубопровод</td>
+                      <td>Трубопровод</td>
+                      <td>Трубопровод</td>
+                      <td>Трубопровод</td>
+                      <td>Трубопровод</td>
+                      <td>Маслянный испаритель</td>
+                      <td>Маслянный испаритель</td>
+                      <td>Маслянный испаритель</td>
+                      <td>Маслянный испаритель</td>
+                      <td>Маслянный испаритель</td>
+                    </tr>
+                    <tr>
+                      <td>Испаритель (диаметр патрубков), дюйм</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                    </tr>
+                    <tr>
+                      <td>Охладитель (тип)</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                      <td>R22</td>
+                    </tr>
+                    <tr>
+                      <td>Охладитель (вес хладагента), кг</td>
+                      <td>2</td>
+                      <td>2,5</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>7,5</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>Водяной конденсат (тип)</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                      <td>Маслянный конденсатор</td>
+                    </tr>
+                    <tr>
+                      <td>Водяной конденсат (диаметр патрубков), дюйм</td>
+                      <td>1</td>
+                      <td>1</td>
+                      <td>1-1/2</td>
+                      <td>1-1/2</td>
+                      <td>1-1/2</td>
+                      <td>1-1/2</td>
+                      <td>2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                    </tr>
+                    <tr>
+                      <td>Производительность водного потока, л/мин</td>
+                      <td>65</td>
+                      <td>70</td>
+                      <td>100</td>
+                      <td>110</td>
+                      <td>150</td>
+                      <td>170</td>
+                      <td>230</td>
+                      <td>270</td>
+                      <td>330</td>
+                      <td>480</td>
+                    </tr>
+                    <tr>
+                      <td>Конденсатор воздушного охлаждения (тип)</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                      <td>Воздушное охлаждение</td>
+                    </tr>
+                    <tr>
+                      <td>Конденсатор воздушного охлаждения (мощность обдува), кВт</td>
+                      <td>0,15х2</td>
+                      <td>0,2х2</td>
+                      <td>0,3x2</td>
+                      <td>0,4х2</td>
+                      <td>0,5х2</td>
+                      <td>0,8х2</td>
+                      <td>0,8х2</td>
+                      <td>0,8х2</td>
+                      <td>0,8х3</td>
+                      <td>0,8х3</td>
+                    </tr>
+                    <tr>
+                      <td>Ёмкость бака, л</td>
+                      <td>50</td>
+                      <td>50</td>
+                      <td>70</td>
+                      <td>70</td>
+                      <td>125</td>
+                      <td>125</td>
+                      <td>140</td>
+                      <td>140</td>
+                      <td>150</td>
+                      <td>180</td>
+                    </tr>
+                    <tr>
+                      <td>Помпа (мощность), кВт</td>
+                      <td>0,37</td>
+                      <td>0,75</td>
+                      <td>1,5</td>
+                      <td>1,5</td>
+                      <td>1,5</td>
+                      <td>2,2</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>4</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>Помпа (производительность), л.с.</td>
+                      <td>0,5</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Помпа (производительность), л/мин</td>
+                      <td>40</td>
+                      <td>60</td>
+                      <td>100</td>
+                      <td>100</td>
+                      <td>100</td>
+                      <td>200</td>
+                      <td>400</td>
+                      <td>400</td>
+                      <td>400</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>Размеры присоединительных патрубков (выходной), дюйм</td>
+                      <td>(1/2)х4</td>
+                      <td>(1/2)х4</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                    </tr>
+                    <tr>
+                      <td>Размеры присоединительных патрубков (входной), дюйм</td>
+                      <td>(1/2)х4</td>
+                      <td>(1/2)х4</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                      <td>2-1/2</td>
+                    </tr>
+                    <tr>
+                      <td>Размеры (водяной охладитель), см</td>
+                      <td>97х56х97</td>
+                      <td>97х56х97</td>
+                      <td>155х70х128</td>
+                      <td>155х70х128</td>
+                      <td>173х75х130</td>
+                      <td>206х81х141</td>
+                      <td>210х86х141</td>
+                      <td>210х86х141</td>
+                      <td>224х85х147</td>
+                      <td>224х85х151</td>
+                    </tr>
+                    <tr>
+                      <td>Размеры (воздушный охладитель), см</td>
+                      <td>131х63х115</td>
+                      <td>131х65х124</td>
+                      <td>174х86х158</td>
+                      <td>183х91х160</td>
+                      <td>183х101х154</td>
+                      <td>196х106х160</td>
+                      <td>220х105х165</td>
+                      <td>220х105х190</td>
+                      <td>225х115х190</td>
+                      <td>265х115х200</td>
+                    </tr>
+                    <tr>
+                      <td>Вес (с воздушным конденсаторным блоком), кг</td>
+                      <td>187</td>
+                      <td>197</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Вес ( с водяным конденсаторным блоком), кг</td>
+                      <td>190</td>
+                      <td>198</td>
+                      <td>405</td>
+                      <td>415</td>
+                      <td>460</td>
+                      <td>570</td>
+                      <td>680</td>
+                      <td>920</td>
+                      <td>920</td>
+                      <td>1180</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+
+                <!-- Промышленные чиллеры шнекового типа -->
+                <li class="tab-content__item js-tab-content" data-tab="2">
+                  <h3>Промышленные чиллеры шнекового типа</h3>
+                  <table>
+                    <tbody>
+                    <tr>
+                      <td>Параметры</td>
+                      <td>Мощность охлаждения, кВт</td>
+                      <td>Мощность охлаждения, Ккал/ч</td>
+                      <td>Компрессор (входная мощность), кВт</td>
+                      <td>Компрессор (номинальная мощность), л.с.</td>
+                      <td>Испаритель, тип</td>
+                      <td>Испаритель (диаметр трубы), дюйм</td>
+                      <td>Конденсаторб тип</td>
+                      <td>Конденсатор (диаметр трубы), дюйм</td>
+                      <td>Конденсатор (расход охл. Воды), л/мин</td>
+                      <td>Габариты, см</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-30-S</td>
+                      <td>88</td>
+                      <td>75680</td>
+                      <td>22</td>
+                      <td>30</td>
+                      <td>Корпус испарителя</td>
+                      <td>2&divide;1/2</td>
+                      <td>Корпус конденсатора</td>
+                      <td>2&divide;1/2</td>
+                      <td>330</td>
+                      <td>170&times;85&times;135</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-40-S</td>
+                      <td>118</td>
+                      <td>101480</td>
+                      <td>30</td>
+                      <td>40</td>
+                      <td>Корпус испарителя</td>
+                      <td>3</td>
+                      <td>Корпус конденсатора</td>
+                      <td>3</td>
+                      <td>480</td>
+                      <td>170&times;85&times;135</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-50-S</td>
+                      <td>152</td>
+                      <td>130720</td>
+                      <td>36</td>
+                      <td>48</td>
+                      <td>Корпус испарителя</td>
+                      <td>3</td>
+                      <td>Корпус конденсатора</td>
+                      <td>3</td>
+                      <td>600</td>
+                      <td>220&times;85&times;140</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-60-S</td>
+                      <td>172</td>
+                      <td>147920</td>
+                      <td>41</td>
+                      <td>55</td>
+                      <td>Корпус испарителя</td>
+                      <td>3</td>
+                      <td>Корпус конденсатора</td>
+                      <td>3</td>
+                      <td>700</td>
+                      <td>220&times;85&times;140</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-80-S</td>
+                      <td>230</td>
+                      <td>197800</td>
+                      <td>56</td>
+                      <td>75</td>
+                      <td>Корпус испарителя</td>
+                      <td>3</td>
+                      <td>Корпус конденсатора</td>
+                      <td>3</td>
+                      <td>1000</td>
+                      <td>220&times;85&times;14</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-100-S</td>
+                      <td>300</td>
+                      <td>257880</td>
+                      <td>61</td>
+                      <td>82</td>
+                      <td>Корпус испарителя</td>
+                      <td>4</td>
+                      <td>Корпус конденсатора</td>
+                      <td>4</td>
+                      <td>1200</td>
+                      <td>250&times;95&times;15</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-120-S</td>
+                      <td>350</td>
+                      <td>309456</td>
+                      <td>80</td>
+                      <td>120</td>
+                      <td>Корпус испарителя</td>
+                      <td>4</td>
+                      <td>Корпус конденсатора</td>
+                      <td>4</td>
+                      <td>1400</td>
+                      <td>350&times;115&times;17</td>
+                    </tr>
+                    <tr>
+                      <td>WSIW-160-S</td>
+                      <td>480</td>
+                      <td>412608</td>
+                      <td>120</td>
+                      <td>160</td>
+                      <td>Корпус испарителя</td>
+                      <td>5</td>
+                      <td>Корпус конденсатора</td>
+                      <td>4</td>
+                      <td>2000</td>
+                      <td>360&times;116&times;18</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </li>
+            </ul>
+          </div>';
 
 INSERT INTO products
 SET title = 'Стеллажи',
@@ -7965,7 +10956,52 @@ SET title = 'Стеллажи',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '<table>
+            <tbody>
+            <tr>
+              <td>Модель</td>
+              <td>WSMR-1000</td>
+              <td>WSMR-1500</td>
+              <td>WSMR-2000</td>
+            </tr>
+            <tr>
+              <td>Максимальная загрузка (т), низ</td>
+              <td>1</td>
+              <td>1,5</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Максимальная загрузка (т), 2-3 ярус</td>
+              <td>0,8</td>
+              <td>1</td>
+              <td>1,2</td>
+            </tr>
+            <tr>
+              <td>Размеры (см)</td>
+              <td>313х60х200</td>
+              <td>343х78х200</td>
+              <td>343х110х295</td>
+            </tr>
+            <tr>
+              <td>Размеры блоков (см)</td>
+              <td>50х88</td>
+              <td>50х105</td>
+              <td>33х148</td>
+            </tr>
+            <tr>
+              <td>Вынос тали (см)</td>
+              <td>35</td>
+              <td>35</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>Грузоподъемность, т</td>
+              <td>1</td>
+              <td>1,5</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>';
 
 INSERT INTO products
 SET title = 'Роботы',
@@ -7973,7 +11009,967 @@ SET title = 'Роботы',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '<p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">Серия ARR</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">Серия ARH</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="3">Серия ARH (повышенная мощность)</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="4">Серия ARH (3-х осевой с сервоприводом)</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="5">3-х осевой робот с сервоприводом серии H</li>
+
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+              <!-- ARR -->
+              <li class="tab-content__item js-tab-content active" data-tab="1">
+                <h3>Поворотный робот серии ARR</h3>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C (мин)</td>
+                    <td>D (макс)</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                  </tr>
+                  <tr>
+                    <td>ARR550I</td>
+                    <td>860</td>
+                    <td>680</td>
+                    <td>40</td>
+                    <td>320</td>
+                    <td>60</td>
+                    <td>180</td>
+                    <td>550</td>
+                    <td>150</td>
+                    <td>1140</td>
+                    <td>1400</td>
+                    <td>280</td>
+                  </tr>
+                  <tr>
+                    <td>ARR650I</td>
+                    <td>860</td>
+                    <td>680</td>
+                    <td>40</td>
+                    <td>320</td>
+                    <td>60</td>
+                    <td>180</td>
+                    <td>550</td>
+                    <td>150</td>
+                    <td>1240</td>
+                    <td>1500</td>
+                    <td>280</td>
+                  </tr>
+                  <tr>
+                    <td>ARR750W</td>
+                    <td>940</td>
+                    <td>800</td>
+                    <td>40</td>
+                    <td>380</td>
+                    <td>60</td>
+                    <td>180</td>
+                    <td>550</td>
+                    <td>150</td>
+                    <td>950</td>
+                    <td>1180</td>
+                    <td>280</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Мощность Энергоемкость</td>
+                    <td>Рабочее давление</td>
+                    <td>Допустимое давление</td>
+                    <td>Система привода</td>
+                  </tr>
+                  <tr>
+                    <td>1&Oslash;АС220В 50/60Гц</td>
+                    <td>0,2 кВт</td>
+                    <td>0,49 Мпа</td>
+                    <td>Давление</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Наименование</td>
+                    <td>Рекомендуемое усилие смыкания ТПА, т</td>
+                    <td>Ход по вертикали, мм</td>
+                    <td>Поперечный ход, мм</td>
+                    <td>Тип руки</td>
+                    <td>Угол поворота, &deg;</td>
+                    <td>Система привода</td>
+                    <td>Время съема, с</td>
+                    <td>Время сухого цикла, с</td>
+                    <td>Расход воздуха, л/цикл</td>
+                    <td>Макс.нагрузка, кг</td>
+                    <td>Масса, кг</td>
+                  </tr>
+                  <tr>
+                    <td>ARR550I</td>
+                    <td>50~120</td>
+                    <td>550</td>
+                    <td>120</td>
+                    <td>Одинарная</td>
+                    <td>60&deg;-90&deg;</td>
+                    <td>Пневматическая</td>
+                    <td>0,7</td>
+                    <td>3,8</td>
+                    <td>10,5</td>
+                    <td>3</td>
+                    <td><strong>40</strong></td>
+                  </tr>
+                  <tr>
+                    <td>ARR650I</td>
+                    <td>100~180</td>
+                    <td>650</td>
+                    <td>120</td>
+                    <td>Одинарная</td>
+                    <td>60&deg;-90&deg;</td>
+                    <td>Пневматическая</td>
+                    <td>0,9</td>
+                    <td>4,2</td>
+                    <td>12,5</td>
+                    <td>3</td>
+                    <td>41</td>
+                  </tr>
+                  <tr>
+                    <td>ARR750W</td>
+                    <td>150~250</td>
+                    <td>750</td>
+                    <td>200</td>
+                    <td>Двойная телескопическая</td>
+                    <td>60&deg;-90&deg;</td>
+                    <td>Пневматическая</td>
+                    <td>0,9</td>
+                    <td>3,8</td>
+                    <td>11,5</td>
+                    <td>3</td>
+                    <td>58</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+              <!-- ARH -->
+              <li class="tab-content__item js-tab-content" data-tab="2">
+                <h3>Облегченный робот манипулятор серии ARH</h3>
+
+                <h4>Основные размеры</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I (мин)</td>
+                    <td>J (мин)</td>
+                    <td>K (макс)</td>
+                    <td>L</td>
+                    <td>M</td>
+                  </tr>
+                  <tr>
+                    <td>ARH650DI</td>
+                    <td>1140</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1220</td>
+                    <td>2020</td>
+                    <td>200</td>
+                    <td>185</td>
+                    <td>650</td>
+                    <td>110</td>
+                    <td>160</td>
+                    <td>420</td>
+                    <td>375</td>
+                    <td>800</td>
+                  </tr>
+                  <tr>
+                    <td>ARH750DI</td>
+                    <td>1540</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1220</td>
+                    <td>2020</td>
+                    <td>200</td>
+                    <td>185</td>
+                    <td>750</td>
+                    <td>110</td>
+                    <td>160</td>
+                    <td>540</td>
+                    <td>375</td>
+                    <td>920</td>
+                  </tr>
+                  <tr>
+                    <td>ARH850DI</td>
+                    <td>1640</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1460</td>
+                    <td>2260</td>
+                    <td>150</td>
+                    <td>185</td>
+                    <td>850</td>
+                    <td>110</td>
+                    <td>160</td>
+                    <td>540</td>
+                    <td>375</td>
+                    <td>920</td>
+                  </tr>
+                  <tr>
+                    <td>ARH750DW</td>
+                    <td>1120</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1220</td>
+                    <td>2020</td>
+                    <td>150</td>
+                    <td>130</td>
+                    <td>750</td>
+                    <td>185</td>
+                    <td>140</td>
+                    <td>500</td>
+                    <td>375</td>
+                    <td>920</td>
+                  </tr>
+                  <tr>
+                    <td>ARH850DW</td>
+                    <td>1180</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1460</td>
+                    <td>2260</td>
+                    <td>150</td>
+                    <td>130</td>
+                    <td>850</td>
+                    <td>185</td>
+                    <td>140</td>
+                    <td>500</td>
+                    <td>375</td>
+                    <td>920</td>
+                  </tr>
+                  <tr>
+                    <td>ARH950W</td>
+                    <td>1240</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1460</td>
+                    <td>2260</td>
+                    <td>150</td>
+                    <td>130</td>
+                    <td>950</td>
+                    <td>185</td>
+                    <td>140</td>
+                    <td>620</td>
+                    <td>375</td>
+                    <td>1040</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <h4>Технические характеристики</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Возможность подсоединения</td>
+                    <td>Длина хода, мм</td>
+                    <td>Поперечный ход, мм</td>
+                    <td>Вертикальный ход, мм</td>
+                    <td>Время съема изделия, сек</td>
+                    <td>Цикл движения, сек</td>
+                    <td>Мощность, кВт</td>
+                    <td>Потребление воздуха, л/цикл</td>
+                    <td>Максимальная нагрузка, кг</td>
+                    <td>Вес нетто, кг</td>
+                  </tr>
+                  <tr>
+                    <td>ARH650DI/DW</td>
+                    <td>80~220</td>
+                    <td>1220</td>
+                    <td>М:200 S:120</td>
+                    <td>650</td>
+                    <td>1,2</td>
+                    <td>80~220</td>
+                    <td>0,5</td>
+                    <td>20</td>
+                    <td>3</td>
+                    <td>180/200</td>
+                  </tr>
+                  <tr>
+                    <td>ARH750DI/DW</td>
+                    <td>150~250</td>
+                    <td>1220</td>
+                    <td>М:200 S:120</td>
+                    <td>750</td>
+                    <td>1,3</td>
+                    <td>9</td>
+                    <td>0,5</td>
+                    <td>22</td>
+                    <td>300</td>
+                    <td>190/210</td>
+                  </tr>
+                  <tr>
+                    <td>ARH850DI/DW</td>
+                    <td>200~300</td>
+                    <td>1460</td>
+                    <td>М:200 S:120</td>
+                    <td>850</td>
+                    <td>1,4</td>
+                    <td>10</td>
+                    <td>0,5</td>
+                    <td>24</td>
+                    <td>3</td>
+                    <td>200/220</td>
+                  </tr>
+                  <tr>
+                    <td>ARH950DI/DW</td>
+                    <td>25~350</td>
+                    <td>1460</td>
+                    <td>M:250 S:120</td>
+                    <td>950</td>
+                    <td>1,5</td>
+                    <td>11</td>
+                    <td>0,5</td>
+                    <td>24</td>
+                    <td>4</td>
+                    <td>230</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+              <!-- ARH (повышенная мощность) -->
+              <li class="tab-content__item js-tab-content" data-tab="3">
+                <h3>Робот манипулятор повышенной мощности серии ARH</h3>
+                <h4>Основные размеры</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I (мин)</td>
+                    <td>J (мин)</td>
+                    <td>K (макс)</td>
+                    <td>L</td>
+                    <td>M</td>
+                  </tr>
+                  <tr>
+                    <td>ARH1100DW</td>
+                    <td>1580</td>
+                    <td>380</td>
+                    <td>430</td>
+                    <td>1800</td>
+                    <td>2640</td>
+                    <td>200</td>
+                    <td>170</td>
+                    <td>1100</td>
+                    <td>260</td>
+                    <td>360</td>
+                    <td>470</td>
+                    <td>380</td>
+                    <td>1270</td>
+                  </tr>
+                  <tr>
+                    <td>ARH1300DW</td>
+                    <td>1700</td>
+                    <td>380</td>
+                    <td>430</td>
+                    <td>2040</td>
+                    <td>2880</td>
+                    <td>200</td>
+                    <td>170</td>
+                    <td>1300</td>
+                    <td>260</td>
+                    <td>360</td>
+                    <td>590</td>
+                    <td>380</td>
+                    <td>1390</td>
+                  </tr>
+                  <tr>
+                    <td>ARH1500DW</td>
+                    <td>1940</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>2200</td>
+                    <td>3200</td>
+                    <td>270</td>
+                    <td>280</td>
+                    <td>1500</td>
+                    <td>350</td>
+                    <td>410</td>
+                    <td>700</td>
+                    <td>550</td>
+                    <td>1550</td>
+                  </tr>
+                  <tr>
+                    <td>ARH1700DW</td>
+                    <td>2050</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>2440</td>
+                    <td>3440</td>
+                    <td>270</td>
+                    <td>280</td>
+                    <td>1700</td>
+                    <td>350</td>
+                    <td>410</td>
+                    <td>820</td>
+                    <td>550</td>
+                    <td>1670</td>
+                  </tr>
+                  <tr>
+                    <td>ARH2000DW</td>
+                    <td>2200</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>2680</td>
+                    <td>3680</td>
+                    <td>-</td>
+                    <td>280</td>
+                    <td>2000</td>
+                    <td>&nbsp;-</td>
+                    <td>&nbsp;-</td>
+                    <td>900</td>
+                    <td>550</td>
+                    <td>1850</td>
+                  </tr>
+                  <tr>
+                    <td>ARH2500DW</td>
+                    <td>2500</td>
+                    <td>550</td>
+                    <td>550</td>
+                    <td>2960</td>
+                    <td>3960</td>
+                    <td>-</td>
+                    <td>280</td>
+                    <td>2500</td>
+                    <td>&nbsp;-</td>
+                    <td>&nbsp;-</td>
+                    <td>1240</td>
+                    <td>600</td>
+                    <td>2090</td>
+                  </tr>
+                  <tr>
+                    <td>ARH3000DE</td>
+                    <td>2750</td>
+                    <td>550</td>
+                    <td>550</td>
+                    <td>3200</td>
+                    <td>4200</td>
+                    <td>-</td>
+                    <td>280</td>
+                    <td>3000</td>
+                    <td>&nbsp;-</td>
+                    <td>&nbsp;-</td>
+                    <td>1480</td>
+                    <td>600</td>
+                    <td>2330</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <h4>Технические характеристики</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>ARH1100DW</td>
+                    <td>ARH1300DW</td>
+                    <td>ARH1500DW</td>
+                    <td>ARH1700DW</td>
+                    <td>ARH2000DW</td>
+                    <td>ARH2500MW</td>
+                    <td>ARH3000MW</td>
+                  </tr>
+                  <tr>
+                    <td>Возможность подсоединения</td>
+                    <td>350~550</td>
+                    <td>400~700</td>
+                    <td>650~1100</td>
+                    <td>1000~1600</td>
+                    <td>1600~2200</td>
+                    <td>2000~3000</td>
+                    <td>3000~4000</td>
+                  </tr>
+                  <tr>
+                    <td>Длина хода, мм</td>
+                    <td>1800</td>
+                    <td>2040</td>
+                    <td>2200</td>
+                    <td>24440</td>
+                    <td>2680</td>
+                    <td>2960</td>
+                    <td>3200</td>
+                  </tr>
+                  <tr>
+                    <td>Поперечный ход, мм</td>
+                    <td>M:300 S:200</td>
+                    <td>M:400 S200</td>
+                    <td>M:500 S:200</td>
+                    <td>M:600 S:200</td>
+                    <td>M:700</td>
+                    <td>M:800</td>
+                    <td>M:1000</td>
+                  </tr>
+                  <tr>
+                    <td>Вертикальный ход, мм</td>
+                    <td>1100</td>
+                    <td>1300</td>
+                    <td>1500</td>
+                    <td>1700</td>
+                    <td>2000</td>
+                    <td>2500</td>
+                    <td>3000</td>
+                  </tr>
+                  <tr>
+                    <td>Привод горизонтального движения</td>
+                    <td>Стандарт. Инверторный мотор (АС сервомотор)</td>
+                    <td>Стандарт. Инверторный мотор (АС сервомотор)</td>
+                    <td>Стандарт. Инверторный мотор (АС сервомотор)</td>
+                    <td>Стандарт. Инверторный мотор (АС сервомотор)</td>
+                    <td>Стандарт. Инверторный мотор (АС сервомотор)</td>
+                    <td>Стандарт. Инверторный мотор (АС сервомотор)</td>
+                    <td>Стандарт. Инверторный мотор (АС сервомотор)</td>
+                  </tr>
+                  <tr>
+                    <td>Время съема изделия, сек</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7,5</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>Цикл движения, сек</td>
+                    <td>18</td>
+                    <td>20</td>
+                    <td>22</td>
+                    <td>25</td>
+                    <td>29</td>
+                    <td>34</td>
+                    <td>39</td>
+                  </tr>
+                  <tr>
+                    <td>Мощность, кВт</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1,5</td>
+                    <td>1,5</td>
+                    <td>1,5</td>
+                    <td>1,5</td>
+                    <td>1,5</td>
+                  </tr>
+                  <tr>
+                    <td>Рабочее давление, кг/см3</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                  </tr>
+                  <tr>
+                    <td>Потребление воздуха, л/цикл</td>
+                    <td>75</td>
+                    <td>800</td>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>100</td>
+                    <td>110</td>
+                    <td>120</td>
+                  </tr>
+                  <tr>
+                    <td>Максимальная нагрузка, кг</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>30</td>
+                    <td>50</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Вес нетто, кг</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>800</td>
+                    <td>820</td>
+                    <td>900</td>
+                    <td>1000</td>
+                    <td>1100</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+
+              <!-- Серия ARH (3-х осевой с сервоприводом) -->
+              <li class="tab-content__item js-tab-content" data-tab="4">
+                <h3>3-х осевой робот с сервоприводом серии ARH</h3>
+                <h4>Основные размеры</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I (мин)</td>
+                    <td>J (мин)</td>
+                    <td>K (макс)</td>
+                    <td>L</td>
+                    <td>M</td>
+                  </tr>
+                  <tr>
+                    <td>ARH750DWZ</td>
+                    <td>1240</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1220</td>
+                    <td>2020</td>
+                    <td>150</td>
+                    <td>110</td>
+                    <td>750</td>
+                    <td>185</td>
+                    <td>130</td>
+                    <td>450</td>
+                    <td>375</td>
+                    <td>920</td>
+                  </tr>
+                  <tr>
+                    <td>ARH950DWZ</td>
+                    <td>1300</td>
+                    <td>300</td>
+                    <td>460</td>
+                    <td>1460</td>
+                    <td>2260</td>
+                    <td>150</td>
+                    <td>110</td>
+                    <td>950</td>
+                    <td>185</td>
+                    <td>130</td>
+                    <td>570</td>
+                    <td>375</td>
+                    <td>1040</td>
+                  </tr>
+                  <tr>
+                    <td>ARH750DWE</td>
+                    <td>1240</td>
+                    <td>300</td>
+                    <td>655</td>
+                    <td>1220</td>
+                    <td>2215</td>
+                    <td>150</td>
+                    <td>110</td>
+                    <td>750</td>
+                    <td>185</td>
+                    <td>130</td>
+                    <td>450</td>
+                    <td>310</td>
+                    <td>920</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <h4>Технические характеристики</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Возможность подсоединения</td>
+                    <td>Длина хода, мм</td>
+                    <td>Вертикальный ход, мм</td>
+                    <td>Поперечный ход, мм</td>
+                    <td>Привод горизонтального движения</td>
+                    <td>Время съема изделия, сек</td>
+                    <td>Цикл движения, сек</td>
+                    <td>Энергопотребление, кВт</td>
+                    <td>Рабочее давление, кг/см3</td>
+                    <td>Потребление воздуха, л/цикл</td>
+                    <td>Максимальная нагрузка, кг</td>
+                    <td>Вес нетто, кг</td>
+                  </tr>
+                  <tr>
+                    <td>ARH750DWE</td>
+                    <td>150~250</td>
+                    <td>1220</td>
+                    <td>750</td>
+                    <td>M:450 S:120</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>0,7</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>230</td>
+                  </tr>
+                  <tr>
+                    <td>ARH950DWE</td>
+                    <td>250~350</td>
+                    <td>1460</td>
+                    <td>950</td>
+                    <td>M:570 S:120</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>0,8</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>250~350</td>
+                  </tr>
+                  <tr>
+                    <td>ARH750DWZ</td>
+                    <td>150~250</td>
+                    <td>1220</td>
+                    <td>750</td>
+                    <td>M:200 S:120</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>1,5</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>230</td>
+                  </tr>
+                  <tr>
+                    <td>ARH950DWZ</td>
+                    <td>250~350</td>
+                    <td>1460</td>
+                    <td>950</td>
+                    <td>M:250 S:120</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>1,2</td>
+                    <td>10</td>
+                    <td>1,5</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>250</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+
+              <!-- 3-х осевой робот с сервоприводом серии H -->
+              <li class="tab-content__item js-tab-content" data-tab="5">
+                <h3>3-х осевой робот с сервоприводом серии ARH</h3>
+                <h4>Основные размеры</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>J (мин)</td>
+                    <td>K (макс)</td>
+                    <td>M</td>
+                  </tr>
+                  <tr>
+                    <td>H1500</td>
+                    <td>1960</td>
+                    <td>450</td>
+                    <td>915</td>
+                    <td>2200</td>
+                    <td>3600</td>
+                    <td>330</td>
+                    <td>1500</td>
+                    <td>350</td>
+                    <td>1000</td>
+                    <td>1950</td>
+                  </tr>
+                  <tr>
+                    <td>H1700</td>
+                    <td>2080</td>
+                    <td>450</td>
+                    <td>915</td>
+                    <td>2440</td>
+                    <td>3880</td>
+                    <td>330</td>
+                    <td>1700</td>
+                    <td>350</td>
+                    <td>1180</td>
+                    <td>2130</td>
+                  </tr>
+                  <tr>
+                    <td>H2000</td>
+                    <td>2260</td>
+                    <td>450</td>
+                    <td>990</td>
+                    <td>2680</td>
+                    <td>4120</td>
+                    <td>330</td>
+                    <td>2000</td>
+                    <td>350</td>
+                    <td>1420</td>
+                    <td>2370</td>
+                  </tr>
+                  <tr>
+                    <td>H2500</td>
+                    <td>2560</td>
+                    <td>450</td>
+                    <td>990</td>
+                    <td>2960</td>
+                    <td>4400</td>
+                    <td>330</td>
+                    <td>2500</td>
+                    <td>350</td>
+                    <td>1660</td>
+                    <td>2660</td>
+                  </tr>
+                  <tr>
+                    <td>H3000</td>
+                    <td>2800</td>
+                    <td>450</td>
+                    <td>990</td>
+                    <td>3200</td>
+                    <td>4640</td>
+                    <td>330</td>
+                    <td>3000</td>
+                    <td>350</td>
+                    <td>1900</td>
+                    <td>2900</td>
+                  </tr>
+                  </tbody>
+                </table>
+
+                <h4>Технические характеристики</h4>
+                <table>
+                  <tbody>
+                  <tr>
+                    <td>Модель</td>
+                    <td>Возможность подсоединения</td>
+                    <td>Длина хода, мм</td>
+                    <td>Вертикальный ход, мм</td>
+                    <td>Поперечный ход, мм</td>
+                    <td>Привод горизонтального движения</td>
+                    <td>Время съема изделия, сек</td>
+                    <td>Цикл движения, сек</td>
+                    <td>Энергопотребление, кВт</td>
+                    <td>Рабочее давление, кг/см3</td>
+                    <td>Максимальная нагрузка, кг</td>
+                    <td>Вес нетто, кг</td>
+                  </tr>
+                  <tr>
+                    <td>H1500</td>
+                    <td>650~1100</td>
+                    <td>2200</td>
+                    <td>1500</td>
+                    <td>1000</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>1,8</td>
+                    <td>14</td>
+                    <td>5</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>30</td>
+                    <td>750</td>
+                  </tr>
+                  <tr>
+                    <td>H1700</td>
+                    <td>1000~1600</td>
+                    <td>2440</td>
+                    <td>1700</td>
+                    <td>1180</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>2,2</td>
+                    <td>16</td>
+                    <td>5</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>30</td>
+                    <td>780</td>
+                  </tr>
+                  <tr>
+                    <td>H2000</td>
+                    <td>1500~2200</td>
+                    <td>2760</td>
+                    <td>2000</td>
+                    <td>1420</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>2,8</td>
+                    <td>19</td>
+                    <td>6</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>30</td>
+                    <td>820</td>
+                  </tr>
+                  <tr>
+                    <td>H2500</td>
+                    <td>2000~3000</td>
+                    <td>3160</td>
+                    <td>2500</td>
+                    <td>1660</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>3,5</td>
+                    <td>22</td>
+                    <td>6</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>50</td>
+                    <td>950</td>
+                  </tr>
+                  <tr>
+                    <td>H3000</td>
+                    <td>2500~4000</td>
+                    <td>3560</td>
+                    <td>3000</td>
+                    <td>1900</td>
+                    <td>Стандарт: АС Серводвигатель</td>
+                    <td>4,5</td>
+                    <td>25</td>
+                    <td>6</td>
+                    <td>5 &plusmn; 1 кг/см2</td>
+                    <td>50</td>
+                    <td>1050</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </li>
+            </ul>
+          </div>';
 
 INSERT INTO products
 SET title = 'Транспортеры',
@@ -7981,7 +11977,139 @@ SET title = 'Транспортеры',
     big_image_path ='',
     category_id = '3',
     small_desc = '',
-    content = '';
+    content = '          <p>Выберите тип: </p>
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">Ленточные конвейеры</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">Вертикальный транспортер</li>
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+              <!-- ARR -->
+              <li class="tab-content__item js-tab-content active" data-tab="1">
+                    <h3>Ленточные конвейры</h3>
+                    <table>
+                      <tbody>
+                      <tr>
+                          <td><strong>Модель</strong></td>
+                          <td><strong>СВ200</strong></td>
+                          <td><strong>СВ300</strong></td>
+                          <td><strong>СВ400</strong></td>
+                          <td><strong>СВ500</strong></td>
+                          <td><strong>СВ600</strong></td>
+                      </tr>
+                      <tr>
+                          <td>Ширина ленты, мм</td>
+                          <td>200</td>
+                          <td>300</td>
+                          <td>400</td>
+                          <td>500</td>
+                          <td>600</td>
+                      </tr>
+                      <tr>
+                          <td>Длина конвейера, мм</td>
+                          <td colspan="5">1500/2000/2500/3000/3500/4000/4500/5000/5500/6000</td>
+                      </tr>
+                      <tr>
+                          <td>H1 высота до нижнего края, мм</td>
+                          <td colspan="5">700-1300</td>
+                      </tr>
+                      <tr>
+                          <td>H2 высота до верхнего края, мм</td>
+                          <td colspan="5">1100 - 1600</td>
+                      </tr>
+                      <tr>
+                          <td>Площадка L2, мм</td>
+                          <td>300 (для СВ-Р) 500 (для СВ-Р) 700(СВ_Р)</td>
+                          <td>300 (для СВ-Р) 500 (для СВ-Р) 700(СВ_Р)</td>
+                          <td>300 (для СВ-Р) 500 (для СВ-Р) 700(СВ_Р)</td>
+                          <td>300 (для СВ-Р) 500 (для СВ-Р) 700(СВ_Р)</td>
+                          <td>300 (для СВ-Р) 500 (для СВ-Р) 700(СВ_Р)</td>
+                      </tr>
+                      <tr>
+                          <td>Максимальная грузоподъемность, кг</td>
+                          <td colspan="5">20</td>
+                      </tr>
+                      <tr>
+                          <td>Максимальная скорость, кг</td>
+                          <td colspan="5">12</td>
+                      </tr>
+                      <tr>
+                          <td>Описание ленты конвейеры</td>
+                          <td colspan="5">Материал - ПВХ; толщина 2мм; температурный дипазон - 10С ~ +80C; антистатическое покрытие; стойкое к маслу и испарению</td>
+                      </tr>
+                      <tr>
+                          <td>Источник энергопотребления</td>
+                          <td colspan="5">Однофазный 220В+-10В 50/60Гц</td>
+                      </tr>
+                      <tr>
+                          <td>Мощность, кВт</td>
+                          <td colspan="5">0.2</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </li>
+
+              <!-- ARH -->
+              <li class="tab-content__item js-tab-content" data-tab="2">
+                    <h3>Вертикальный транспортер</h3>
+                    <table>
+                      <tbody>
+                      <tr>
+                          <td><strong>Модель</strong></td>
+                          <td><strong>VT550</strong></td>
+                          <td><strong>VT650</strong></td>
+                          <td><strong>VT750</strong></td>
+                          <td><strong>VT850</strong></td>
+                      </tr>
+                      <tr>
+                          <td>H1</td>
+                          <td>1540</td>
+                          <td>1640</td>
+                          <td>1740</td>
+                          <td>1840</td>
+                      </tr>
+                      <tr>
+                          <td>H2</td>
+                          <td>990</td>
+                          <td>1090</td>
+                          <td>1190</td>
+                          <td>1290</td>
+                      </tr>
+                      <tr>
+                          <td>H2</td>
+                          <td>879</td>
+                          <td>979</td>
+                          <td>1079</td>
+                          <td>1179</td>
+                      </tr>
+                      </tbody>
+                  </table>
+                    <table>
+                      <tbody>
+                      <tr>
+                          <td><strong>Рабочее давление</strong></td>
+                          <td><strong>Рекомендуемый ТПА (тонн)</strong></td>
+                          <td><strong>Максимальная грузоподъемность (кг)</strong></td>
+                          <td><strong>РАсход воздуха (NL/цикл)</strong></td>
+                          <td><strong>Вес нетто (кг)</strong></td>
+                      </tr>
+                      <tr>
+                          <td>5кг - сила/см 0.49Мпа</td>
+                          <td>50-250</td>
+                          <td>2</td>
+                          <td>0.5</td>
+                          <td>21</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </li>
+
+            </ul>
+          </div>';
 
 INSERT INTO products
 SET title = 'Циклонные системы',
@@ -7998,3 +12126,46 @@ SET title = 'Шнековые дозаторы красителя',
     category_id = '3',
     small_desc = '',
     content = '';
+
+
+-- ДОБАВЛЕНИЕ видео
+-- ТПА
+INSERT INTO video
+SET title = 'Инжекционно-литьевая машина Alliance, серия Titan. Цикл 4,8 с',
+    video_url ='zRNGfCpJ97I',
+    category_id = '1';
+
+INSERT INTO video
+SET title = 'ТПА для тонкостенного литья PAC300 (Yizumi) 2',
+    video_url ='8F1KXN7oZ5s',
+    category_id = '1';
+
+INSERT INTO video
+SET title = 'Трёхцветная инжекционно-литьевая машина Alliance',
+    video_url ='sXR4qE23tLo',
+    category_id = '1';
+
+INSERT INTO video
+SET title = 'Инжекционно литевая машина Alliance Titan130GL (цикл - 4,4 с)',
+    video_url ='UCVScOQoERQ',
+    category_id = '1';
+
+INSERT INTO video
+SET title = 'Инжекционно литевая машина Alliance Titan130GL (цикл - 4,4 с) 2',
+    video_url ='eQdDa6s7Zy8',
+    category_id = '1';
+
+INSERT INTO video
+SET title = 'Магнитные плиты',
+    video_url ='QBqBYGDFGQA',
+    category_id = '1';
+
+INSERT INTO video
+SET title = 'Термопластавтомат 1400SM, 1800SM, 2200SM',
+    video_url ='SofG-AWfM8M',
+    category_id = '1';
+
+INSERT INTO video
+SET title = 'Двукомпонентная инжекционно-литьевая машина с поворотным столом',
+    video_url ='TtT7rOL1IFg',
+    category_id = '1';

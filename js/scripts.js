@@ -1,4 +1,23 @@
 $(document).ready(function () {
+    $("#demo01").animatedModal();
+
+    $('.price-form').submit(function(event) {
+        event.preventDefault();
+        let msg  = $(this).serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: 'price.php',
+            data: msg,
+            success: function(data) {
+                console.log(data);
+            },
+            error: function(xhr, str){
+                console.log(xhr);
+            }
+        });
+    });
+
     $('#catalog').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');

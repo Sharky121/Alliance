@@ -258,7 +258,7 @@
         </div>
     </section>
 
-    <section class="section-map">
+    <section class="section-map" id="section-map">
         <div class="container">
             <h2 class="title-bg">
                 <span class="title-bg__bg-text">Карта</span>

@@ -63,7 +63,7 @@
                 </li>
 
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="?view=contacts" >Контакты</a>
+                    <a class="main-menu__link" href="/#section-map" >Контакты</a>
                 </li>
             </ul>
 
