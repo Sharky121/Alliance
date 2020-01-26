@@ -1,5 +1,15 @@
 $(document).ready(function () {
-    $("#demo01").animatedModal();
+    let priceModal = $("#priceModal").animatedModal();
+
+    if (priceModal) {
+        $("#priceModal").animatedModal({
+            color: '#4db6ac',
+
+            afterClose: function() {
+                $('.price-modal__btn').text('Отправить');
+            }
+        });
+    }
 
     $('.price-form').submit(function(event) {
         event.preventDefault();
@@ -9,8 +19,34 @@ $(document).ready(function () {
             type: 'POST',
             url: 'price.php',
             data: msg,
+
             success: function(data) {
-                console.log(data);
+                $('.price-modal__btn').text('Ваш запрос отправлен!');
+                $('.price-modal__btn').attr('disabled');
+            },
+            error: function(xhr, str){
+                console.log(xhr);
+            }
+        });
+    });
+
+    $('.phone-form').submit(function(event) {
+        event.preventDefault();
+        let msg  = $(this).serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: 'price.php',
+            data: msg,
+
+            success: function(data) {
+                $('.main-footer__input').val('Ваш запрос отправлен!');
+                $('.main-footer__input').prop( "disabled", true );
+
+                setTimeout(function(){
+                    $('.main-footer__input').val( 'Ваш телефон');
+                    $('.main-footer__input').prop( "disabled", false);
+                }, 2000);
             },
             error: function(xhr, str){
                 console.log(xhr);
@@ -20,6 +56,7 @@ $(document).ready(function () {
 
     $('#catalog').on('click', function (e) {
         e.preventDefault();
+
         $(this).toggleClass('active');
         $('.sub-menu').slideToggle();
     });

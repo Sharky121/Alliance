@@ -56,9 +56,9 @@
 
                 <p>Оставьте свой телефон и наш менеджер свяжется с вами!</p>
 
-                <form method="post">
+                <form class="phone-form">
                     <div class="form-group">
-                        <input class="main-footer__input" id="footer-phone" type="phone" name="field-name" value="" placeholder="Ваш телефон" required autocomplete="off">
+                        <input class="main-footer__input" id="footer-phone" type="phone" name="phone" placeholder="Ваш телефон" required autocomplete="off">
                         <button class="send-btn" type="submit">
                             <svg class="send-btn__ico" viewBox="0 0 469.335 469.335">
                                 <path d="M464.761,1.918c-3.385-2.365-7.813-2.552-11.385-0.51l-448,256c-3.656,2.083-5.74,6.125-5.323,10.313

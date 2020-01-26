@@ -64,7 +64,7 @@
                 <?php endif; ?>
 
                 <button class="btn">Скачать технические характеристики</button>
-                <button class="btn" id="demo01" href="#animatedModal">Узнать цену</button>
+                <button class="btn" id="priceModal" href="#animatedModal">Узнать цену</button>
             </div>
         </div>
 
@@ -84,20 +84,31 @@
               <?= $content; ?>
           </div>
         <?php endif; ?>
-        <p>Мы оставляем за собой право вносить изменения без предварительного уведомления.</p>
+        <p class="small-text">*Мы оставляем за собой право вносить изменения без предварительного уведомления.</p>
     </div>
     <!-- modal -->
-    <div id="animatedModal">
+    <div id="animatedModal" class="price-modal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div class="close-animatedModal">
           <img class="closebt" src="/img/closebt.svg">
         </div>
 
         <div class="modal-content">
-            <form class="price-form">
-                <input type="email" name="email" id="">
+            <h3 class="price-modal__title">Заполните форму и мы вышлем коммерческое предложение</h3>
 
-                <button>Отправить</button>
+            <form class="price-form">
+                <input name="product_title" type="hidden" value="<?= $product_title; ?>">
+
+                <label class="price-form__label" for="name">Введите ваше имя</label>
+                <input class="price-form__input" id="name" name="name" type="text">
+
+                <label class="price-form__label" for="name">Введите ваш email</label>
+                <input class="price-form__input" id="email" name="email" type="email">
+
+                <label class="price-form__label" for="name">Введите ваш номер телефона</label>
+                <input class="price-form__input" id="footer-phone" name="phone" type="phone">
+
+                <button class="price-modal__btn">Отправить</button>
             </form>
         </div>
     </div>

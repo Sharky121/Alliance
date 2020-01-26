@@ -101,6 +101,13 @@ input { box-sizing: border-box; }
   overflow: hidden;
 }
 
+.small-text {
+  font-size: 12px;
+  font-weight: 400;
+
+  color: #777777;
+}
+
 .button {
   position: relative;
   z-index: 2;
@@ -631,6 +638,7 @@ input { box-sizing: border-box; }
   font-size: 16px;
   background: none;
   border: none;
+  outline: none;
 
   cursor: pointer;
 }
@@ -1160,7 +1168,7 @@ input { box-sizing: border-box; }
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .product-list__item {
@@ -1372,10 +1380,79 @@ input { box-sizing: border-box; }
   position: relative;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  margin-top: 100px;
-
   overflow: hidden;
 }
+
+.price-modal__title {
+  width: 400px;
+
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.price-form {
+  width: 480px;
+
+  text-align: center;
+}
+
+.price-form__input {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 7px 15px;
+  margin-bottom: 20px;
+
+  font: inherit;
+  color: #000;
+  border: 1px solid #d1d1d1;
+
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price-form__label {
+  display: block;
+  margin-bottom: 5px;
+
+  text-align: left;
+  font-size: 12px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.price-modal__btn {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 12px 30px;
+
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  background-color: transparent;
+
+  transition: all .3s;
+  outline: none;
+  cursor: pointer;
+}
+
+.price-modal__btn:hover {
+  color: #4db6ac;
+
+  background-color: #ffffff;
+}
+
+.price-modal__btn:active,
+.price-modal__btn:focus,
+.price-modal__btn:visited { outline: 0; }
