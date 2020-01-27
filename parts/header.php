@@ -50,9 +50,9 @@
                     <a class="main-menu__link" id="catalog">Каталог продукции</a>
                 </li>
 
-<!--                <li class="main-menu__item">-->
-<!--                  <a class="main-menu__link" id="demo02" href="#modal03">Пресс-формы</a>-->
-<!--                </li>-->
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="?view=press-form">Пресс-формы</a>
+                </li>
 <!---->
 <!--                <li class="main-menu__item">-->
 <!--                  <a class="main-menu__link" id="demo02" href="#modal03">Запасные части</a>-->

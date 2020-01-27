@@ -4,7 +4,7 @@
         $id = intval($_GET['id']);
     }
 
-    $product_sql = "SELECT p.title, small_desc, content, big_image_path, c.id as cat_id, c.title as cat_title
+    $product_sql = "SELECT p.title, p.image_path, small_desc, content, big_image_path,  c.id as cat_id, c.title as cat_title
                     FROM products p 
                     INNER JOIN category c ON c.id = p.category_id
                     WHERE p.id = '$id'";
@@ -20,8 +20,17 @@
         $small_desc = $val['small_desc'];
         $content = $val['content'];
         $big_image_path = $val['big_image_path'];
+        $image_path = $val['image_path'];
     };
 
+  $video_sql = "SELECT v.title as video_title, video_url, category_id
+                      FROM video v 
+                      INNER JOIN category c ON c.id = category_id
+                      WHERE c.id = '$category_id'";
+
+  $video_res = mysqli_query($link, $video_sql);
+
+  $video_name = mysqli_fetch_all($video_res, MYSQLI_ASSOC);
 ?>
 
 <main>
@@ -41,7 +50,7 @@
         <div class="product-wrapper">
             <div class="product__column product__column--left">
                 <?php if (empty($big_image_path)): ?>
-                    <img class="product-image" src="/img/placeholder.png" alt="Изображение отсутствует">
+                    <img class="product-image" src="<?= $image_path; ?>" alt="Изображение отсутствует">
                 <?php else: ?>
                     <img class="product-image" src="<?= $big_image_path; ?>" alt="<?= $product_title; ?>">
                 <?php endif; ?>
@@ -78,9 +87,52 @@
           </div>
         <?php endif; ?>
         <p class="small-text">*Мы оставляем за собой право вносить изменения без предварительного уведомления.</p>
+
+        <div class="owl-carousel owl-theme owl-carousel--works product__owl-carousel">
+            <?php foreach ($video_name as $key => $val): ?>
+              <div class="item">
+                <lite-youtube class="video-list__box" videoid="<?=$val['video_url']; ?>" style="background-image: url('https://i.ytimg.com/vi/ogfYd705cRs/hqdefault.jpg');">
+                  <div class="lty-playbtn"></div>
+                </lite-youtube>
+
+                <h4 class="video-list__title"><?= $val['video_title']; ?></h4>
+              </div>
+            <?php endforeach; ?>
+        </div>
+
+
+        <h3>Остались вопросы?</h3>
+        <p>Звоните по телефону +7 (800) 222-48-13 (звонок бесплатный), +7 (4912) 70-19-81 или заполните форму обратной связи</p>
+
+        <form class="question-form">
+          <input name="product_title" type="hidden" value="<?= $product_title; ?>">
+
+          <div class="form-group question-form__form-group">
+            <p>
+              <label class="form-label form-label--grey" for="name">Введите ваше имя</label>
+              <input class="form-input form-input--grey" id="name" name="name" type="text" placeholder="Как вас зовут?">
+            </p>
+
+            <p>
+              <label class="form-label form-label--grey" for="name">Введите ваш email</label>
+              <input class="form-input form-input--grey" id="email" name="email" type="email" placeholder="email@email.ru">
+            </p>
+
+            <p>
+              <label class="form-label form-label--grey" for="name">Введите ваш номер телефона</label>
+              <input class="form-input form-input--grey" id="footer-phone" name="phone" type="phone" placeholder="+7 000 000 00 00">
+            </p>
+          </div>
+
+          <label class="form-label form-label--grey" for="text">Ваш вопрос</label>
+          <textarea class="form-textarea form-textarea--grey" name="text" type="text" placeholder="Опишите вас вопрос"></textarea>
+
+          <button class="form-btn form-btn--green">Отправить</button>
+        </form>
+
     </div>
 
-    <!-- price-modal -->
+    <!-- modal -->
     <div id="animatedModal" class="price-modal">
         <div class="close-animatedModal">
             <img class="closebt" src="/img/closebt.svg">
@@ -92,16 +144,16 @@
             <form class="price-form">
                 <input name="product_title" type="hidden" value="<?= $product_title; ?>">
 
-                <label class="price-form__label" for="name">Введите ваше имя</label>
-                <input class="price-form__input" id="name" name="name" type="text">
+                <label class="form-label" for="name">Введите ваше имя</label>
+                <input class="form-input" id="name" name="name" type="text">
 
-                <label class="price-form__label" for="name">Введите ваш email</label>
-                <input class="price-form__input" id="email" name="email" type="email">
+                <label class="form-label" for="name">Введите ваш email</label>
+                <input class="form-input" id="email" name="email" type="email">
 
-                <label class="price-form__label" for="name">Введите ваш номер телефона</label>
-                <input class="price-form__input" id="footer-phone" name="phone" type="phone">
+                <label class="form-label" for="name">Введите ваш номер телефона</label>
+                <input class="form-input" id="footer-phone" name="phone" type="phone">
 
-                <button class="price-modal__btn">Отправить</button>
+                <button class="form-btn">Отправить</button>
             </form>
         </div>
     </div>

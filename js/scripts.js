@@ -13,20 +13,18 @@ $(document).ready(function () {
         });
     }
 
-
-
     $('.price-form').submit(function(event) {
         event.preventDefault();
         let msg  = $(this).serialize();
 
         $.ajax({
             type: 'POST',
-            url: 'price.php',
+            url: 'send.php',
             data: msg,
 
             success: function(data) {
-                $('.price-modal__btn').text('Ваш запрос отправлен!');
-                $('.price-modal__btn').attr('disabled');
+                $('.price-modal .form-btn').text('Ваш запрос отправлен!');
+                $('.price-modal .form-btn').attr('disabled');
             },
             error: function(xhr, str){
                 console.log(xhr);
@@ -40,7 +38,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'price.php',
+            url: 'send.php',
             data: msg,
 
             success: function(data) {
@@ -58,6 +56,54 @@ $(document).ready(function () {
         });
     });
 
+    $('.question-form').submit(function(event) {
+        event.preventDefault();
+        let msg  = $(this).serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: 'send.php',
+            data: msg,
+
+            success: function(data) {
+                $('.question-form .form-btn').text('Ваш запрос отправлен!');
+                $('.question-form .form-btn').prop( "disabled", true );
+
+                setTimeout(function(){
+                    $('.question-form .form-btn').text('Отправить');
+                    $('.question-form .form-btn').prop( "disabled", false);
+                }, 2000);
+            },
+            error: function(xhr, str){
+                console.log(xhr);
+            }
+        });
+    });
+
+    $('.press-form').submit(function(event) {
+        event.preventDefault();
+        let msg  = $(this).serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: 'sendPress.php',
+            data: msg,
+
+            success: function(data) {
+                $('.press-form .form-btn').text('Ваш запрос отправлен!');
+                $('.press-form .form-btn').prop( "disabled", true );
+
+                setTimeout(function(){
+                    $('.press-form .form-btn').text('Отправить');
+                    $('.press-form .form-btn').prop( "disabled", false);
+                }, 2000);
+            },
+            error: function(xhr, str){
+                console.log(xhr);
+            }
+        });
+    });
+
     $('#catalog').on('click', function (e) {
         e.preventDefault();
 
@@ -65,7 +111,6 @@ $(document).ready(function () {
         $('.sub-menu').slideToggle();
     });
 
-    
     $("#footer-phone").mask("+7 (999) 999-99-99", {
         completed: function(){
             $(".send-btn__ico").addClass('active');
@@ -87,7 +132,7 @@ $(document).ready(function () {
             dots: true,
             nav: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            autoplay: false
+            autoplay: true
         });
     }
 

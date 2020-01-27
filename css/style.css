@@ -932,6 +932,30 @@ input { box-sizing: border-box; }
 
 .owl-carousel--works .owl-dots { margin-top: 90px !important; }
 
+
+/* Карусель для product*/
+.product__owl-carousel {
+  margin: 40px 0;
+
+  text-align: center;
+}
+
+.product__owl-carousel .owl-item {
+  transform: none;
+  opacity: 1;
+}
+
+.owl-carousel--works .active.center {
+  opacity: 1;
+  transform: none;
+}
+
+.product__owl-carousel .owl-item .item { padding: 10px; }
+
+.product__owl-carousel .owl-dots { margin-top: 0 !important; }
+
+.product__owl-carousel .owl-nav { display: none !important;}
+
 .image-mock {
   position: absolute;
   top: -15px;
@@ -957,7 +981,7 @@ input { box-sizing: border-box; }
   width: 60px;
 }
 
- .item__ico .stroke-dotted {
+.item__ico .stroke-dotted {
     opacity: 0;
     stroke-dasharray: 4,5;
     stroke-width: 1px;
@@ -966,29 +990,29 @@ input { box-sizing: border-box; }
     transition: opacity 1s ease, stroke-width 1s ease; 
   }
 
-  .item__ico .stroke-solid {
+.item__ico .stroke-solid {
     stroke-dashoffset: 0;
     stroke-dashArray: 300;
     stroke-width: 4px;
     transition: stroke-dashoffset 1s ease, opacity 1s ease; 
   }
 
-  .item__ico .icon {
+.item__ico .icon {
     transform-origin: 50% 50%;
     transition: transform 200ms ease-out; 
   }
 
-  .item__ico:hover .stroke-dotted {
+.item__ico:hover .stroke-dotted {
     stroke-width: 4px;
     opacity: 1; 
   }
 
-  .item__ico:hover .stroke-solid {
+.item__ico:hover .stroke-solid {
     opacity: 0;
     stroke-dashoffset: 300; 
   }
 
-  .item__ico:hover .icon { transform: scale(1.05); }
+.item__ico:hover .icon { transform: scale(1.05); }
 
 /* ==========================================================================
    SECTION MAP
@@ -1051,8 +1075,8 @@ input { box-sizing: border-box; }
 }
 
 .box-list__img img {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
 }
 
 .box-list__title {
@@ -1172,7 +1196,6 @@ input { box-sizing: border-box; }
 
 /* product-list
    ========================================================================== */
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -1213,10 +1236,6 @@ input { box-sizing: border-box; }
 .product-list__item:hover .product-list__title { color: #4db6ac; }
 
 
-
-
-
-
 /* ==========================================================================
    PRODUCT ITEM
    ========================================================================== */
@@ -1229,6 +1248,12 @@ input { box-sizing: border-box; }
 .product__column {
   width: 48%;
   margin-bottom: 2%;
+}
+
+.product__column--left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product-title {
@@ -1266,6 +1291,7 @@ input { box-sizing: border-box; }
   transition: all .3s;
   cursor: pointer;
 }
+
 .tab-header__item.active {
   color: white;
 
@@ -1418,7 +1444,21 @@ input { box-sizing: border-box; }
   text-align: center;
 }
 
-.price-form__input {
+.question-form {
+  margin-bottom: 60px;
+}
+
+.question-form__form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-form__form-group p {
+  flex: 0 32%;
+  margin: 0;
+}
+
+.form-input {
   position: relative;
 
   display: block;
@@ -1436,21 +1476,28 @@ input { box-sizing: border-box; }
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-sizing: border-box;
 }
 
-.price-form__textarea {
+.form-input--grey { border: 1px solid #777777; }
+
+.form-textarea {
   display: block;
   width: 100%;
   min-height: 62px;
   margin-bottom: 15px;
+  padding: 7px 15px;
 
   outline: none;
   -moz-appearance: none;
   border: none;
   resize: none;
+  box-sizing: border-box;
 }
 
-.price-form__label {
+.form-textarea--grey { border: 1px solid #777777; }
+
+.form-label {
   display: block;
   margin-bottom: 5px;
 
@@ -1460,7 +1507,9 @@ input { box-sizing: border-box; }
   color: #ffffff;
 }
 
-.price-modal__btn {
+.form-label--grey { color: #777777; }
+
+.form-btn {
   display: inline-block;
   margin: 5px 5px 0 0;
   padding: 12px 30px;
@@ -1476,12 +1525,27 @@ input { box-sizing: border-box; }
   cursor: pointer;
 }
 
-.price-modal__btn:hover {
+.form-btn:hover {
   color: #4db6ac;
 
   background-color: #ffffff;
 }
 
-.price-modal__btn:active,
-.price-modal__btn:focus,
-.price-modal__btn:visited { outline: 0; }
+.form-btn:active,
+.form-btn:focus,
+.form-btn:visited { outline: 0; }
+
+.form-btn--green {
+  color: #4db6ac;
+
+  border: 1px solid #4db6ac;
+  background-color: transparent;
+}
+
+.form-btn--green:hover {
+  color: #ffffff;
+
+  background-color: #4db6ac;
+}
+
+.press-form { margin-bottom: 60px; }
