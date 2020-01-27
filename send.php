@@ -23,6 +23,12 @@
 		$phone = '';
 	}
 
+    if(isset($_POST["text"]) && !empty($_POST["text"])) {
+        $text = trim($_POST["text"]);
+    } else {
+        $text = '';
+    }
+
 	$to      = 'Sharky121@mail.ru';
 	$subject = 'Заявка на обратный звонок';
 
@@ -30,6 +36,7 @@
         'Раздел: ' . $product_title . "\r\n" .
         'Имя: ' . $name . "\r\n" .
         'Электронная почта: ' . $email . "\r\n" .
+        'Вопрос: ' . $text . "\r\n" .
         'Телефон: ' . $phone ;
 
 	$headers = array();
