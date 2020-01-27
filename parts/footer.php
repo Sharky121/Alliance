@@ -58,6 +58,7 @@
 
                 <form class="phone-form">
                     <div class="form-group">
+                        <input name="product_title" type="hidden" value="Обратный звонок">
                         <input class="main-footer__input" id="footer-phone" type="phone" name="phone" placeholder="Ваш телефон" required autocomplete="off">
                         <button class="send-btn" type="submit">
                             <svg class="send-btn__ico" viewBox="0 0 469.335 469.335">

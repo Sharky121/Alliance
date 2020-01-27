@@ -26,8 +26,6 @@
 
 <main>
     <div class="container">
-<!--        <h1 class="main-title"></h1>-->
-
         <ul class="breadcrumbs-list">
             <li class="breadcrumbs-list__item">
                 <a class="breadcrumbs-list__link" href="index.php">Главная</a>
@@ -52,7 +50,6 @@
             <div class="product__column product__column--right">
                 <h1 class="product-title"><?= $product_title; ?></h1>
 
-
                 <?php if (empty($small_desc)): ?>
                     <p class="product-small_desc">
                       Наша компания по праву занимает место среди ведущих поставщиков оборудования в сфере переработки пластмасс и цветных металлов
@@ -63,8 +60,8 @@
                     </p>
                 <?php endif; ?>
 
-                <button class="btn">Скачать технические характеристики</button>
-                <button class="btn" id="priceModal" href="#animatedModal">Узнать цену</button>
+<!--                <button class="btn">Скачать технические характеристики</button>-->
+                <button class="btn" id="demo01" href="#animatedModal">Узнать цену</button>
             </div>
         </div>
 
@@ -75,10 +72,6 @@
                 В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
             </p>
 
-        <div class="specification">
-
-        </div>
-
         <?php else: ?>
           <div class="specification">
               <?= $content; ?>
@@ -86,11 +79,11 @@
         <?php endif; ?>
         <p class="small-text">*Мы оставляем за собой право вносить изменения без предварительного уведомления.</p>
     </div>
-    <!-- modal -->
+
+    <!-- price-modal -->
     <div id="animatedModal" class="price-modal">
-        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div class="close-animatedModal">
-          <img class="closebt" src="/img/closebt.svg">
+            <img class="closebt" src="/img/closebt.svg">
         </div>
 
         <div class="modal-content">

@@ -26,7 +26,11 @@
 	$to      = 'Sharky121@mail.ru';
 	$subject = 'Заявка на обратный звонок';
 
-	$message =   'Раздел: ' . $product_title . "\r\n" . 'Имя: ' . $name . "\r\n" . 'Электронная почта: ' . $email . "\r\n" . 'Телефон: ' . $phone ;
+	$message =
+        'Раздел: ' . $product_title . "\r\n" .
+        'Имя: ' . $name . "\r\n" .
+        'Электронная почта: ' . $email . "\r\n" .
+        'Телефон: ' . $phone ;
 
 	$headers = array();
 	$headers[] = "MIME-Version: 1.0";

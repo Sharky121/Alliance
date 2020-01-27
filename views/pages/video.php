@@ -1,5 +1,5 @@
 <?php
-  $video_sql = "SELECT id, title, video_url, category_id FROM video";
+  $video_sql = "SELECT id, title, video_url, category_id FROM video ORDER BY RAND()";
   $video_list_res = mysqli_query($link, $video_sql);
   $video_list = mysqli_fetch_all($video_list_res, MYSQLI_ASSOC);
 ?>
@@ -16,7 +16,7 @@
           </li>
         </ul>
 
-        <h3 class="video-title">Термопластавтоматы</h3>
+<!--        <h3 class="video-title">Термопластавтоматы</h3>-->
 
         <ul class="video-list">
             <?php foreach ($video_list as $key => $val): ?>

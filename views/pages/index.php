@@ -100,34 +100,46 @@
 
             <ul class="box-list features">
                 <li class="box-list__item">
-                    <div class="box-list__img"></div>
+                    <div class="box-list__img">
+                        <img src="/img/recycle-sign.svg" alt="">
+                    </div>
                     <h3 class="box-list__title">Горизонтальные и вертикальные термопластавтоматы</h3>
                     <p class="box-list__text">Сотрудничество и огромный опыт работы с ведущими заводами - производителями термопластавтоматов, позволяет нашей компании занимать лидирующие позиции
                         на рынке оборудования для переработки пластмасс, а нашим клиентам добиваться поставленной задачи</p>
                 </li>
                 <li class="box-list__item">
-                    <div class="box-list__img"></div>
+                    <div class="box-list__img">
+                        <img src="/img/computer.svg" alt="">
+                    </div>
                     <h3 class="box-list__title">Возможность построения централизованой системы управления производством</h3>
                     <p class="box-list__text">Термопластавтоматы объединяются в единую сеть, что позволяет диагностировать и управлять работой оборудования с помощью сетей Ethernet</p>
                 </li>
                 <li class="box-list__item">
-                    <div class="box-list__img"></div>
+                    <div class="box-list__img">
+                        <img src="/img/power-press.svg" alt="">
+                    </div>
                     <h3 class="box-list__title">Пресс-формы</h3>
                     <p class="box-list__text">Открытие производственного участка под ключ и реализация Ваши проектов - наша работ! Технические специалисты готовы оказать помощь при конструировании и моделировании пресс-форм, а анализ проливаемости
                         позволит добиться требуемого качества и высокой точности конечного изделия</p>
                 </li>
                 <li class="box-list__item">
-                    <div class="box-list__img"></div>
+                    <div class="box-list__img">
+                        <img src="/img/gears.svg" alt="">
+                    </div>
                     <h3 class="box-list__title">Периферийное оборудование</h3>
                     <p class="box-list__text">Автоматизация и подготовка производства ключевой момент для успешного ведения бизнеса и сокращения затрат времени</p>
                 </li>
                 <li class="box-list__item">
-                    <div class="box-list__img"></div>
+                    <div class="box-list__img">
+                        <img src="/img/waste-plastic.svg" alt="">
+                    </div>
                     <h3 class="box-list__title">Выдувное оборудование</h3>
                     <p class="box-list__text">Мы предлагаем Вам готовые решения для производства пластиковой тары различного назначения</p>
                 </li>
                 <li class="box-list__item">
-                    <div class="box-list__img"></div>
+                    <div class="box-list__img">
+                        <img src="/img/print.svg" alt="">
+                    </div>
                     <h3 class="box-list__title">Экструзионное оборудование</h3>
                     <p class="box-list__text">Оргнанизация бизнеса в сфере экструзии перспектвное и рентабельное направление. Выбор надежного поставщика одна из главных задач в ведении данного бизнеса</p>
                 </li>

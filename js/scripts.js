@@ -1,8 +1,10 @@
 $(document).ready(function () {
-    let priceModal = $("#priceModal").animatedModal();
 
-    if (priceModal) {
-        $("#priceModal").animatedModal({
+    let demo1 = $('#demo01');
+    console.log(demo1.length);
+
+    if (demo1.length) {
+        demo1.animatedModal({
             color: '#4db6ac',
 
             afterClose: function() {
@@ -10,6 +12,8 @@ $(document).ready(function () {
             }
         });
     }
+
+
 
     $('.price-form').submit(function(event) {
         event.preventDefault();
