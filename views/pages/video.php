@@ -16,8 +16,6 @@
           </li>
         </ul>
 
-<!--        <h3 class="video-title">Термопластавтоматы</h3>-->
-
         <ul class="video-list">
             <?php foreach ($video_list as $key => $val): ?>
               <li class="video-list__item">

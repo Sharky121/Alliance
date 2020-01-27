@@ -1,7 +1,5 @@
 $(document).ready(function () {
-
     let demo1 = $('#demo01');
-    console.log(demo1.length);
 
     if (demo1.length) {
         demo1.animatedModal({
@@ -135,7 +133,6 @@ $(document).ready(function () {
             autoplay: true
         });
     }
-
 
     $('.js-tab-trigger').click(function() {
         var id = $(this).attr('data-tab');
