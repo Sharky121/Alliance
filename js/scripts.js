@@ -1,4 +1,17 @@
 $(document).ready(function () {
+    let headerMain = $('.js-main-header');
+    let headerMainHeight = headerMain.innerHeight();
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > headerMainHeight) {
+            headerMain.addClass("js-main-header--active");
+        }
+        else {
+            headerMain.removeClass("js-main-header--active");
+        }
+    });
+
+
     let demo1 = $('#demo01');
 
     if (demo1.length) {
@@ -127,10 +140,9 @@ $(document).ready(function () {
             },
             loop: true,
             center: true,
+            autoplay: false,
             dots: true,
-            nav: true,
-            navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            autoplay: true
+            nav: true
         });
     }
 
@@ -165,9 +177,9 @@ $(document).ready(function () {
                     // Масштаб, тут все просто
                     zoom: 14
                 });
-            
+
                 var myGeoObjects = [];
-            
+
                 // Наша метка, указываем коордианты
                 myGeoObjects = new ymaps.Placemark([54.582000, 39.766990],{
                     balloonContentBody: 'Текст в балуне',
@@ -181,16 +193,16 @@ $(document).ready(function () {
                     // её «ножки» (точки привязки).
                     iconImageOffset: [-35, -35]
                 });
-            
+
                 var clusterer = new ymaps.Clusterer({
                     clusterDisableClickZoom: false,
                     clusterOpenBalloonOnClick: false,
                 });
-            
+
                 clusterer.add(myGeoObjects);
                 myMap.geoObjects.add(clusterer);
                 // Отлючаем возможность изменения масштаба
-            
+
             }
     }
 

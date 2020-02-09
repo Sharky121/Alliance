@@ -35,9 +35,12 @@
 
 <main>
     <div class="container">
-        <ul class="breadcrumbs-list">
+        <ul class="breadcrumbs-list products-breadcrumbs">
             <li class="breadcrumbs-list__item">
                 <a class="breadcrumbs-list__link" href="index.php">Главная</a>
+            </li>
+            <li class="breadcrumbs-list__item">
+              <a class="breadcrumbs-list__link" href="?view=products">Продукция</a>
             </li>
             <li class="breadcrumbs-list__item">
                 <a class="breadcrumbs-list__link" href="?view=catalog&cat=<?= $category_id ?>"><?= $category_title; ?></a>
@@ -88,6 +91,8 @@
         <?php endif; ?>
         <p class="small-text">*Мы оставляем за собой право вносить изменения без предварительного уведомления.</p>
 
+        <h3 class="sub-title">Видео</h3>
+
         <div class="owl-carousel owl-theme owl-carousel--works product__owl-carousel">
             <?php foreach ($video_name as $key => $val): ?>
               <div class="item">
@@ -101,8 +106,8 @@
         </div>
 
 
-        <h3>Остались вопросы?</h3>
-        <p>Звоните по телефону +7 (800) 222-48-13 (звонок бесплатный), +7 (4912) 70-19-81 или заполните форму обратной связи</p>
+        <h3 class="sub-title">Остались вопросы?</h3>
+        <p class="grey-text">Звоните по телефону +7 (800) 222-48-13 (звонок бесплатный), +7 (4912) 70-19-81 или заполните форму обратной связи</p>
 
         <form class="question-form">
           <input name="product_title" type="hidden" value="<?= $product_title; ?>">
