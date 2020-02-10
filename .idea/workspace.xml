@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/pages/news-page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alliance.sql" beforeDir="false" afterPath="$PROJECT_DIR$/alliance.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts/data.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parts/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/news.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +49,16 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/pages" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views/pages" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/parts" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/views/pages" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -128,7 +133,10 @@
       <workItem from="1580126266162" duration="1242000" />
       <workItem from="1580128122771" duration="9369000" />
       <workItem from="1580200294257" duration="604000" />
-      <workItem from="1581274499932" duration="14838000" />
+      <workItem from="1581274499932" duration="15599000" />
+      <workItem from="1581320051862" duration="345000" />
+      <workItem from="1581344457141" duration="1545000" />
+      <workItem from="1581346448637" duration="2823000" />
     </task>
     <servers />
   </component>
@@ -144,11 +152,11 @@
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="584" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578829177017" />
-    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1580112935612">
+    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1581346001138">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="2656" y="290" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579785582423" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1580112935612" />
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1581346001138" />
     <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl/59.27.1861.1053@59.27.1861.1053" timestamp="1578440796127" />
     <state x="785" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1578438038166">
       <screen x="59" y="27" width="1861" height="1053" />
@@ -172,11 +180,6 @@
           <url>file://$PROJECT_DIR$/views/pages/video.php</url>
           <line>4</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/parts/data.php</url>
-          <line>77</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

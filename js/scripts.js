@@ -172,27 +172,36 @@ $(document).ready(function () {
 
             function init () {
                 var myMap = new ymaps.Map("map", {
-                    // Центр карты, указываем коордианты
                     center:[54.582000, 39.766990],
-                    // Масштаб, тут все просто
                     zoom: 14
                 });
 
                 var myGeoObjects = [];
 
                 // Наша метка, указываем коордианты
-                myGeoObjects = new ymaps.Placemark([54.582000, 39.766990],{
-                    balloonContentBody: 'Текст в балуне',
-                },{
-                    iconLayout: 'default#image',
-                    // Путь до нашей картинки
-                    iconImageHref: '/img/placemarker.png',
-                    // Размер по ширине и высоте
-                    iconImageSize: [100, 77],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её «ножки» (точки привязки).
-                    iconImageOffset: [-35, -35]
+                myGeoObjects = new ymaps.Placemark([54.582000, 39.766990],
+                    {
+                        balloonContentBody: 'Текст в балуне',
+                    },
+
+                    {
+                        iconLayout: 'default#image',
+                        iconImageHref: '/img/placemarker.png',
+                        iconImageSize: [100, 77],
+                        iconImageOffset: [-35, -35]
                 });
+
+                myGeoObjectsOffice = new ymaps.Placemark([54.582000, 39.766990],
+                    {
+                        balloonContentBody: 'Текст в балуне',
+                    },
+
+                    {
+                        iconLayout: 'default#image',
+                        iconImageHref: '/img/placemarker.png',
+                        iconImageSize: [100, 77],
+                        iconImageOffset: [-15, -15]
+                    });
 
                 var clusterer = new ymaps.Clusterer({
                     clusterDisableClickZoom: false,
@@ -201,7 +210,9 @@ $(document).ready(function () {
 
                 clusterer.add(myGeoObjects);
                 myMap.geoObjects.add(clusterer);
-                // Отлючаем возможность изменения масштаба
+
+                clusterer.add(myGeoObjectsOffice);
+                myMap.geoObjects.add(clusterer);
 
             }
     }

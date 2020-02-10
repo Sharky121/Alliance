@@ -37,7 +37,10 @@
 
                 <ul class="contacts-list">
                     <li class="contacts-list__item">
-                        <a class="contacts-list__link" href="">г. Рязань, 198км Окружной автодороги, 6</a>
+                        <a class="contacts-list__link" href="">г. Рязань, 198км Окружной автодороги, 6 (склад)</a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link" href="">г. Рязань, ул. Петрова, 10 (офис)</a>
                     </li>
                     <li class="contacts-list__item">
                         <a class="contacts-list__link" href="tel:+78002224813">+7 (800) 222-48-13</a>
