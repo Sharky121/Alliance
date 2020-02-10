@@ -8,6 +8,9 @@
             <li class="breadcrumbs-list__item">
                 <a class="breadcrumbs-list__link" href="index.php">Главная</a>
             </li>
+            <li class="breadcrumbs-list__item">
+                <a class="breadcrumbs-list__link" href="?view=products">Продукция</a>
+            </li>
             <li class="breadcrumbs-list__item breadcrumbs-list__item--active">
                 <a class="breadcrumbs-list__link"><?php getCategoryName($category_list, $category_url); ?></a>
             </li>

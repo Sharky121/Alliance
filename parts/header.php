@@ -11,7 +11,7 @@
 
 ?>
 
-<header class="main-header">
+<header class="main-header <?php if (isset($_GET['view'])): ?>main-header--green<?php else: ?>js-main-header<?php endif; ?>">
     <div class="container">
         <nav class="main-nav">
             <div class="main-nav__wrapper">
@@ -51,6 +51,14 @@
                 </li>
 
                 <li class="main-menu__item">
+                  <a class="main-menu__link" href="?view=pressform">Пресс-формы</a>
+                </li>
+<!---->
+<!--                <li class="main-menu__item">-->
+<!--                  <a class="main-menu__link" id="demo02" href="#modal03">Запасные части</a>-->
+<!--                </li>-->
+
+                <li class="main-menu__item">
                     <a class="main-menu__link" href="?view=service">Услуги</a>
                 </li>
 
@@ -59,11 +67,11 @@
                 </li>
 
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="?view=video" >Наши работы</a>
+                    <a class="main-menu__link" href="?view=video">Наши работы</a>
                 </li>
 
                 <li class="main-menu__item">
-                    <a class="main-menu__link" href="?view=contacts" >Контакты</a>
+                    <a class="main-menu__link" href="/#section-map" >Контакты</a>
                 </li>
             </ul>
 

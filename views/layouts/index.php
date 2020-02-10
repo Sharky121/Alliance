@@ -8,6 +8,7 @@
     <?php include ($_SERVER['DOCUMENT_ROOT'].'/views/pages/'.$view.'.php'); ?>
 
     <?php include ('parts/footer.php') ?>
+    <?php include ('parts/modal.php') ?>
   </body>
 
 </html>
