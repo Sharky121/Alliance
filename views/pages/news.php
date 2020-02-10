@@ -6,10 +6,54 @@
 
   foreach ($news_list as $key => $val) {
       $news_link =  $val['id'];
+      $news_date = $val['created_at'];
   }
 
-  function date_post($date) {
-    return $publish_date = strtotime($date);
+  $day = date("d", strtotime($news_date));
+
+
+  function get_month($date) {
+    $date = date("m", strtotime($date));
+
+    switch ($date) {
+    case '01':
+        return 'янв';
+        break;
+    case '02':
+        return 'фев';
+        break;
+    case '03':
+        return 'мар';
+        break;
+    case '04':
+        return 'апр';
+        break;
+    case '05':
+        return 'май';
+        break;
+    case '06':
+        return 'июн';
+        break;
+    case '07':
+        return 'июл';
+        break;
+    case '08':
+        return 'авг';
+        break;
+    case '09':
+        return 'сен';
+        break;
+    case '10':
+        return 'окт';
+        break;
+    case '11':
+        return 'ноя';
+        break;
+    case '12':
+        return 'дек';
+        break;
+    }
+
   }
 
   function cutText(string $text, int $id, int $num_symbols = 120): string {
@@ -29,10 +73,10 @@
     $new_text = implode(" ", $new_text_array);
 
     if ($current_length <= $num_symbols) {
-        return "<p>$new_text</p>";
+        return "<p class='news__text'>$new_text</p>";
     }
 
-    return "<p>$new_text...</p><a class='news__more-link' href='?view=news-page&id=$id'>Читать далее</a>";
+    return "<p class='news__text'>$new_text...<a class='news__more-link' href='?view=news-page&id=$id'> читать далее</a></p>";
 }
 
 ?>
@@ -54,7 +98,7 @@
             <?php foreach ($news_list as $key => $val): ?>
                 <li class="news-list__item">
                     <div class="news-list__inner">
-                        <div class="news__date">10 <br> фев</div>
+                        <div class="news__date"><?= $day; ?><br><?= get_month($news_date); ?></div>
 
                         <h3 class="news__title">
                             <a href="?view=news-page&id=<?= $val['id'] ?>" class="news__link"><?= $val['title']; ?></a>

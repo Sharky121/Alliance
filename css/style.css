@@ -64,7 +64,11 @@ body {
   color: #000000;
 }
 
-a { text-decoration: none; }
+a { 
+  color: #777777;;
+
+  text-decoration: none; 
+}
 
 img {
   max-width: 100%;
@@ -872,6 +876,13 @@ input { box-sizing: border-box; }
 
 .news__link { color: #000000; }
 
+.news__more-link { color: #888888; }
+
+.news__more-link:hover,
+.news__more-link:focus { 
+  color: #4db6ac; 
+}
+
 .news__meta {
   margin-top: 0;
   margin-bottom: 10px;
@@ -887,8 +898,12 @@ input { box-sizing: border-box; }
 .news__text {
   margin: 0;
 
-  overflow: hidden;
-  max-height: 42px;
+  font-size: 14px;
+}
+
+.news__content {
+  margin-bottom: 40px;
+
   font-size: 14px;
 }
 
@@ -911,6 +926,13 @@ input { box-sizing: border-box; }
 }
 
 .page-news-list .news-list__item { width: 100%; }
+
+.news-item__date {
+  margin-bottom: 10px;
+
+  font: 14px;
+  color: #888888;
+}
 
 /* ==========================================================================
    SECTION ABOUT
