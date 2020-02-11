@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/more.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/news/9.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/IP.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Messelogo_Interplastica_frei_a86d7198cf28a004f9f011531fe97e68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/План Экспоцентр_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +142,7 @@
       <workItem from="1581344457141" duration="1545000" />
       <workItem from="1581346448637" duration="2823000" />
       <workItem from="1581398098500" duration="8914000" />
-      <workItem from="1581410389896" duration="5927000" />
+      <workItem from="1581410389896" duration="6628000" />
     </task>
     <servers />
   </component>
