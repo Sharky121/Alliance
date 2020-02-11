@@ -168,52 +168,53 @@ $(document).ready(function () {
     });
 
     if($('#map').length) {
-            ymaps.ready(init);
+        ymaps.ready(init);
+        function init() {
 
-            function init () {
-                var myMap = new ymaps.Map("map", {
-                    center:[54.582000, 39.766990],
-                    zoom: 14
-                });
+            var myMap = new ymaps.Map("map", {
+                center: [54.582000, 39.766990],
+                zoom: 11,
+            });
 
-                var myGeoObjects = [];
+            // Собственное изображение для метки с контентом
+            var placemark1 = new ymaps.Placemark([54.582000, 39.766990], {
+                hintContent: 'Собственный значок метки с контентом',
+            }, {
+                // Опции.
 
-                // Наша метка, указываем коордианты
-                myGeoObjects = new ymaps.Placemark([54.582000, 39.766990],
-                    {
-                        balloonContentBody: 'Текст в балуне',
-                    },
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
 
-                    {
-                        iconLayout: 'default#image',
-                        iconImageHref: '/img/placemarker.png',
-                        iconImageSize: [100, 77],
-                        iconImageOffset: [-35, -35]
-                });
+                // Своё изображение иконки метки.
+                iconImageHref: '/img/placemarker.png',
+                // Размеры метки.
+                iconImageSize: [100, 77],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-35, -35]
+            });
 
-                myGeoObjectsOffice = new ymaps.Placemark([54.582000, 39.766990],
-                    {
-                        balloonContentBody: 'Текст в балуне',
-                    },
+            myMap.geoObjects.add(placemark1);
 
-                    {
-                        iconLayout: 'default#image',
-                        iconImageHref: '/img/placemarker.png',
-                        iconImageSize: [100, 77],
-                        iconImageOffset: [-15, -15]
-                    });
+            // Собственное изображение для метки с контентом
+            var placemark2 = new ymaps.Placemark([54.634386, 39.742331], {
+                hintContent: 'Собственный значок метки с контентом',
+            }, {
+                // Опции.
 
-                var clusterer = new ymaps.Clusterer({
-                    clusterDisableClickZoom: false,
-                    clusterOpenBalloonOnClick: false,
-                });
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
 
-                clusterer.add(myGeoObjects);
-                myMap.geoObjects.add(clusterer);
+                // Своё изображение иконки метки.
+                iconImageHref: '/img/placemarker.png',
+                // Размеры метки.
+                iconImageSize: [100, 77],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-35, -35]
+            });
 
-                clusterer.add(myGeoObjectsOffice);
-                myMap.geoObjects.add(clusterer);
-
-            }
+            myMap.geoObjects.add(placemark2);
+        }
     }
 });
