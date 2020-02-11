@@ -1,6 +1,4 @@
 <?php
-  include ('parts/data.php');
-
   if (isset($_GET['cat'])) {
       $category_url = $_GET['cat'];
   }

@@ -1,3 +1,18 @@
+<?php
+
+$news_sql = "SELECT id, title, author, created_at, content, small_content FROM news ORDER BY id ASC LIMIT 4";
+$news_list_res = mysqli_query($link,  $news_sql);
+$news_list = mysqli_fetch_all($news_list_res, MYSQLI_ASSOC);
+
+foreach ($news_list as $key => $val) {
+    $news_link =  $val['id'];
+    $news_date = $val['created_at'];
+}
+
+$day = date("d", strtotime($news_date));
+
+?>
+
 <main>
     <h1 class="visually-hidden">Альянс-пром</h1>
 
@@ -155,71 +170,26 @@
 
             <div class="section-news__wrapper">
                 <ul class="news-list">
-                    <li class="news-list__item">
+                    <?php foreach ($news_list as $key => $val): ?>
+                        <li class="news-list__item">
                         <div class="news-list__inner">
-                            <div class="news__date">10 <br> дек</div>
+                            <div class="news__date"><?= $day; ?><br><?= get_month($news_date); ?></div>
 
                             <h3 class="news__title">
-                                <a href="" class="news__link">interplastica 2020: мощный старт нового проекта Recycling Solutions</a>
+                                <a href="?view=news-page&id=<?= $val['id'] ?>" class="news__link"><?= cutText($val['title'], $val['id'], 40, 'title'); ?></a>
                             </h3>
+
                             <p class="news__meta">
                                 <svg class="news__img" viewBox="0 0 482.9 482.9">
                                     <use xlink:href="#avatar"></use>
                                 </svg>
-                                Источник: plastinfo.ru
+                                <?= $val['author']; ?>
                             </p>
-                            <p class="news__text">Большое число потенциальных участников и экспонентов, мощный старт нового проекта «Recycling Solutions», четвертый сезон специального раздела «3D fab + print», деловая программа «Polymer Plaza», освещающая концепции устойчивого развития, — это и многое другое ждёт посетителей на выставке interplastica 2020
-                            </p>
-                        </div>
-                    </li>
-                    <li class="news-list__item">
-                        <div class="news-list__inner">
-                            <div class="news__date">06 <br> дек</div>
 
-                            <h3 class="news__title">
-                                <a href="" class="news__link">Solvay расширяет производство поливинилиденфторида</a>
-                            </h3>
-                            <p class="news__meta">
-                                <svg class="news__img" viewBox="0 0 482.9 482.9">
-                                    <use xlink:href="#avatar"></use>
-                                </svg>
-                                Источник: plastinfo.ru
-                            </p>
-                            <p class="news__text">Предполагается, что модернизация производства завершится к первой половине 2022 года, однако подробностей этого проекта компания не разглашает</p>
+                            <p class="news__text"><?= cutText($val['small_content'], $val['id'], 90, 'text'); ?></p>
                         </div>
                     </li>
-                    <li class="news-list__item">
-                        <div class="news-list__inner">
-                            <div class="news__date">03 <br> дек</div>
-
-                            <h3 class="news__title">
-                                <a href="" class="news__link">«Техноплекс» стал членом ассоциации производителей экструзионного пенополистирола</a>
-                            </h3>
-                            <p class="news__meta">
-                                <svg class="news__img" viewBox="0 0 482.9 482.9">
-                                    <use xlink:href="#avatar"></use>
-                                </svg>
-                                Источник: plastinfo.ru
-                            </p>
-                            <p class="news__text">Деятельность РАПЭКС сконцентрирована на поддержке рынка экструзионного пенополистирола в России</p>
-                        </div>
-                    </li>
-                    <li class="news-list__item">
-                        <div class="news-list__inner">
-                            <div class="news__date">27 <br> ноя</div>
-
-                            <h3 class="news__title">
-                                <a href="" class="news__link">Авиакомпания SAS на своих рейсах расширит использование экологичной упаковки</a>
-                            </h3>
-                            <p class="news__meta">
-                                <svg class="news__img" viewBox="0 0 482.9 482.9">
-                                    <use xlink:href="#avatar"></use>
-                                </svg>
-                                Источник: plastinfo.ru
-                            </p>
-                            <p class="news__text">Полный отказ от полимерной упаковки на бортах авиакомпании намечен к 2030 году, что позволит сэкономить до 51 тонны использования пластмасс ежегодно</p>
-                        </div>
-                    </li>
+                    <?php endforeach; ?>
                 </ul>
 
                 <a class="btn" href="?view=news">Все новости</a>

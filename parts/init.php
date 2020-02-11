@@ -7,7 +7,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     $link = @mysqli_connect(
         'localhost',
         'root',
-        '123456',
+        '12345678',
         'alliance'
     ) or die('Ошибка: Невозможно подключиться к MySQL '. mysqli_connect_error());
 

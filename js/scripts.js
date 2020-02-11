@@ -216,18 +216,4 @@ $(document).ready(function () {
 
             }
     }
-
-    var array = [9, 12, 4, 5, 7, 45, 67];
-    var minValue = array[0];
-
-    for (var j = 2; j < array.length; j++) {
-        if (array[j] < minValue) {
-            minValue = array[j];
-        } 
-    }
-
-        console.log(minValue);
-
-
-
 });
