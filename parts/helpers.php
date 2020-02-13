@@ -71,3 +71,11 @@ function cutText(string $text, int $id, int $num_symbols, string $mode): string 
         return "<p class='news__text'>$new_text...<a class='news__more-link' href='?view=news-page&id=$id'> читать далее</a></p>";
     }
 }
+
+function getCategoryName($category_list, $id) {
+    foreach ($category_list as $key => $val) {
+        if ($id == $val['id']) {
+            echo $val['title'];
+        }
+    };
+}

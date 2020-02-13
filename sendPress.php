@@ -27,7 +27,7 @@ $clientName=trim($_POST["name"]);
 $phone=trim($_POST["phone"]);
 $email=trim($_POST["email"]);
 
-$to      = 'Sharky121@mail.ru';
+$to      = 'Sharky121@mail.ru, sale5@aliance-prom.ru, nastya@aliance-prom.ru';
 $subject = 'Заявка на расчет пресс-формы';
 
 $message =  'Наименование пресс-форм: ' . $name . "\r\n" .

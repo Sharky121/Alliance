@@ -33,48 +33,111 @@ $day = date("d", strtotime($news_date));
 
             <ul class="box-list features">
                 <li class="box-list__item">
+                  <a href="?view=catalog&cat=1">
                     <div class="box-list__img">
-                        <img src="/img/recycle-sign.svg" alt="">
+                      <img src="/img/recycle-sign.svg" alt="">
                     </div>
+
                     <h3 class="box-list__title">Горизонтальные и вертикальные термопластавтоматы</h3>
-                    <p class="box-list__text">Сотрудничество и огромный опыт работы с ведущими заводами - производителями термопластавтоматов, позволяет нашей компании занимать лидирующие позиции
-                        на рынке оборудования для переработки пластмасс, а нашим клиентам добиваться поставленной задачи</p>
+
+                    <p class="box-list__text">Оборудование под маркой Titan и Сhrome для литья пластмасс и серии Lanson-Alliance для литья цветных металлов под давлением</p>
+                  </a>
                 </li>
+
                 <li class="box-list__item">
-                    <div class="box-list__img">
-                        <img src="/img/computer.svg" alt="">
-                    </div>
-                    <h3 class="box-list__title">Возможность построения централизованой системы управления производством</h3>
-                    <p class="box-list__text">Термопластавтоматы объединяются в единую сеть, что позволяет диагностировать и управлять работой оборудования с помощью сетей Ethernet</p>
-                </li>
-                <li class="box-list__item">
+                  <a href="?view=pressform">
                     <div class="box-list__img">
                         <img src="/img/power-press.svg" alt="">
                     </div>
+
                     <h3 class="box-list__title">Пресс-формы</h3>
-                    <p class="box-list__text">Открытие производственного участка под ключ и реализация Ваши проектов - наша работ! Технические специалисты готовы оказать помощь при конструировании и моделировании пресс-форм, а анализ проливаемости
-                        позволит добиться требуемого качества и высокой точности конечного изделия</p>
+
+                    <p class="box-list__text">Открытие производственного участка под ключ и реализация Ваши проектов! Конструирование и моделировании пресс-форм</p>
+                  </a>
                 </li>
+
                 <li class="box-list__item">
+                  <a href="?view=catalog&cat=3">
                     <div class="box-list__img">
                         <img src="/img/gears.svg" alt="">
                     </div>
+
                     <h3 class="box-list__title">Периферийное оборудование</h3>
+
                     <p class="box-list__text">Автоматизация и подготовка производства ключевой момент для успешного ведения бизнеса и сокращения затрат времени</p>
+                  </a>
                 </li>
+
                 <li class="box-list__item">
+                  <a>
                     <div class="box-list__img">
                         <img src="/img/waste-plastic.svg" alt="">
                     </div>
+
                     <h3 class="box-list__title">Выдувное оборудование</h3>
+
                     <p class="box-list__text">Мы предлагаем Вам готовые решения для производства пластиковой тары различного назначения</p>
+                  </a>
                 </li>
+
                 <li class="box-list__item">
+                  <a>
+                    <div class="box-list__img">
+                      <img src="/img/computer.svg" alt="">
+                    </div>
+
+                    <h3 class="box-list__title">Построение системы управления производством</h3>
+
+                    <p class="box-list__text">Единая сеть, что позволяет диагностировать и управлять работой оборудования с помощью сетей Ethernet</p>
+                  </a>
+                </li>
+
+                <li class="box-list__item">
+                  <a>
                     <div class="box-list__img">
                         <img src="/img/print.svg" alt="">
                     </div>
+
                     <h3 class="box-list__title">Экструзионное оборудование</h3>
-                    <p class="box-list__text">Оргнанизация бизнеса в сфере экструзии перспектвное и рентабельное направление. Выбор надежного поставщика одна из главных задач в ведении данного бизнеса</p>
+
+                    <p class="box-list__text">Организация бизнеса в сфере экструзии перспективное и рентабельное направление. Выбор надежного поставщика одна из главных задач в ведении данного бизнеса</p>
+                  </a>
+                </li>
+
+                <li class="box-list__item">
+                  <a href="?view=catalog&cat=2">
+                    <div class="box-list__img">
+                      <img src="/img/aluminum.svg" alt="Литье цветных металлов и сплавов под давлением">
+                    </div>
+
+                    <h3 class="box-list__title">Литье цветных металлов и сплавов под давлением</h3>
+
+                    <p class="box-list__text">Альянс-Пром эксклюзивный представитель крупнейшего мирового производителя оборудования для литья под давлением цветных металлов и сплавов</p>
+                  </a>
+                </li>
+
+                <li class="box-list__item">
+                  <a>
+                    <div class="box-list__img">
+                      <img src="/img/medal.svg" alt="Цена - качество">
+                    </div>
+
+                    <h3 class="box-list__title">Цена - качество</h3>
+
+                    <p class="box-list__text">Предлагаем наиболее оптимальную линейку оборудования по соотношению цена-качество, которую оценили не только ведущие российские производители, но и такие мировые гиганты как Toyota  Motor Corporation</p>
+                  </a>
+                </li>
+
+                <li class="box-list__item">
+                  <a>
+                    <div class="box-list__img">
+                      <img src="/img/iso.svg" alt="">
+                    </div>
+
+                    <h3 class="box-list__title">Сертифицикация и стандарты</h3>
+
+                    <p class="box-list__text">Машины произведены с учетом всех основных требований российских производителей и сертифицированы ISO 9001 и ISO14001, а так же имеют сертификат европейского стандарта качества</p>
+                  </a>
                 </li>
             </ul>
         </div>

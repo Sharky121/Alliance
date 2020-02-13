@@ -29,7 +29,7 @@
         $text = '';
     }
 
-	$to      = 'Sharky121@mail.ru';
+	$to      = 'Sharky121@mail.ru, sale5@aliance-prom.ru, nastya@aliance-prom.ru';
 	$subject = 'Заявка на обратный звонок';
 
 	$message =

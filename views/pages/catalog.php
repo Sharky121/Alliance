@@ -1,3 +1,9 @@
+<?php
+    $catalog_sql = "SELECT id, title,image_path FROM products WHERE category_id = '$category_url'";
+    $catalog_list_res = mysqli_query($link, $catalog_sql);
+    $catalog_list = mysqli_fetch_all($catalog_list_res, MYSQLI_ASSOC);
+?>
+
 <main>
     <div class="container">
         <h1 class="main-title">
@@ -16,6 +22,13 @@
             </li>
         </ul>
 
+        <?php if ($category_url == 2): ?>
+          <p class="text-products quote">Альянс-Пром эксклюзивный представитель крупнейшего мирового производителя оборудования для литья под давлением цветных металлов и сплавов.
+          Предлагаем наиболее оптимальную линейку оборудования по соотношению цена-качество, которую оценили не только ведущие российские производители, но и такие мировые гиганты как <b>Toyota Motor Corporation.</b> </p>
+          <p class="text-products">Машины произведены с учетом всех основных требований российских производителей и сертифицированы <b>ISO 9001</b> и <b>ISO14001</b>, а так же имеют <b>сертификат европейского стандарта качества.</b>
+          </p>
+        <? endif; ?>
+
         <!--        <ul class="category-list">-->
         <!--          --><?php //foreach ($cat as $key => $val): ?>
         <!--            <li class="category-list__item">--><?//= $val['title']; ?><!--</li>-->
@@ -23,12 +36,6 @@
         <!--        </ul>-->
 
         <ul class="product-list">
-            <?php
-                $catalog_sql = "SELECT id, title,image_path FROM products WHERE category_id = '$category_url'";
-                $catalog_list_res = mysqli_query($link, $catalog_sql);
-                $catalog_list = mysqli_fetch_all($catalog_list_res, MYSQLI_ASSOC);
-            ?>
-
             <?php foreach ($catalog_list as $key => $val): ?>
                 <li class="product-list__item peripheral">
                     <a class="product-list__link" href="?view=product&id=<?= $val['id'] ?>">

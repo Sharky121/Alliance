@@ -203,6 +203,12 @@ input { box-sizing: border-box; }
 
 .grey-text { color: #777777; }
 
+.quote {
+  padding: 2px 0 2px 15px;
+
+  border-left: 3px solid #4db6ac;
+}
+
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
@@ -1304,6 +1310,10 @@ input { box-sizing: border-box; }
 
 /* product-list
    ========================================================================== */
+.text-products {
+  font-size: 14px;
+}
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
