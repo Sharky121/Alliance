@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/demo-6-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/head.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +137,8 @@
       <workItem from="1581517226889" duration="437000" />
       <workItem from="1581580874482" duration="7313000" />
       <workItem from="1581610447373" duration="202000" />
+      <workItem from="1581665119934" duration="599000" />
+      <workItem from="1581666580424" duration="418000" />
     </task>
     <servers />
   </component>
@@ -154,11 +154,11 @@
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="584" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578829177017" />
-    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1581608398575">
+    <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl" timestamp="1581666996000">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="2656" y="290" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1579785582423" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1581608398575" />
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1581666996000" />
     <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl/59.27.1861.1053@59.27.1861.1053" timestamp="1578440796127" />
     <state x="785" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1578438038166">
       <screen x="59" y="27" width="1861" height="1053" />
