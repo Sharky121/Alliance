@@ -29,11 +29,14 @@
             <li class="breadcrumbs-list__item">
                 <a class="breadcrumbs-list__link" href="?view=news">Новости</a>
             </li>
+            <li class="breadcrumbs-list__item breadcrumbs-list__item--active">
+              <a class="breadcrumbs-list__link"><time><?= $news_date; ?></time></a>
+            </li>
         </ul>
 
         <h2 class="news__title"><?= $news_title; ?></h2>
 
-        <p class="grey-text small-text">Дата: <date><?= $news_date; ?></date></p>
+        <p class="grey-text small-text">Дата: <time><?= $news_date; ?></time></p>
 
         <p class="grey-text small-text">Источник:
             <a href="<?= $news_author_link; ?>">
