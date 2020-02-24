@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title><?php echo $title ?></title>
-    <meta name="description" content="Free Web tutorials">
+    <meta name="description" content="Альянс-пром - поставка оборудование для литья пластмасс (ТПА), литья под давлением цветных металлов и сплавов, периферийного оборудования, конструирование и поставка пресс-форм">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
+    <meta name="yandex-verification" content="07f20a699ae1dd9b"/>
 
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
