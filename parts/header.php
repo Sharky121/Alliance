@@ -1,14 +1,3 @@
-<?php
-  if (isset($_GET['cat'])) {
-      $category_url = $_GET['cat'];
-  }
-
-  $category_sql = 'SELECT id, title FROM category ORDER BY id ASC';
-  $category_list_res = mysqli_query($link, $category_sql);
-  $category_list = mysqli_fetch_all($category_list_res, MYSQLI_ASSOC);
-
-?>
-
 <header class="main-header <?php if (isset($_GET['view'])): ?>main-header--green<?php else: ?>js-main-header<?php endif; ?>">
     <div class="container">
         <nav class="main-nav">
@@ -74,10 +63,10 @@
             </ul>
 
             <ul class="sub-menu">
-                <?php foreach ($category_list as $key => $val): ?>
-                <li class="sub-menu__item">
-                    <a href="?view=catalog&cat=<?= $val['id'] ?>" class="sub-menu__link"><?= $val['title']; ?></a>
-                </li>
+                <?php foreach ($categories as $val): ?>
+                    <li class="sub-menu__item">
+                        <a href="?view=catalog&cat=<?= $val['id'] ?>" class="sub-menu__link"><?= $val['title']; ?></a>
+                    </li>
                 <?php endforeach; ?>
             </ul>
 

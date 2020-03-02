@@ -1,11 +1,3 @@
-<?php
-
-    $category_sql = "SELECT id, title, image_path FROM category";
-    $category_list_res = mysqli_query($link,  $category_sql);
-    $category_list = mysqli_fetch_all($category_list_res, MYSQLI_ASSOC);
-
-?>
-
 <main>
     <div class="container">
         <h1 class="main-title">Продукция</h1>
@@ -20,7 +12,7 @@
         </ul>
 
         <ul class="product-list">
-          <?php foreach ($category_list as $key => $val): ?>
+          <?php foreach ($categories as $val): ?>
             <li class="product-list__item product-list__item--category">
               <a class="product-list__link" href="?view=catalog&cat=<?= $val['id'] ?>">
                 <div class="product-list__box">
