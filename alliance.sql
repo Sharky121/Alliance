@@ -7,7 +7,9 @@ USE alliance;
 CREATE TABLE category (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(64) NOT NULL UNIQUE,
-  image_path VARCHAR(255)
+  image_path VARCHAR(255),
+  seo_title VARCHAR(255),
+  seo_description VARCHAR(255)
 );
 
 
@@ -15,7 +17,9 @@ CREATE TABLE video (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255) NOT NULL,
   video_url VARCHAR(255),
-  category_id INT NOT NULL
+  category_id INT NOT NULL,
+  seo_title VARCHAR(255),
+  seo_description VARCHAR(255)
 );
 
 CREATE TABLE products (
@@ -25,7 +29,9 @@ CREATE TABLE products (
   small_desc TEXT,
   content LONGTEXT,
   image_path VARCHAR(255),
-  big_image_path VARCHAR(255)
+  big_image_path VARCHAR(255),
+  seo_title VARCHAR(255),
+  seo_description VARCHAR(255)
 );
 
 CREATE TABLE news (
@@ -35,7 +41,9 @@ CREATE TABLE news (
   author VARCHAR(128) NOT NULL,
   author_link VARCHAR(128) NOT NULL,
   small_content LONGTEXT,
-  content LONGTEXT
+  content LONGTEXT,
+  seo_title VARCHAR(255),
+  seo_description VARCHAR(255)
 );
 
 -- ДОБАВЛЕНИЕ КАТЕГОРИЙ
