@@ -4,6 +4,14 @@ DEFAULT CHARACTER SET utf8
 DEFAULT COLLATE utf8_general_ci;
 USE alliance;
 
+CREATE TABLE pages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(64) NOT NULL UNIQUE,
+  content LONGTEXT,
+  seo_title VARCHAR(255),
+  seo_description VARCHAR(255)
+);
+
 CREATE TABLE category (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(64) NOT NULL UNIQUE,
@@ -45,6 +53,11 @@ CREATE TABLE news (
   seo_title VARCHAR(255),
   seo_description VARCHAR(255)
 );
+-- ДОБАВЛЕНИЕ СТРАНИЦ
+--
+INSERT INTO pages SET title = 'Контакты';
+INSERT INTO pages SET title = 'Запасные части';
+INSERT INTO pages SET title = 'Биоразлагаемое сырье';
 
 -- ДОБАВЛЕНИЕ КАТЕГОРИЙ
 --
