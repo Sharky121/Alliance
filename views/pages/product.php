@@ -1,12 +1,12 @@
 <?php
-    foreach ($product_info as $val) {
-        $product_title =  $val['title'];
-        $category_id = $val['cat_id'];
-        $category_title = $val['cat_title'];
-        $small_desc = $val['small_desc'];
-        $content = $val['content'];
-        $big_image_path = $val['big_image_path'];
-        $image_path = $val['image_path'];
+    foreach ($data as $product) {
+        $product_title =  $product['title'];
+        $category_id = $product['cat_id'];
+        $category_title = $product['cat_title'];
+        $small_desc = $product['small_desc'];
+        $content = $product['content'];
+        $big_image_path = $product['big_image_path'];
+        $image_path = $product['image_path'];
     };
 ?>
 
@@ -48,7 +48,7 @@
                     <?= $small_desc; ?>
                 </p>
             <?php endif; ?>
-            
+
             <div>
 <!--            <button class="btn">Скачать технические характеристики</button>-->
                 <button class="btn" id="demo01" href="#animatedModal">Узнать цену</button>
@@ -74,13 +74,13 @@
     <h3 class="sub-title">Видео наших работ</h3>
 
     <div class="owl-carousel owl-theme owl-carousel--works product__owl-carousel">
-        <?php foreach ($product_video as $val): ?>
+        <?php foreach ($data as $video): ?>
           <div class="item">
-            <lite-youtube class="video-list__box" videoid="<?=$val['video_url']; ?>" style="background-image: url('https://i.ytimg.com/vi/ogfYd705cRs/hqdefault.jpg');">
+            <lite-youtube class="video-list__box" videoid="<?= $video['video_url']; ?>" style="background-image: url('https://i.ytimg.com/vi/ogfYd705cRs/hqdefault.jpg');">
               <div class="lty-playbtn"></div>
             </lite-youtube>
 
-            <h4 class="video-list__title"><?= $val['video_title']; ?></h4>
+            <h4 class="video-list__title"><?= $video['video_title']; ?></h4>
           </div>
         <?php endforeach; ?>
     </div>

@@ -1,8 +1,8 @@
 <head>
     <meta charset="UTF-8">
-    <title><?=$seo_title;?></title>
+    <title><?= $seo_title; ?></title>
 
-    <meta name="description" content="<?=$seo_description;?>">
+    <meta name="description" content="<?= $seo_description; ?>">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="format-detection" content="telephone=no">

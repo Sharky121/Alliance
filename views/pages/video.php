@@ -12,13 +12,13 @@
     </ul>
 
     <ul class="video-list">
-        <?php foreach ($videos as $val): ?>
+        <?php foreach ($data as $video): ?>
           <li class="video-list__item">
-            <lite-youtube class="video-list__box" videoid="<?=$val['video_url']; ?>" style="background-image: url('https://i.ytimg.com/vi/ogfYd705cRs/hqdefault.jpg');">
+            <lite-youtube class="video-list__box" videoid="<?= $video['video_url']; ?>" style="background-image: url('https://i.ytimg.com/vi/ogfYd705cRs/hqdefault.jpg');">
               <div class="lty-playbtn"></div>
             </lite-youtube>
 
-            <h4 class="video-list__title"><?=$val['title']; ?></h4>
+            <h4 class="video-list__title"><?= $videol['title']; ?></h4>
           </li>
         <?php endforeach; ?>
     </ul>

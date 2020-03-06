@@ -1,6 +1,13 @@
+<?php
+
+$category_name = $data[0]['cat_title'];
+$category_id = $data[0]['category_id'];
+
+?>
+
 <div class="container">
     <h1 class="main-title">
-        <?php getCategoryName($catalog, $category_url); ?>
+        <?= $category_name ?>
     </h1>
 
     <ul class="breadcrumbs-list">
@@ -11,16 +18,16 @@
             <a class="breadcrumbs-list__link" href="?view=products">Продукция</a>
         </li>
         <li class="breadcrumbs-list__item breadcrumbs-list__item--active">
-            <a class="breadcrumbs-list__link"><?php getCategoryName($catalog, $category_url); ?></a>
+            <a class="breadcrumbs-list__link"><?= $category_name ?></a>
         </li>
     </ul>
 
-    <?php if ($category_url === '2'): ?>
+    <?php if ($category_id === '2'): ?>
         <p class="text-products quote">Альянс-Пром эксклюзивный представитель крупнейшего мирового производителя оборудования для литья под давлением цветных металлов и сплавов.
         Предлагаем наиболее оптимальную линейку оборудования по соотношению цена-качество, которую оценили не только ведущие российские производители, но и такие мировые гиганты как <b>Toyota Motor Corporation.</b> </p>
         <p class="text-products">Машины произведены с учетом всех основных требований российских производителей и сертифицированы <b>ISO 9001</b> и <b>ISO14001</b>, а так же имеют <b>сертификат европейского стандарта качества.</b>
         </p>
-    <?php elseif ($category_url == 3): ?>
+    <?php elseif ($category_id == '3'): ?>
         <p class="text-products quote">
         <b>Группа компаний «Альянс»</b> занимается поставкой на российский рынок качественного периферийного оборудования.
         Компании - производители, с которыми мы сотрудничаем, обеспечивают выпуск оборудования европейского класса надежности. Благодаря строгому контролю, осуществляемому на всех стадиях производства, поставляемое оборудование полностью отвечает мировым стандартам качества.
@@ -32,27 +39,17 @@
     <?php endif; ?>
 
     <div class="wrapper">
-        <div class=" catalog catalog-left-column">
-            <h3 class="catalog__title">Каталог продукции</h3>
 
-            <ul class="category-list">
-                <?php foreach ($categories as $val): ?>
-                    <li class="category__item">
-                        <a class="category__link" href="?view=catalog&cat=<?= $val['id'] ?>"><?= $val['title']; ?></a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
 
         <ul class="product-list catalog-right-column">
-            <?php foreach ($catalog as $val): ?>
-                <li class="product-list__item <?php if ($category_url === '3'): ?>peripheral<?php endif; ?>">
-                    <a class="product-list__link" href="?view=product&id=<?= $val['id'] ?>">
+            <?php foreach ($data as $category): ?>
+                <li class="product-list__item <?php if ($category_id === '3'): ?>peripheral<?php endif; ?>">
+                    <a class="product-list__link" href="?view=product&id=<?= $category['id'] ?>">
                         <div class="product-list__box">
-                            <img class="product-list__img" src="<?= $val['image_path']; ?>" alt="<?= $val['title']; ?>">
+                            <img class="product-list__img" src="<?= $category['image_path']; ?>" alt="<?= $category['title']; ?>">
                         </div>
 
-                        <h4 class="product-list__title"><?= $val['title']; ?></h4>
+                        <h4 class="product-list__title"><?= $category['title']; ?></h4>
                     </a>
                 </li>
             <?php endforeach; ?>

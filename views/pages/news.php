@@ -1,5 +1,9 @@
 <?php
-  foreach ($news as $key => $val) {
+/**
+ * @var array $data
+ */
+
+foreach ($data as $key => $val) {
       $news_link =  $val['id'];
       $news_date = $val['created_at'];
   }
@@ -20,23 +24,23 @@
     </ul>
 
     <ul class="news-list page-news-list">
-        <?php foreach ($news as $val): ?>
+        <?php foreach ($data as $news): ?>
             <li class="news-list__item">
                 <div class="news-list__inner">
                     <div class="news__date"><?= $day; ?><br><?= get_month($news_date); ?></div>
 
                     <h3 class="news__title">
-                        <a href="?view=news-page&id=<?= $val['id'] ?>" class="news__link"><?= $val['title']; ?></a>
+                        <a href="?view=news-page&id=<?= $news['id'] ?>" class="news__link"><?=  $news['title']; ?></a>
                     </h3>
 
                     <p class="news__meta">
                         <svg class="news__img" viewBox="0 0 482.9 482.9">
                             <use xlink:href="#avatar"></use>
                         </svg>
-                        Источник: <?= $val['author']; ?>
+                        Источник: <?= $news['author']; ?>
                     </p>
 
-                    <p class="news__text"><?= cutText($val['small_content'], $val['id'], 120, 'text'); ?></p>
+                    <p class="news__text"><?= cutText( $news['small_content'],  $news['id'], 120, 'text'); ?></p>
                 </div>
             </li>
         <?php endforeach; ?>

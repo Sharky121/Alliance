@@ -6,6 +6,7 @@
  * @param array $data Ассоциативный массив с данными для шаблона
  * @return string Итоговый HTML
  */
+
 function include_template($name, array $data = [])
 {
     $name = 'views/pages/' . $name;
@@ -17,6 +18,7 @@ function include_template($name, array $data = [])
 
     ob_start();
     extract($data);
+
     require $name;
 
     $result = ob_get_clean();
@@ -65,7 +67,6 @@ function get_month($date) {
             return 'дек';
             break;
     }
-
 }
 
 function cutText(string $text, int $id, int $num_symbols, string $mode): string {
@@ -94,12 +95,4 @@ function cutText(string $text, int $id, int $num_symbols, string $mode): string 
     if ($mode == 'text') {
         return "<p class='news__text'>$new_text...<a class='news__more-link' href='?view=news-page&id=$id'> читать далее</a></p>";
     }
-}
-
-function getCategoryName($category_list, $id) {
-    foreach ($category_list as $key => $val) {
-        if ($id == $val['id']) {
-            echo $val['title'];
-        }
-    };
 }

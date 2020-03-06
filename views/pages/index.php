@@ -1,6 +1,9 @@
 <?php
+/**
+ * @var array $data
+ */
 
-foreach ($news as $key => $val) {
+foreach ($data as $val) {
     $news_link =  $val['id'];
     $news_date = $val['created_at'];
 }
@@ -16,7 +19,7 @@ $day = date("d", strtotime($news_date));
         <h2 class="section-header__title">15 лет на рынке оборудования<br> по переработке пластмасс и цветных металлов</h2>
         <p class="section-header__text">Тщательный выбор поставщиков позволил нам подобрать для Вас оптимальную линейку оборудования по соотношению цена-качество</p>
         <a class="btn section-header__btn" href="?view=products">Наше оборудование</a>
-        <p class="section-header__subtitle">Официальный представитель Компании <b>NINGBO HAIXING MACHINERY MANUFACTURING CO., LTD</b> в России и СНГ</span>
+      <p class="section-header__subtitle">Официальный представитель Компании <b>NINGBO HAIXING MACHINERY MANUFACTURING CO., LTD</b> в России и СНГ</span></p>
     </div>
 </section>
 
@@ -229,24 +232,24 @@ $day = date("d", strtotime($news_date));
 
         <div class="section-news__wrapper">
             <ul class="news-list">
-                <?php foreach($news as $val): ?>
+                <?php foreach($data as $news_item): ?>
                     <li class="news-list__item">
                         <div class="news-list__inner">
-                        <div class="news__date"><?= $day; ?><br><?= get_month($news_date); ?></div>
+                            <div class="news__date"><?= $day; ?><br><?= get_month($news_date); ?></div>
 
-                        <h3 class="news__title">
-                            <a href="?view=news-page&id=<?= $val['id'] ?>" class="news__link"><?= cutText($val['title'], $val['id'], 40, 'title'); ?></a>
-                        </h3>
+                            <h3 class="news__title">
+                                <a href="?view=news-page&id=<?= $news_item['id'] ?>" class="news__link"><?= cutText($news_item['title'], $val['id'], 40, 'title'); ?></a>
+                            </h3>
 
-                        <p class="news__meta">
-                            <svg class="news__img" viewBox="0 0 482.9 482.9">
-                                <use xlink:href="#avatar"></use>
-                            </svg>
-                            <?= $val['author']; ?>
-                        </p>
+                            <p class="news__meta">
+                                <svg class="news__img" viewBox="0 0 482.9 482.9">
+                                    <use xlink:href="#avatar"></use>
+                                </svg>
+                                <?= $news_item['author']; ?>
+                            </p>
 
-                        <p class="news__text"><?= cutText($val['small_content'], $val['id'], 90, 'text'); ?></p>
-                    </div>
+                            <p class="news__text"><?= cutText($news_item['small_content'], $news_item['id'], 90, 'text'); ?></p>
+                        </div>
                     </li>
                 <?php endforeach; ?>
             </ul>
