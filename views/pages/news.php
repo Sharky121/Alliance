@@ -3,12 +3,6 @@
  * @var array $data
  */
 
-foreach ($data as $key => $val) {
-      $news_link =  $val['id'];
-      $news_date = $val['news_date'];
-  }
-
-  $day = date("d", strtotime($news_date));
 ?>
 
 <div class="container">
@@ -27,7 +21,7 @@ foreach ($data as $key => $val) {
         <?php foreach ($data as $news): ?>
             <li class="news-list__item">
                 <div class="news-list__inner">
-                    <div class="news__date"><?= $day; ?><br><?= get_month($news_date); ?></div>
+                    <div class="news__date"><?= date("d", strtotime($news['news_date']))  ?><br><?= get_month($news['news_date']); ?></div>
 
                     <h3 class="news__title">
                         <a href="?view=news-page&id=<?= $news['id'] ?>" class="news__link"><?=  $news['title']; ?></a>
