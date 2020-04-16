@@ -1,13 +1,9 @@
 <?php
-    if (isset($_GET['id'])) {
-        $id = intval($_GET['id']);
-    }
+/**
+ * @var array $data
+ */
 
-    $news_sql = "SELECT id, title, author, author_link, created_at, content FROM news WHERE id ='$id'";
-    $news_list_res = mysqli_query($link,  $news_sql);
-    $news_list = mysqli_fetch_all($news_list_res, MYSQLI_ASSOC);
-
-    foreach ($news_list as $key => $val) {
+    foreach ($data as $val) {
         $news_title =  $val['title'];
         $news_content =  $val['content'];
         $news_date = $val['created_at'];

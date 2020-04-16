@@ -1,14 +1,3 @@
-<?php
-  if (isset($_GET['cat'])) {
-      $category_url = $_GET['cat'];
-  }
-
-  $category_sql = 'SELECT id, title FROM category ORDER BY id ASC';
-  $category_list_res = mysqli_query($link, $category_sql);
-  $category_list = mysqli_fetch_all($category_list_res, MYSQLI_ASSOC);
-
-?>
-
 <header class="main-header <?php if (isset($_GET['view'])): ?>main-header--green<?php else: ?>js-main-header<?php endif; ?>">
     <div class="container">
         <nav class="main-nav">
@@ -20,13 +9,29 @@
                     <span class="logo__text">Поставки на условиях <br> FOB и DDP</span>
                 </a>
 
-                <div class="address address__main-nav">
+                <div class="address warehouse-main-nav warehouse">
+                    <svg class="warehouse__ico" viewBox="0 0 399.3 399.3">
+                        <use xlink:href="#warehouse"></use>
+                    </svg>
+
+                    <div class="warehouse__text">
+                        <div class="address__row">
+                            <a class="address__mail" href="mailto:sales@aliance-prom.ru">Наш склад</a>
+                        </div>
+
+                        <div class="address__row">
+                            <a class="address__location" href="/" >г. Рязань, 198км Окружной автодороги, 6</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="address office-main-nav">
                     <div class="address__row">
                         <a class="address__mail" href="mailto:sales@aliance-prom.ru">sales@aliance-prom.ru</a>
                     </div>
 
                     <div class="address__row">
-                        <a class="address__location" href="/" >г. Рязань, 198км Окружной автодороги, 6</a>
+                        <a class="address__location" href="/" >г. Рязань, ул. Петрова, 10 (офис)</a>
                     </div>
                 </div>
 
@@ -74,10 +79,10 @@
             </ul>
 
             <ul class="sub-menu">
-                <?php foreach ($category_list as $key => $val): ?>
-                <li class="sub-menu__item">
-                    <a href="?view=catalog&cat=<?= $val['id'] ?>" class="sub-menu__link"><?= $val['title']; ?></a>
-                </li>
+                <?php foreach ($categories as $val): ?>
+                    <li class="sub-menu__item">
+                        <a href="?view=catalog&cat=<?= $val['id'] ?>" class="sub-menu__link"><?= $val['title']; ?></a>
+                    </li>
                 <?php endforeach; ?>
             </ul>
 

@@ -1,5 +1,31 @@
 <?php
 
+/**
+ * Подключает шаблон, передает туда данные и возвращает итоговый HTML контент
+ * @param string $name Путь к файлу шаблона относительно папки templates
+ * @param array $data Ассоциативный массив с данными для шаблона
+ * @return string Итоговый HTML
+ */
+
+function include_template($name, array $data = [])
+{
+    $name = 'views/pages/' . $name;
+    $result = '';
+
+    if (!is_readable($name)) {
+        return $result;
+    }
+
+    ob_start();
+    extract($data);
+
+    require $name;
+
+    $result = ob_get_clean();
+
+    return $result;
+}
+
 function get_month($date) {
     $date = date("m", strtotime($date));
 
@@ -41,7 +67,6 @@ function get_month($date) {
             return 'дек';
             break;
     }
-
 }
 
 function cutText(string $text, int $id, int $num_symbols, string $mode): string {
@@ -70,12 +95,4 @@ function cutText(string $text, int $id, int $num_symbols, string $mode): string 
     if ($mode == 'text') {
         return "<p class='news__text'>$new_text...<a class='news__more-link' href='?view=news-page&id=$id'> читать далее</a></p>";
     }
-}
-
-function getCategoryName($category_list, $id) {
-    foreach ($category_list as $key => $val) {
-        if ($id == $val['id']) {
-            echo $val['title'];
-        }
-    };
 }
