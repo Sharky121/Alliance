@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parts/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/products.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/products.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/video.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/video.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/bio.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/bio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/catalog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/video.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/alliance.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/alliance.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/news.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/news.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/news-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/news-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/news.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +151,7 @@
       <workItem from="1586894704186" duration="902000" />
       <workItem from="1586978986937" duration="12093000" />
       <workItem from="1587015491135" duration="15000" />
-      <workItem from="1587066293915" duration="6905000" />
+      <workItem from="1587066293915" duration="8131000" />
     </task>
     <servers />
   </component>
@@ -201,5 +195,20 @@
     </state>
     <state x="2532" y="236" width="694" height="696" key="search.everywhere.popup/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1583161491149" />
     <state x="652" y="257" width="672" height="678" key="search.everywhere.popup/59.27.1861.1053@59.27.1861.1053" timestamp="1578439129049" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/parts/database.php</url>
+          <line>37</line>
+          <properties>
+            <option name="className" value="" />
+            <option name="methodName" value="\getCurrentNews" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -6,7 +6,7 @@
     foreach ($data as $val) {
         $news_title =  $val['title'];
         $news_content =  $val['content'];
-        $news_date = $val['created_at'];
+        $news_date = $val['news_date'];
         $news_author =  $val['author'];
         $news_author_link =  $val['author_link'];
     }

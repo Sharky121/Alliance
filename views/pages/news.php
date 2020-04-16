@@ -5,7 +5,7 @@
 
 foreach ($data as $key => $val) {
       $news_link =  $val['id'];
-      $news_date = $val['created_at'];
+      $news_date = $val['news_date'];
   }
 
   $day = date("d", strtotime($news_date));
