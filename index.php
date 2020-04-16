@@ -2,6 +2,9 @@
 
 require_once 'parts/init.php';
 
+define("PRESSFORM_ID", 2, true);
+define("SERVICE_ID", 3, true);
+
 $view = empty($_GET['view']) ? 'index' : $_GET['view'];
 
 $template_name = $view . '.php';
@@ -19,7 +22,9 @@ function get_pageData(string $page, $link) {
 
     switch ($page) {
         case 'index.php':
-            return getNews($link);
+        case 'service.php':
+        case 'bio.php':
+            return getIndex($link, SERVICE_ID);
             break;
         case 'news.php':
             return getAllNews($link);
@@ -39,10 +44,13 @@ function get_pageData(string $page, $link) {
         case 'product.php':
             return getProduct($link, $id);
             break;
+        case 'pressform.php':
+            return getIndex($link, PRESSFORM_ID);
+            break;
         default:
             echo "";
     }
-}
+};
 
 $data = get_pageData($template_name, $link);
 

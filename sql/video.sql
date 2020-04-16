@@ -4,10 +4,7 @@ INSERT INTO video
 SET title = 'Инжекционно-литьевая машина Alliance, серия Titan. Цикл 4,8 с',
     video_url ='zRNGfCpJ97I',
     category_id = '1';
-INSERT INTO video
-SET title = 'ТПА для тонкостенного литья PAC300 (Yizumi) 2',
-    video_url ='8F1KXN7oZ5s',
-    category_id = '1';
+
 INSERT INTO video
 SET title = 'Трёхцветная инжекционно-литьевая машина Alliance',
     video_url ='sXR4qE23tLo',
@@ -36,10 +33,7 @@ INSERT INTO video
 SET title = 'Инжекционно-литьевая машина Alliance, серия Titan. Цикл 4,8 с',
     video_url ='zRNGfCpJ97I',
     category_id = '1';
-INSERT INTO video
-SET title = 'ТПА для тонкостенного литья PAC300 (Yizumi) 2',
-    video_url ='8F1KXN7oZ5s',
-    category_id = '1';
+
 INSERT INTO video
 SET title = 'Трёхцветная инжекционно-литьевая машина Alliance',
     video_url ='sXR4qE23tLo',
@@ -84,10 +78,7 @@ INSERT INTO video
 SET title = 'Двуцветная инжекционно-литьевая машина',
     video_url ='Do2BuQSsvFI',
     category_id = '1';
-INSERT INTO video
-SET title = 'Завод Yizumi',
-    video_url ='FRNcuTKYyv8',
-    category_id = '1';
+
 INSERT INTO video
 SET title = 'Прямой механизм смыкания',
     video_url ='_pTszDrmAeM',
@@ -134,10 +125,7 @@ INSERT INTO video
 SET title = 'Проектирование и изготовление пресс-форм для дюбеля',
     video_url ='Emp2qXus8e0',
     category_id = '4';
-INSERT INTO video
-SET title = 'ТПА для тонкостенного литья PAC300 (Yizumi)',
-    video_url ='sHbuoImaSEo',
-    category_id = '4';
+
 INSERT INTO video
 SET title = 'Тест пресс-формы "Сепаратор"',
     video_url ='GOhMmR85UYY',
@@ -234,14 +222,8 @@ INSERT INTO video
 SET title = 'Литье цветных металлов под давлением',
     video_url ='SDRKwhNJ1ts',
     category_id = '2';
-INSERT INTO video
-SET title = 'Yizumi DM1000-опрыскиватель',
-    video_url ='GFa7E9zcMr',
-    category_id = '2';
-INSERT INTO video
-SET title = 'Горячая камера+робот Yizumi',
-    video_url ='fyKKKkamZkg',
-    category_id = '2';
+
+
 INSERT INTO video
 SET title = 'Автоматическая линия розлива металла',
     video_url ='1geSlaK8AVI',
@@ -279,10 +261,6 @@ SET title = 'YL-V220L с устройством загрузки силикон�
 INSERT INTO video
 SET title = 'https://www.youtube.com/watch?v=0DkZbj61uKU',
     video_url ='0DkZbj61uKU',
-    category_id = '2';
-INSERT INTO video
-SET title = 'Yizumi. Электрические ТПА',
-    video_url ='Nuh2tFBr2F8',
     category_id = '2';
 
 -- машины для литья резины 5

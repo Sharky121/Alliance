@@ -7,10 +7,9 @@ function fetchData($link, $sql): array
     return mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 
-function getIndex($link): array
+function getIndex($link, $id): array
 {
-    $sql = "SELECT seo_title, seo_description FROM pages WHERE id = 1
-            ";
+    $sql = "SELECT id, seo_title, seo_description FROM pages WHERE id = '$id'";
 
     return fetchData($link, $sql);
 }
