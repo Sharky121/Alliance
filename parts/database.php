@@ -30,14 +30,14 @@ function getNews($link): array
 
 function getAllNews($link): array
 {
-    $sql = "SELECT id, title, author, created_at, content, small_content, seo_title, seo_description FROM news";
+    $sql = "SELECT id, news_date, title, author, created_at, content, small_content, seo_title, seo_description FROM news";
 
     return fetchData($link, $sql);
 }
 
 function getCurrentNews($link, $id): array
 {
-    $sql = "SELECT id, title, author, author_link, created_at, content, seo_title, seo_description FROM news WHERE id ='$id'";
+    $sql = "SELECT id, news_date, title, author, author_link, created_at, content, seo_title, seo_description FROM news WHERE id ='$id'";
 
     return fetchData($link, $sql);
 }
@@ -53,7 +53,7 @@ function getCatalog($link, $id): array
 {
     $sql = "SELECT p.id, p.title, p.image_path, p.category_id, c.title as cat_title, c.seo_title, c.seo_description
             FROM products p
-            INNER JOIN category c ON c.id = p.category_id 
+            INNER JOIN category c ON c.id = p.category_id
             WHERE p.category_id = '$id'";
 
     return fetchData($link, $sql);
@@ -62,7 +62,7 @@ function getCatalog($link, $id): array
 function getProduct($link, $id): array
 {
     $sql = "SELECT p.title, p.image_path, small_desc, content, big_image_path, p.category_id, c.id as cat_id, c.title as cat_title, video_url, v.title as video_title, p.seo_title, p.seo_description
-                    FROM products p 
+                    FROM products p
                     INNER JOIN category c ON c.id = p.category_id
                     RIGHT JOIN video v ON v.category_id = p.category_id
                     WHERE p.id = '$id'";
