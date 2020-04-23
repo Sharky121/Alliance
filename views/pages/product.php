@@ -1,13 +1,13 @@
 <?php
-  foreach ($data as $product) {
-    $product_title =  $product['title'];
-    $category_id = $product['cat_id'];
-    $category_title = $product['cat_title'];
-    $small_desc = $product['small_desc'];
-    $content = $product['content'];
-    $big_image_path = $product['big_image_path'];
-    $image_path = $product['image_path'];
-  };
+foreach ($data as $product) {
+  $product_title =  $product['title'];
+  $category_id = $product['cat_id'];
+  $category_title = $product['cat_title'];
+  $small_desc = $product['small_desc'];
+  $content = $product['content'];
+  $big_image_path = $product['big_image_path'];
+  $image_path = $product['image_path'];
+};
 ?>
 
 <div class="container">
@@ -49,7 +49,7 @@
       <?php endif; ?>
 
       <div>
-        <!--            <button class="btn">Скачать технические характеристики</button>-->
+        <!-- <button class="btn">Скачать технические характеристики</button>-->
         <button class="btn" id="demo01" href="#animatedModal">Узнать цену</button>
       </div>
 
@@ -86,7 +86,6 @@
 
   <h3 class="sub-title">Остались вопросы?</h3>
   <p class="grey-text">Звоните по телефону +7 (800) 222-48-13 (звонок бесплатный), +7 (4912) 70-19-81 или заполните форму обратной связи</p>
-
   <form class="question-form">
     <input name="product_title" type="hidden" value="<?= $product_title; ?>">
 

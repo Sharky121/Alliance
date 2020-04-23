@@ -59,7 +59,6 @@ foreach ($data as $seo) {
     $seo_description = $seo['seo_description'];
 };
 
-
 $page_content = include_template($template_name, [
     'categories' => $categories,
     'data' => $data

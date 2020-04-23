@@ -259,7 +259,7 @@ SET title = 'YL-V220L с устройством загрузки силикон�
     video_url ='cntTSZmU6m0',
     category_id = '2';
 INSERT INTO video
-SET title = 'https://www.youtube.com/watch?v=0DkZbj61uKU',
+SET title = 'ТПА с прямым узлом смыкания',
     video_url ='0DkZbj61uKU',
     category_id = '2';
 
