@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/video.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/video.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/product.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cat_energy" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -153,7 +148,7 @@
       <workItem from="1587015491135" duration="15000" />
       <workItem from="1587066293915" duration="9677000" />
       <workItem from="1587115079699" duration="377000" />
-      <workItem from="1587672665382" duration="992000" />
+      <workItem from="1587672665382" duration="1990000" />
     </task>
     <servers />
   </component>
@@ -161,19 +156,11 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="584" y="214" width="800" height="677" key="#SQL_Dialects" timestamp="1578495196712">
-      <screen x="59" y="27" width="1861" height="1053" />
-    </state>
-    <state x="584" y="214" width="800" height="677" key="#SQL_Dialects/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578495196712" />
-    <state x="584" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578829177017">
-      <screen x="59" y="27" width="1861" height="1053" />
-    </state>
-    <state x="584" y="214" width="800" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1578829177017" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1587115455266">
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1587674654107">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="2656" y="290" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1583827784785" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1587115455266" />
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1587674654107" />
     <state x="772" y="310" width="424" height="513" key="FileChooserDialogImpl/59.27.1861.1053@59.27.1861.1053" timestamp="1584264632054" />
     <state x="478" y="187" key="SettingsEditor" timestamp="1586894745054">
       <screen x="59" y="27" width="1861" height="1053" />
