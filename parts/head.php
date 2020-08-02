@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="/css/animate.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/main.css">
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >

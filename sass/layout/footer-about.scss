@@ -1,0 +1,26 @@
+.footer-about {
+  display: none;
+}
+
+@include tablet-size {
+  .footer-about {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .footer-about__social {
+    display: none;
+  }
+
+  .footer-about__text {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-about__social {
+    display: flex;
+  }
+}

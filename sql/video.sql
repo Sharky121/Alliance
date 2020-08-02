@@ -4,7 +4,6 @@ INSERT INTO video
 SET title = 'Инжекционно-литьевая машина Alliance, серия Titan. Цикл 4,8 с',
     video_url ='zRNGfCpJ97I',
     category_id = '1';
-
 INSERT INTO video
 SET title = 'Трёхцветная инжекционно-литьевая машина Alliance',
     video_url ='sXR4qE23tLo',
@@ -33,7 +32,6 @@ INSERT INTO video
 SET title = 'Инжекционно-литьевая машина Alliance, серия Titan. Цикл 4,8 с',
     video_url ='zRNGfCpJ97I',
     category_id = '1';
-
 INSERT INTO video
 SET title = 'Трёхцветная инжекционно-литьевая машина Alliance',
     video_url ='sXR4qE23tLo',

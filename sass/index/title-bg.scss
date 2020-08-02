@@ -1,0 +1,53 @@
+.title-bg {
+  position: relative;
+
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+
+  &::after {
+    content: '';
+
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin: 15px auto;
+
+    background-color: #4db6ac;
+  }
+}
+
+.title-bg--about {
+  &::after {
+    background-color: #ffffff;
+  }
+}
+
+.title-bg__bg-text {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+
+  font-weight: 800;
+  font-size: 34px;
+  color: #333333;
+  text-transform: uppercase;
+  opacity: 0.03;
+
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+@include tablet-size {
+  .title-bg__bg-text {
+    bottom: 12px;
+    font-size: 38px;
+  }
+}
+
+@include desktop-size {
+  .title-bg__bg-text {
+    bottom: 10px;
+    font-size: 48px;
+  }
+}

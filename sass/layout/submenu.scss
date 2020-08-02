@@ -1,0 +1,30 @@
+@include tablet-size {
+  .submenu-list {
+    position: absolute;
+
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .submenu-list__item {
+    margin-right: 20px;
+  }
+
+  .submenu-list__link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+
+    &:hover,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  .main-header--green .submenu-list {
+    position: static;
+
+    padding-bottom: 7px;
+  }
+}
+

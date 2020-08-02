@@ -1,84 +1,71 @@
 <header class="main-header <?php if (isset($_GET['view'])): ?>main-header--green<?php else: ?>js-main-header<?php endif; ?>">
-  <div class="container">
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <a href="/" class="logo">
-          <svg class="logo__img" viewBox="0 0 105000 41000">
-            <use xlink:href="#logo"></use>
-          </svg>
-          <span class="logo__text">Поставки на условиях <br> FOB и DDP</span>
-        </a>
+  <div class="container main-header__container">
+      <a class="logo main-header__logo"  href="/">
+        <img class="logo__img" src="img/logo-ver2.svg" width="120" height="47" alt="Логотип ООО Альянс-пром">
+        <span class="logo__text">Поставки на условиях <br> FOB и DDP</span>
+      </a>
 
-        <div class="address warehouse-main-nav warehouse">
-          <svg class="warehouse__ico" viewBox="0 0 399.3 399.3">
-            <use xlink:href="#warehouse"></use>
-          </svg>
-
-          <div class="warehouse__text">
-            <div class="address__row">
-              <a class="address__mail" href="mailto:sales@aliance-prom.ru">Наш склад</a>
-            </div>
-
-            <div class="address__row">
-              <a class="address__location" href="/" >г. Рязань, ул.Связи, 25 стр. 2</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="address office-main-nav">
-          <div class="address__row">
-            <a class="address__mail" href="mailto:sales@aliance-prom.ru">sales@aliance-prom.ru</a>
-          </div>
-
-          <div class="address__row">
-            <a class="address__location" href="/" >г. Рязань, ул. Петрова, 10 (офис)</a>
-          </div>
-        </div>
-
-        <div class="phone">
-          <div class="phone__row">
-            <a class="phone__link" href="tel:+78002224813">+7 (800) 222-48-13</a>
-            <span class="phone__text">Звонок бесплатный</span>
-          </div>
-          <div class="phone__row">
-            <a class="phone__link" href="tel:+74912427047">+7 (4912) 70-19-81</a>
-            <span class="phone__text">пн-пт 10:00 до 18:00</span>
-          </div>
-        </div>
+      <div class="address main-header__address main-header__address--warehouse">
+        <a class="address__title">Наш склад</a>
+        <a class="address__location" href="/">г. Рязань, ул.Связи, 25 стр. 2</a>
       </div>
 
-      <ul class="main-menu">
-        <li class="main-menu__item">
-          <a class="main-menu__link" id="catalog">Каталог продукции</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="?view=pressform">Пресс-формы</a>
-        </li>
-        <!---->
-        <!--                <li class="main-menu__item">-->
-        <!--                  <a class="main-menu__link" id="demo02" href="#modal03">Запасные части</a>-->
-        <!--                </li>-->
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="?view=service">Услуги</a>
-        </li>
-        <li class="main-menu__item main-menu__item--active">
-          <a class="main-menu__link" href="?view=news">Новости</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="?view=video">Наши работы</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="/#section-map" >Контакты</a>
-        </li>
-      </ul>
+      <div class="address main-header__address main-header__address--office">
+        <a class="address__title" href="mailto:sales@aliance-prom.ru">sales@aliance-prom.ru</a>
+        <a class="address__location" href="/">г. Рязань, ул. Петрова, 10 (офис)</a>
+      </div>
 
-      <ul class="sub-menu">
-        <?php foreach ($categories as $val): ?>
-          <li class="sub-menu__item">
-            <a href="?view=catalog&cat=<?= $val['id'] ?>" class="sub-menu__link"><?= $val['title']; ?></a>
-          </li>
-        <?php endforeach; ?>
-      </ul>
-    </nav>
+      <div class="main-header__phone phone">
+        <a class="phone__link" href="tel:+78002224813">
+          +7 (800) 222-48-13
+          <span class="phone__text">Звонок бесплатный</span>
+        </a>
+
+        <a class="phone__link" href="tel:+74912427047">
+          +7 (4912) 70-19-81
+          <span class="phone__text">пн-пт 10:00 до 18:00</span>
+        </a>
+      </div>
+
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--catalog" id="catalog">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Пресс-формы</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Услуги</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Новости</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Наши работы</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-nav__submenu submenu-list" style="display: none;">
+            <li class="submenu-list__item">
+              <a class="submenu-list__link" href="?view=catalog&amp;cat=1" class="sub-menu__link">Литье пластмасс</a>
+            </li>
+            <li class="submenu-list__item">
+              <a class="submenu-list__link" href="?view=catalog&amp;cat=2" class="sub-menu__link">Литье цветных металлов</a>
+            </li>
+            <li class="submenu-list__item">
+              <a class="submenu-list__link" href="?view=catalog&amp;cat=3" class="sub-menu__link">Периферийное оборудование</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
   </div>
 </header>
+

@@ -2,7 +2,6 @@
   $category_name = $data[0]['cat_title'];
   $category_id = $data[0]['category_id'];
 ?>
-
 <div class="container">
   <h1 class="main-title"><?= $category_name ?></h1>
 
@@ -34,20 +33,16 @@
     <p class="text-products">Наш квалифицированный персонал, имеющий опыт работы с данным оборудованием, поможет разработать наиболее экономически выгодную и технически обусловленную производственную схему, произвести монтаж, пуско-наладку, гарантийное и постгарантийное обслуживание оборудования.</p>
   <?php endif; ?>
 
-  <div class="wrapper">
-    <ul class="product-list">
+  <div class="products">
+    <ul class="product__list">
       <?php foreach ($data as $category): ?>
-        <li class="product-list__item peripheral">
-          <a class="product-list__link" href="?view=product&id=<?= $category['id'] ?>">
-            <div class="product-list__box">
-              <img class="product-list__img" src="<?= $category['image_path']; ?>" alt="<?= $category['title']; ?>">
-            </div>
-
-            <h4 class="product-list__title"><?= $category['title']; ?></h4>
+        <li class="product__item products-item">
+          <a class="product-item__link" href="?view=product&id=<?= $category['id'] ?>">
+            <img class="product-item__img" src="<?= $category['image_path']; ?>" alt="<?= $category['title']; ?>">
+            <h4 class="product-item__title"><?= $category['title']; ?></h4>
           </a>
         </li>
       <?php endforeach; ?>
     </ul>
   </div>
 </div>
-

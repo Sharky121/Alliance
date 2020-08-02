@@ -1,0 +1,30 @@
+.logo {
+  display: inline-block;
+}
+
+.logo__text {
+  display: none;
+}
+
+@include tablet-size {
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo__img {
+    margin-right: 15px;
+    padding-right: 15px;
+
+    border-right: 1px solid #ffffff;
+  }
+
+  .logo__text {
+    display: inline;
+
+    font-size: 12px;
+    line-height: 1.4;
+    color: #ffffff;
+  }
+}
+

@@ -1,0 +1,36 @@
+.send-btn {
+  position: absolute;
+  right: 10px;
+  top: 0;
+
+  width: 50px;
+  height: 48px;
+
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff80;
+
+  font-size: 16px;
+  background: none;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.send-btn__ico {
+  height: 16px;
+  width: 16px;
+
+  fill: rgba(255,255,255,0.20);
+}
+
+.send-btn:hover .send-btn__ico,
+.send-btn:focus .send-btn__icog,
+.send-btn:active .send-btn__ico {
+  fill: #4db6ac;
+}
+
+.send-btn__ico.active {
+  fill: #4db6ac;
+}

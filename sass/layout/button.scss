@@ -1,0 +1,90 @@
+.button {
+  position: relative;
+  z-index: 2;
+
+  display: inline-block;
+  width: 160px;
+  padding: 8px 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+  background: none;
+  border: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 8px;
+  margin-top: -4px;
+
+  background-color: #4db6ac;
+
+  -webkit-transition-duration: 0.2s;
+
+  transition-duration: 0.2s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.button:hover,
+.button:focus {
+  background-color: transparent;
+
+  color: #FFFFFF;
+}
+
+.button:hover::before,
+.button:focus::before {
+  -webkit-transform: scaleY(5);
+  transform: scaleY(5);
+}
+
+.button:active { color: rgba(0, 0, 0, 0.3); }
+
+.button:active::before { color: rgba(0, 0, 0, 0.3); }
+
+.btn {
+  display: inline-block;
+  margin: 5px 5px 0 0;
+  padding: 10px 60px;
+
+  color: #fff;
+
+  border: 1px solid $color-green;
+  border-radius: 3px;
+  background-color: $color-green;
+
+  transition: all .3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+  }
+
+  &--green-hover {
+    &:hover,
+    &:focus {
+      color: $color-green;
+
+      border: 1px solid $color-green;
+      background-color: transparent;
+    }
+  }
+}
+

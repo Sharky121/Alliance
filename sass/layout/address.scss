@@ -1,0 +1,20 @@
+.address {
+  line-height: 1;
+  color: #ffffff;;
+}
+
+.address__title {
+  display: block;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.address__location {
+  font-size: 12px;
+  font-weight: 400;
+  color: inherit;
+
+  border-bottom: 1px dotted white;
+}
