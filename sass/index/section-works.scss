@@ -63,6 +63,10 @@
 }
 
 @include desktop-size {
+  .section.section-works {
+    padding-bottom: 40px;
+  }
+
   .owl-carousel--works {
     width: 100%;
     margin-bottom: 115px;

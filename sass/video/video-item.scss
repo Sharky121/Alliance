@@ -1,0 +1,78 @@
+.video-item__link {
+  position: relative;
+
+  display: block;
+}
+
+.video-item__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-item__ico {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: 60px;
+  width: 60px;
+
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.video-item__ico {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1000;
+  height: 60px;
+  width: 60px;
+}
+
+.video-item__ico .stroke-dotted {
+  opacity: 0;
+  stroke-dasharray: 4,5;
+  stroke-width: 1px;
+  transform-origin: 50% 50%;
+  animation: spin 4s infinite linear;
+  transition: opacity 1s ease, stroke-width 1s ease;
+}
+
+.video-item__ico .stroke-solid {
+  stroke-dashoffset: 0;
+  stroke-dashArray: 300;
+  stroke-width: 4px;
+  transition: stroke-dashoffset 1s ease, opacity 1s ease;
+}
+
+.video-item__ico .icon {
+  transform-origin: 50% 50%;
+  transition: transform 200ms ease-out;
+}
+
+.video-item__ico:hover .stroke-dotted {
+  stroke-width: 4px;
+  opacity: 1;
+}
+
+.video-item__ico:hover .stroke-solid {
+  opacity: 0;
+  stroke-dashoffset: 300;
+}
+
+.video-item__ico:hover .icon { transform: scale(1.05); }
+

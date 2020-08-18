@@ -91,5 +91,3 @@
     <span class="copyright__text">© ООО «Альянс-Пром», 2006−2020</span>
   </section>
 </footer>
-
-

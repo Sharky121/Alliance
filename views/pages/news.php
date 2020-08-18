@@ -2,7 +2,6 @@
 /**
  * @var array $data
  */
-
 ?>
 
 <div class="container">

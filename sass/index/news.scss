@@ -1,0 +1,174 @@
+.section-news { text-align: center; }
+
+.news-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.news-list__item {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  margin-bottom: 2%;
+  padding: 15px 15px;
+
+  background: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.news-list__inner {
+  position: relative;
+
+  display: block;
+  min-height: 80px;
+
+  text-align: left;
+}
+
+.news__date {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  br {
+    display: none;
+  }
+}
+
+.news__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.news__link { color: #000000; }
+
+.news__more-link { color: #888888; }
+
+.news__more-link:hover,
+.news__more-link:focus {
+  color: #4db6ac;
+}
+
+.news__meta {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: #888888;
+  vertical-align: middle;
+
+  -webkit-transition: all .3s ease;
+}
+
+.news__text {
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.news__content {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+}
+
+.news__img {
+  width: 16px;
+  height: 16px;
+
+  vertical-align:middle;
+  fill: #888888;
+}
+
+.news-list__item:hover .news__img,
+.news-list__item:hover .news__meta,
+.news-list__item:hover .news__date {
+  color: #4db6ac;
+
+  border-color: #4db6ac;
+
+  fill: #4db6ac;
+}
+
+.page-news-list .news-list__item { width: 100%; }
+
+.news-item__date {
+  margin-bottom: 10px;
+
+  font: 14px;
+  color: #888888;
+}
+
+@include tablet-size {
+  .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .news-list__item {
+    width: 49%;
+  }
+}
+
+@include desktop-size {
+  .news-list__item {
+    padding: 22px 40px;
+  }
+
+  .news-item--index {
+    &:nth-child(3) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  .news-list__inner {
+    padding-left: 110px;
+  }
+
+  .news__date {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+    width: 80px;
+    height: 80px;
+    padding: 20px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+
+    border: 1px solid #1a1a1a;
+    box-sizing: border-box;
+
+    -webkit-transition: all .3s ease;
+
+    br {
+      display: block;
+    }
+  }
+
+  .news__title {
+    font-size: 16px;
+    line-height: normal;
+  }
+}

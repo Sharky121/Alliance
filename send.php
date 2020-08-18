@@ -47,5 +47,3 @@
 	$headers[] = "X-Mailer: PHP/".phpversion();
 
 	mail($to, $subject, $message, implode("\r\n", $headers));
-
-

@@ -26,33 +26,27 @@ foreach ($data as $product) {
     </li>
   </ul>
 
-  <div class="product-wrapper">
-    <div class="product__column product__column--left">
+  <div class="product-wrapper product">
+    <div class="product__img">
       <?php if (empty($big_image_path)): ?>
-        <img class="product-image" src="<?= $image_path; ?>" alt="Изображение отсутствует">
+        <img src="<?= $image_path; ?>" alt="Изображение отсутствует">
       <?php else: ?>
-        <img class="product-image" src="<?= $big_image_path; ?>" alt="<?= $product_title; ?>">
+        <img src="<?= $big_image_path; ?>" alt="<?= $product_title; ?>">
       <?php endif; ?>
     </div>
+    <div class="product__info product-info">
+      <h1 class="product-info__title"><?= $product_title; ?></h1>
 
-    <div class="product__column product__column--right">
-      <h1 class="product-title"><?= $product_title; ?></h1>
-
-      <?php if (empty($small_desc)): ?>
-        <p class="product-small_desc">
-          Наша компания по праву занимает место среди ведущих поставщиков оборудования в сфере переработки пластмасс и цветных металлов
-        </p>
-      <?php else: ?>
-        <div class="product-small_desc">
+      <p class="product-info__small_desc">
+        <?php if (empty($small_desc)): ?>
+        Наша компания по праву занимает место среди ведущих поставщиков оборудования в сфере переработки пластмасс и цветных металлов
+        <?php else: ?>
           <?= $small_desc; ?>
-        </div>
-      <?php endif; ?>
+        <?php endif; ?>
+      </p>
 
-      <div>
-        <!-- <button class="btn">Скачать технические характеристики</button>-->
-        <button class="btn" id="demo01" href="#animatedModal">Узнать цену</button>
-      </div>
-
+      <!-- <button class="btn">Скачать технические характеристики</button>-->
+      <a class="product-info__btn btn btn--green-border-hover" id="demo01" href="#animatedModal">Узнать цену</a>
     </div>
   </div>
 
@@ -91,25 +85,25 @@ foreach ($data as $product) {
 
     <div class="form-group question-form__form-group">
       <p>
-        <label class="form-label form-label--grey" for="name">Введите ваше имя</label>
-        <input class="form-input form-input--grey" id="name" name="name" type="text" placeholder="Как вас зовут?">
+        <label class="form-label form-label--grey" for="name">Представьтесь</label>
+        <input class="form-input form-input--grey" id="name" name="name" type="text" placeholder="Иванов Александр Сергеевич" required>
       </p>
 
       <p>
         <label class="form-label form-label--grey" for="name">Введите ваш email</label>
-        <input class="form-input form-input--grey" id="email" name="email" type="email" placeholder="email@email.ru">
+        <input class="form-input form-input--grey" id="email" name="email" type="email" placeholder="email@email.ru" required>
       </p>
 
       <p>
         <label class="form-label form-label--grey" for="name">Введите ваш номер телефона</label>
-        <input class="form-input form-input--grey" id="footer-phone" name="phone" type="phone" placeholder="+7 000 000 00 00">
+        <input class="form-input form-input--grey" id="footer-phone" name="phone" type="phone" placeholder="+7 000 000 00 00" required>
       </p>
     </div>
 
     <label class="form-label form-label--grey" for="text">Ваш вопрос</label>
     <textarea class="form-textarea form-textarea--grey" name="text" type="text" placeholder="Опишите вас вопрос"></textarea>
 
-    <button class="form-btn form-btn--green">Отправить</button>
+    <button class="form-btn form-btn--green" onclick="ym(33475678,'reachGoal','sendQuestion'); return true;">Отправить</button>
   </form>
 </div>
 
@@ -125,16 +119,16 @@ foreach ($data as $product) {
     <form class="price-form">
       <input name="product_title" type="hidden" value="<?= $product_title; ?>">
 
-      <label class="form-label" for="name">Введите ваше имя</label>
-      <input class="form-input" id="name" name="name" type="text">
+      <label class="form-label" for="name">Представьтесь</label>
+      <input class="form-input" id="name" name="name" type="text" placeholder="Иванов Александр Сергеевич" required>
 
       <label class="form-label" for="name">Введите ваш email</label>
-      <input class="form-input" id="email" name="email" type="email">
+      <input class="form-input" id="email" name="email" type="email" placeholder="email@email.ru" required>
 
       <label class="form-label" for="name">Введите ваш номер телефона</label>
-      <input class="form-input" id="footer-phone" name="phone" type="phone">
+      <input class="form-input" id="footer-phone" name="phone" type="phone" placeholder="+7 000 000 00 00" required>
 
-      <button class="form-btn">Отправить</button>
+      <button class="form-btn" onclick="ym(33475678,'reachGoal','getPrice'); return true;">Отправить</button>
     </form>
   </div>
 </div>

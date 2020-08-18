@@ -38,21 +38,22 @@
               <a class="site-list__link site-list__link--catalog" id="catalog">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Пресс-формы</a>
+              <a class="site-list__link" href="?view=pressform">Пресс-формы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Услуги</a>
+              <a class="site-list__link" href="?view=service">Услуги</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Новости</a>
+              <a class="site-list__link" href="?view=news">Новости</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Наши работы</a>
+              <a class="site-list__link" href="?view=video">Наши работы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link">Контакты</a>
+              <a class="site-list__link" href="/#section-map">Контакты</a>
             </li>
           </ul>
+
           <ul class="main-nav__submenu submenu-list" style="display: none;">
             <li class="submenu-list__item">
               <a class="submenu-list__link" href="?view=catalog&amp;cat=1" class="sub-menu__link">Литье пластмасс</a>

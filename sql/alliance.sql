@@ -68,9 +68,12 @@ INSERT INTO pages SET title = 'Биоразлагаемое сырье';
 
 -- ДОБАВЛЕНИЕ КАТЕГОРИЙ
 --
-INSERT INTO category SET title = 'Литье пластмасс';
-INSERT INTO category SET title = 'Литье цветных металлов';
-INSERT INTO category SET title = 'Периферийное оборудование';
+INSERT INTO category SET title = 'Литье пластмасс',
+                         image_path ='/img/catalog/prod1.png';
+INSERT INTO category SET title = 'Литье цветных металлов',
+                         image_path ='/img/catalog/lanson.jpg';
+INSERT INTO category SET title = 'Периферийное оборудование',
+                         image_path ='/img/catalog/drob.jpg';
 
 
 

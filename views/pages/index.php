@@ -1,25 +1,29 @@
 <?php
-/**
- * @var array $data
- */
+$link = @mysqli_connect('localhost','root','12345678', 'alliance');
+@mysqli_set_charset($link, "utf8");
 
-//foreach ($data as $val) {
-//    $news_link =  $val['id'];
-//    $news_date = $val['created_at'];
-//}
-//
-//$day = date("d", strtotime($news_date));
+$sql = "SELECT id, title, author, created_at, news_date, content, small_content FROM news ORDER BY id ASC LIMIT 4";
+$result = mysqli_query($link, $sql) or die(mysqli_error($link));
+$data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+foreach ($data as $val) {
+    $news_link =  $val['id'];
+    $news_date = $val['news_date'];
+}
+
+$day = date("d", strtotime($news_date));
 
 ?>
 
 <h1 class="visually-hidden">Альянс-пром</h1>
-
 <section class="index__section-header section-header">
   <div class="container section-header__container">
     <h2 class="section-header__title">15 лет на рынке оборудования<br> по переработке пластмасс и цветных металлов</h2>
     <p class="section-header__text">Тщательный выбор поставщиков позволил нам подобрать для Вас оптимальную линейку оборудования по соотношению цена-качество</p>
     <a class="btn section-header__btn" href="?view=products">Наше оборудование</a>
-    <p class="section-header__subtitle">Официальный представитель Компании <b>NINGBO HAIXING MACHINERY MANUFACTURING CO., LTD</b> в России и СНГ</span></p>
+    <p class="section-header__subtitle">
+      Официальный представитель Компании <b>NINGBO HAIXING MACHINERY MANUFACTURING CO., LTD</b> в России и СНГ</span>
+    </p>
   </div>
 </section>
 <section class="section section-features">
@@ -141,40 +145,67 @@
     <div class="section-works__wrapper">
       <div class="owl-carousel owl-theme owl-carousel--works">
         <div class="item">
-          <a href="https://www.youtube.com/embed/fxqjarZ1mx8" data-rel="lightcase">
-            <svg class="item__ico" id="play" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
-              <path class="stroke-solid" fill="none" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-                            C97.3,23.7,75.7,2.3,49.9,2.5"></path>
-              <path class="stroke-dotted" fill="none" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-                            C97.3,23.7,75.7,2.3,49.9,2.5"></path>
-              <path class="icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"></path>
+          <a href="https://www.youtube.com/embed/fxqjarZ1mx8?autoplay=1" data-rel="lightcase">
+            <svg class="item__ico" viewBox="0 0 100 100" width="60" height="60">
+              <path class="stroke-solid"
+                    fill="none"
+                    stroke="white"
+                    d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5">
+              </path>
+              <path class="stroke-dotted"
+                    fill="none"
+                    stroke="white"
+                    d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5">
+              </path>
+              <path class="icon"
+                    fill="white"
+                    d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z">
+              </path>
             </svg>
           </a>
-          <img src="/img/youTube_caption1.jpg" class="img-responsive" alt="image">
+          <img src="/img/youTube_caption1.jpg" class="img-responsive" alt="Машина для литья под давлением Lanson TD218 (без автоматизации)">
         </div>
         <div class="item">
-          <a href="https://www.youtube.com/embed/FDExONHumL4" data-rel="lightcase">
-            <svg class="item__ico" id="play" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
-              <path class="stroke-solid" fill="none" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-                           C97.3,23.7,75.7,2.3,49.9,2.5"></path>
-              <path class="stroke-dotted" fill="none" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-                          C97.3,23.7,75.7,2.3,49.9,2.5"></path>
-              <path class="icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"></path>
+          <a href="https://www.youtube.com/embed/FDExONHumL4?autoplay=1" data-rel="lightcase">
+            <svg class="item__ico" viewBox="0 0 100 100" width="60" height="60">
+              <path class="stroke-solid"
+                    fill="none"
+                    stroke="white"
+                    d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5">
+              </path>
+              <path class="stroke-dotted"
+                    fill="none"
+                    stroke="white"
+                    d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5">
+              </path>
+              <path class="icon"
+                    fill="white"
+                    d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z">
+              </path>
             </svg>
           </a>
-          <img src="/img/youTube_caption2.jpg" class="img-responsive" alt="image">
+          <img src="/img/youTube_caption2.jpg" class="img-responsive" alt="Машина ЛПД LS400 и Пресс-форма">
         </div>
         <div class="item">
-          <a href="https://www.youtube.com/embed/fHPaLN1MCsw" data-rel="lightcase">
-            <svg class="item__ico" id="play" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
-              <path class="stroke-solid" fill="none" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-                           C97.3,23.7,75.7,2.3,49.9,2.5"></path>
-              <path class="stroke-dotted" fill="none" stroke="white" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
-                          C97.3,23.7,75.7,2.3,49.9,2.5"></path>
-              <path class="icon" fill="white" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"></path>
+          <a href="https://www.youtube.com/embed/fHPaLN1MCsw?autoplay=1" data-rel="lightcase">
+            <svg class="item__ico" viewBox="0 0 100 100" width="60" height="60">
+              <path class="stroke-solid"
+                    fill="none"
+                    stroke="white"
+                    d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5">
+              </path>
+              <path class="stroke-dotted"
+                    fill="none"
+                    stroke="white"
+                    d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7 C97.3,23.7,75.7,2.3,49.9,2.5">
+              </path>
+              <path class="icon"
+                    fill="white"
+                    d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z">
+              </path>
             </svg>
           </a>
-          <img src="/img/youTube_caption2.jpg" class="img-responsive" alt="image">
+          <img src="/img/youTube_caption2.jpg" class="img-responsive" alt="Машина для литья под давлением 400 тонн (с контролем параметров литья в реальном времени)">
         </div>
       </div>
 
@@ -182,44 +213,47 @@
         <img src="/img/mock.png" class="img-responsive center-block" alt="Mock">
       </div>
 
-      <a class="btn btn--green-hover section-works__btn" href="?view=video">Все работы</a>
+      <a class="section-works__btn btn btn--green-border-hover" href="?view=video">Все работы</a>
     </div>
   </div>
 </section>
 <section class="section section-news">
-    <div class="container">
-        <h2 class="section__title title-bg">
-            <span class="title-bg__bg-text">Новости</span>
-            Новости в мире пластмасс
-        </h2>
+  <div class="container">
+    <h2 class="section__title title-bg">
+      <span class="title-bg__bg-text">Новости</span>
+      Новости в мире пластмасс
+    </h2>
 
-<!--        <div class="section-news__wrapper">-->
-<!--            <ul class="news-list">-->
-<!--                --><?php //foreach($data as $news_item): ?>
-<!--                    <li class="news-list__item">-->
-<!--                        <div class="news-list__inner">-->
-<!--                            <div class="news__date">--><?//= $day; ?><!--<br>--><?//= get_month($news_date); ?><!--</div>-->
-<!---->
-<!--                            <h3 class="news__title">-->
-<!--                                <a href="?view=news-page&id=--><?//= $news_item['id'] ?><!--" class="news__link">--><?//= cutText($news_item['title'], $val['id'], 40, 'title'); ?><!--</a>-->
-<!--                            </h3>-->
-<!---->
-<!--                            <p class="news__meta">-->
-<!--                                <svg class="news__img" viewBox="0 0 482.9 482.9">-->
-<!--                                    <use xlink:href="#avatar"></use>-->
-<!--                                </svg>-->
-<!--                                --><?//= $news_item['author']; ?>
-<!--                            </p>-->
-<!---->
-<!--                            <p class="news__text">--><?//= cutText($news_item['small_content'], $news_item['id'], 90, 'text'); ?><!--</p>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                --><?php //endforeach; ?>
-<!--            </ul>-->
-<!---->
-<!--            <a class="btn" href="?view=news">Все новости</a>-->
-<!--        </div>-->
+    <div class="section-news__wrapper">
+      <ul class="news-list">
+        <?php foreach($data as $news_item): ?>
+          <li class="news-list__item news-item news-item--index">
+            <div class="news-list__inner">
+              <div class="news__date">
+                <?= date("d", strtotime($news_item['news_date']))  ?><br>
+                <?= get_month($news_item['news_date']); ?>
+              </div>
+
+              <h3 class="news__title">
+                <a href="?view=news-page&id=<?= $news_item['id'] ?>" class="news__link"><?= $news_item['title']; ?></a>
+              </h3>
+
+              <p class="news__meta">
+                <svg class="news__img" viewBox="0 0 482.9 482.9" width="16" height="16">
+                  <use xlink:href="#avatar"></use>
+                </svg>
+                <?= $news_item['author']; ?>
+              </p>
+
+              <?= cutText($news_item['small_content'], $news_item['id'], 90, 'text'); ?>
+            </div>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+
+      <a class="btn btn--green-border-hover" href="?view=news">Все новости</a>
     </div>
+  </div>
 </section>
 <section class="section-map" id="section-map">
   <div class="container">

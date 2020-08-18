@@ -24,26 +24,26 @@
   <h4>Для получения расчета заполните приложенную форму:</h4>
 
   <form class="press-form">
-      <p>Обязательно для заполнения</p>
+    <p>Обязательно для заполнения</p>
 
-      <div class="form-group question-form__form-group">
-        <p>
-          <label class="form-label form-label--grey" for="name">Введите ваше имя</label>
-          <input class="form-input form-input--grey" id="name" name="name" type="text" placeholder="Как вас зовут?">
-        </p>
+    <div class="form-group question-form__form-group">
+      <p>
+        <label class="form-label form-label--grey" for="name">Представьтесь</label>
+        <input class="form-input form-input--grey" id="name" name="name" type="text" placeholder="Иванов Сергей Иванович" required>
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="email">Введите ваш email</label>
-          <input class="form-input form-input--grey" id="email" name="email" type="email" placeholder="email@email.ru">
-        </p>
+      <p>
+        <label class="form-label form-label--grey" for="email">Введите ваш email</label>
+        <input class="form-input form-input--grey" id="email" name="email" type="email" placeholder="email@email.ru" required>
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="footer-phone">Введите ваш номер телефона</label>
-          <input class="form-input form-input--grey" id="footer-phone" name="phone" type="phone" placeholder="+7 000 000 00 00">
-        </p>
-      </div>
+      <p>
+        <label class="form-label form-label--grey" for="footer-phone">Введите ваш номер телефона</label>
+        <input class="form-input form-input--grey" id="footer-phone" name="phone" type="phone" placeholder="+7 000 000 00 00" required>
+      </p>
+    </div>
 
-      <p>Дополнительные параметры (*необязательно для заполнения)</p>
+    <p>Дополнительные параметры (*необязательно для заполнения)</p>
 
     <div class="form-group question-form__form-group">
       <p>
@@ -64,7 +64,7 @@
 
     </div>
 
-      <div class="form-group question-form__form-group">
+    <div class="form-group question-form__form-group">
       <p>
         <label class="form-label form-label--grey" for="mass">Масса изделия, г</label>
         <input class="form-input form-input--grey" id="mass" name="mass" type="text" placeholder="Масса изделия, г">
@@ -81,58 +81,58 @@
       </p>
     </div>
 
-      <div class="form-group question-form__form-group">
-        <p>
-          <label class="form-label form-label--grey" for="force">Усилие смыкания, тонн</label>
-          <input class="form-input form-input--grey" id="force" name="force" type="text" placeholder="Усилие смыкания, тонн">
-        </p>
+    <div class="form-group question-form__form-group">
+      <p>
+        <label class="form-label form-label--grey" for="force">Усилие смыкания, тонн</label>
+        <input class="form-input form-input--grey" id="force" name="force" type="text" placeholder="Усилие смыкания, тонн">
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="height">Мин-макс высота пресс-формы, м</label>
-          <input class="form-input form-input--grey" id="height" name="height" type="text" placeholder="Мин-макс высота пресс-формы, м">
-        </p>
+      <p>
+        <label class="form-label form-label--grey" for="height">Мин-макс высота пресс-формы, м</label>
+        <input class="form-input form-input--grey" id="height" name="height" type="text" placeholder="Мин-макс высота пресс-формы, м">
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="closingCount">Гарантийное кол-во смыканий ПФ</label>
-          <input class="form-input form-input--grey" id="closingCount" name="closingCount" type="text" placeholder="Гарантийное кол-во смыканий ПФ">
-        </p>
-      </div>
+      <p>
+        <label class="form-label form-label--grey" for="closingCount">Гарантийное кол-во смыканий ПФ</label>
+        <input class="form-input form-input--grey" id="closingCount" name="closingCount" type="text" placeholder="Гарантийное кол-во смыканий ПФ">
+      </p>
+    </div>
 
-      <div class="form-group question-form__form-group">
-        <p>
-          <label class="form-label form-label--grey" for="socketCount">Кол-во гнезд</label>
-          <input class="form-input form-input--grey" id="socketCount" name="socketCount" type="text" placeholder="Кол-во гнезд">
-        </p>
+    <div class="form-group question-form__form-group">
+      <p>
+        <label class="form-label form-label--grey" for="socketCount">Кол-во гнезд</label>
+        <input class="form-input form-input--grey" id="socketCount" name="socketCount" type="text" placeholder="Кол-во гнезд">
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="workTime">Режим работы</label>
-          <input class="form-input form-input--grey" id="workTime" name="workTime" type="text" placeholder="Режим работы">
-        </p>
+      <p>
+        <label class="form-label form-label--grey" for="workTime">Режим работы</label>
+        <input class="form-input form-input--grey" id="workTime" name="workTime" type="text" placeholder="Режим работы">
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="shagreen">Наличие шагрени (класс)</label>
-          <input class="form-input form-input--grey" id="shagreen" name="shagreen" type="text" placeholder="Наличие шагрени (класс)">
-        </p>
-      </div>
+      <p>
+        <label class="form-label form-label--grey" for="shagreen">Наличие шагрени (класс)</label>
+        <input class="form-input form-input--grey" id="shagreen" name="shagreen" type="text" placeholder="Наличие шагрени (класс)">
+      </p>
+    </div>
 
-      <div class="form-group question-form__form-group">
-        <p>
-          <label class="form-label form-label--grey" for="require">Требования к поверхности формообразующих</label>
-          <input class="form-input form-input--grey" id="require" name="require" type="text" placeholder="Требования к поверхности формообразующих">
-        </p>
+    <div class="form-group question-form__form-group">
+      <p>
+        <label class="form-label form-label--grey" for="require">Требования к поверхности формообразующих</label>
+        <input class="form-input form-input--grey" id="require" name="require" type="text" placeholder="Требования к поверхности формообразующих">
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="systemType">Тип литниковой системы</label>
-          <input class="form-input form-input--grey" id="systemType" name="systemType" type="text" placeholder="Тип литниковой системы">
-        </p>
+      <p>
+        <label class="form-label form-label--grey" for="systemType">Тип литниковой системы</label>
+        <input class="form-input form-input--grey" id="systemType" name="systemType" type="text" placeholder="Тип литниковой системы">
+      </p>
 
-        <p>
-          <label class="form-label form-label--grey" for="other">Прочее</label>
-          <input class="form-input form-input--grey" id="other" name="other" type="text" placeholder="Прочее">
-        </p>
-      </div>
+      <p>
+        <label class="form-label form-label--grey" for="other">Прочее</label>
+        <input class="form-input form-input--grey" id="other" name="other" type="text" placeholder="Прочее">
+      </p>
+    </div>
 
-      <button class="form-btn form-btn--green">Отправить</button>
+    <button class="form-btn form-btn--green" onclick="ym(33475678,'reachGoal','pressForm'); return true;">Отправить</button>
   </form>
 </div>
 

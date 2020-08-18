@@ -2,6 +2,7 @@
 
 require_once 'parts/init.php';
 
+define("INDEX_ID", 1, true);
 define("PRESSFORM_ID", 2, true);
 define("SERVICE_ID", 3, true);
 
@@ -22,8 +23,10 @@ function get_pageData(string $page, $link) {
 
     switch ($page) {
         case 'index.php':
-        case 'service.php':
+          return getIndex($link, INDEX_ID);
+          break;
         case 'bio.php':
+        case 'service.php':
             return getIndex($link, SERVICE_ID);
             break;
         case 'news.php':
