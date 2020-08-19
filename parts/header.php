@@ -1,7 +1,11 @@
 <header class="main-header <?php if (isset($_GET['view'])): ?>main-header--green<?php else: ?>js-main-header<?php endif; ?>">
   <div class="container main-header__container">
       <a class="logo main-header__logo"  href="/">
-        <img class="logo__img" src="img/logo-ver2.svg" width="120" height="47" alt="Логотип ООО Альянс-пром">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__img" src="img/logo-mobile.svg" width="120" height="47" alt="Логотип ООО Альянс-пром">
+        </picture>
+
         <span class="logo__text">Поставки на условиях <br> FOB и DDP</span>
       </a>
 

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-ver2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cat_energy" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
@@ -194,7 +197,9 @@
       <workItem from="1596448686503" duration="610000" />
       <workItem from="1596570298760" duration="6743000" />
       <workItem from="1596620791361" duration="86000" />
-      <workItem from="1597781027903" duration="736000" />
+      <workItem from="1597781027903" duration="1293000" />
+      <workItem from="1597824817574" duration="116000" />
+      <workItem from="1597833574899" duration="559000" />
     </task>
     <servers />
   </component>
@@ -202,11 +207,11 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1596620876164">
-      <screen x="59" y="27" width="1861" height="1053" />
+    <state x="2656" y="290" width="424" height="484" key="FileChooserDialogImpl" timestamp="1597833931991">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2656" y="290" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591120619220" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1596620876164" />
+    <state x="2656" y="290" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597833931991" />
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1597824932230" />
     <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053@59.27.1861.1053" timestamp="1596452022406" />
     <state width="1815" height="278" key="GridCell.Tab.0.bottom" timestamp="1596412003908">
       <screen x="59" y="27" width="1861" height="1053" />
