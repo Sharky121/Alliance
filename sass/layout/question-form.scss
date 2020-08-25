@@ -1,0 +1,21 @@
+.question-form {
+  text-align: center;
+}
+
+@include tablet-size {
+  .question-form {
+    margin-bottom: 60px;
+
+    text-align: left;
+  }
+
+  .question-form__form-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .question-form__form-group p {
+    flex: 0 32%;
+    margin: 0;
+  }
+}

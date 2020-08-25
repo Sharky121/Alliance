@@ -539,19 +539,7 @@
   text-align: center;
 }
 
-.question-form {
-  margin-bottom: 60px;
-}
 
-.question-form__form-group {
-  display: flex;
-  justify-content: space-between;
-}
-
-.question-form__form-group p {
-  flex: 0 32%;
-  margin: 0;
-}
 
 .form-input {
   position: relative;

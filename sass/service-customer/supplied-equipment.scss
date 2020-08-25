@@ -1,0 +1,25 @@
+.supplied-equipment__item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@include tablet-size {
+  .supplied-equipment__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .supplied-equipment__item {
+    width: 48%;
+    margin-right: 2%;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

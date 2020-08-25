@@ -22,6 +22,7 @@
 @import "sass/layout/send-btn.scss";
 @import "sass/layout/section.scss";
 @import "sass/layout/breadcrumbs.scss";
+@import "sass/layout/question-form.scss";
 
 
 // index
@@ -40,3 +41,8 @@
 // video
 @import "sass/video/video-list.scss";
 @import "sass/video/video-item.scss";
+
+// customer-service
+@import "sass/service-customer/customer-service.scss";
+@import "sass/service-customer/supplied-equipment.scss";
+@import "sass/service-customer/supplied-equipment-item.scss";
