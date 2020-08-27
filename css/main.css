@@ -1143,8 +1143,15 @@ ul {
 
 .customer-service__section {
   margin-bottom: 40px; }
-  .customer-service__section:last-of-type {
-    margin-bottom: 0; }
+
+.customer-service-consult {
+  text-align: center; }
+
+.customer-service-consult__question-form {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
 
 .supplied-equipment__item {
   margin-bottom: 40px; }
@@ -1154,16 +1161,62 @@ ul {
 @media (min-width: 768px) {
   .supplied-equipment__list {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between; }
   .supplied-equipment__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 48%;
     margin-right: 2%;
     margin-bottom: 0; }
     .supplied-equipment__item:last-child {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .supplied-equipment-item__btn {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: auto; } }
 
 .supplied-equipment-item {
   text-align: center; }
+
+.supplied-equipment-item__img {
+  padding: 30px; }
+
+@media (min-width: 768px) {
+  .customer-service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+.customer-service-item {
+  padding: 20px 0;
+  text-align: center; }
+
+.customer-service-item__circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  border: 2px solid #4db6ac;
+  border-radius: 50%;
+  z-index: 1; }
+
+.customer-service-item__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2; }
+
+@media (min-width: 768px) {
+  .customer-service-item {
+    width: 24%;
+    margin-bottom: 30px; }
+    .customer-service-item:hover, .customer-service-item:active {
+      box-shadow: 0 0 35px rgba(0, 0, 0, 0.1); } }
 
 /*# sourceMappingURL=main.css.map */

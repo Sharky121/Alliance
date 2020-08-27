@@ -1,0 +1,59 @@
+.customer-service-item {
+  padding: 20px 0;
+
+  text-align: center;
+}
+
+.customer-service-item__circle {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+
+  border: 2px solid #4db6ac;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.customer-service-item__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@include tablet-size {
+  .customer-service-item {
+    width: 24%;
+    margin-bottom: 30px;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 0 35px rgba(0,0,0,.1);
+    }
+  }
+}
+
+//@include desktop-size {
+//  .customer-service-item {
+//    width: 32%;
+//    padding: 40px 40px;
+//  }
+//
+//  .customer-service-item__circle {
+//    width: 80px;
+//    height: 80px;
+//    margin-bottom: 30px;
+//  }
+//
+//  .customer-service-item__title {
+//    font-size: 15px;
+//  }
+//}

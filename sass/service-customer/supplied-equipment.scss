@@ -9,11 +9,14 @@
 @include tablet-size {
   .supplied-equipment__list {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between;
   }
 
   .supplied-equipment__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 48%;
     margin-right: 2%;
     margin-bottom: 0;
@@ -21,5 +24,11 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .supplied-equipment-item__btn {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-top: auto;
   }
 }

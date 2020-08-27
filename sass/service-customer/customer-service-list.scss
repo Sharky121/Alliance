@@ -1,0 +1,7 @@
+@include tablet-size {
+  .customer-service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

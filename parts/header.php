@@ -45,6 +45,9 @@
               <a class="site-list__link" href="?view=pressform">Пресс-формы</a>
             </li>
             <li class="site-list__item">
+              <a class="site-list__link" href="?view=customer-service">Сервис</a>
+            </li>
+            <li class="site-list__item">
               <a class="site-list__link" href="?view=service">Услуги</a>
             </li>
             <li class="site-list__item">
