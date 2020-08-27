@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sass/service-customer/customer-service-item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/service-customer/customer-service-list.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parts/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/service-customer/customer-service.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/service-customer/customer-service.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/service-customer/supplied-equipment-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/service-customer/supplied-equipment-item.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/service-customer/supplied-equipment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/service-customer/supplied-equipment.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/customer-service.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/customer-service.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +201,7 @@
       <workItem from="1598366658637" duration="188000" />
       <workItem from="1598367316198" duration="6292000" />
       <workItem from="1598425516813" duration="23000" />
-      <workItem from="1598514179389" duration="6808000" />
+      <workItem from="1598514179389" duration="7046000" />
     </task>
     <servers />
   </component>
@@ -225,29 +215,29 @@
     <state x="2656" y="290" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597833931991" />
     <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598425538172" />
     <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053@59.27.1861.1053" timestamp="1596452022406" />
-    <state width="1815" height="278" key="GridCell.Tab.0.bottom" timestamp="1598373964825">
+    <state width="1815" height="190" key="GridCell.Tab.0.bottom" timestamp="1598523054641">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state width="1874" height="287" key="GridCell.Tab.0.bottom/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591121995662" />
-    <state width="1815" height="278" key="GridCell.Tab.0.bottom/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598373964825" />
+    <state width="1815" height="190" key="GridCell.Tab.0.bottom/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598523054641" />
     <state width="1815" height="278" key="GridCell.Tab.0.bottom/59.27.1861.1053@59.27.1861.1053" timestamp="1596412003908" />
-    <state width="1815" height="278" key="GridCell.Tab.0.center" timestamp="1598373964825">
+    <state width="1815" height="190" key="GridCell.Tab.0.center" timestamp="1598523054641">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state width="1874" height="287" key="GridCell.Tab.0.center/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591121995662" />
-    <state width="1815" height="278" key="GridCell.Tab.0.center/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598373964825" />
+    <state width="1815" height="190" key="GridCell.Tab.0.center/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598523054641" />
     <state width="1815" height="278" key="GridCell.Tab.0.center/59.27.1861.1053@59.27.1861.1053" timestamp="1596412003908" />
-    <state width="1815" height="278" key="GridCell.Tab.0.left" timestamp="1598373964825">
+    <state width="1815" height="190" key="GridCell.Tab.0.left" timestamp="1598523054640">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state width="1874" height="287" key="GridCell.Tab.0.left/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591121995661" />
-    <state width="1815" height="278" key="GridCell.Tab.0.left/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598373964824" />
+    <state width="1815" height="190" key="GridCell.Tab.0.left/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598523054640" />
     <state width="1815" height="278" key="GridCell.Tab.0.left/59.27.1861.1053@59.27.1861.1053" timestamp="1596412003907" />
-    <state width="1815" height="278" key="GridCell.Tab.0.right" timestamp="1598373964825">
+    <state width="1815" height="190" key="GridCell.Tab.0.right" timestamp="1598523054641">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state width="1874" height="287" key="GridCell.Tab.0.right/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1591121995662" />
-    <state width="1815" height="278" key="GridCell.Tab.0.right/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598373964825" />
+    <state width="1815" height="190" key="GridCell.Tab.0.right/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598523054641" />
     <state width="1815" height="278" key="GridCell.Tab.0.right/59.27.1861.1053@59.27.1861.1053" timestamp="1596412003908" />
     <state x="572" y="298" width="824" height="508" key="IDE.errors.dialog" timestamp="1596404334225">
       <screen x="59" y="27" width="1861" height="1053" />
