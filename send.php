@@ -32,6 +32,11 @@
 	$to      = 'Sharky121@mail.ru, sale5@aliance-prom.ru, nastya@aliance-prom.ru';
 	$subject = 'Заявка на обратный звонок';
 
+	if($product_title === 'service') {
+    $subject = 'Запрос на техническую консультацию';
+    $product_title = 'Наша сервисная служба';
+  }
+
 	$message =
         'Раздел: ' . $product_title . "\r\n" .
         'Имя: ' . $name . "\r\n" .
