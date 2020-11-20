@@ -5,12 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parts/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/index/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/index/section-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/index/section-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/main-nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/main-nav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/index/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/index/about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/layout/footer-about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/footer-about.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +210,7 @@
       <workItem from="1599724125962" duration="25000" />
       <workItem from="1605726738288" duration="1892000" />
       <workItem from="1605775130742" duration="23000" />
-      <workItem from="1605868999531" duration="33000" />
+      <workItem from="1605868999531" duration="486000" />
     </task>
     <servers />
   </component>
@@ -242,10 +239,10 @@
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state width="1815" height="190" key="GridCell.Tab.0.right/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598530510890" />
-    <state x="680" y="291" width="618" height="522" key="find.popup" timestamp="1599665718178">
+    <state x="680" y="291" width="618" height="522" key="find.popup" timestamp="1605869425976">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
-    <state x="680" y="291" width="618" height="522" key="find.popup/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1599665718178" />
+    <state x="680" y="291" width="618" height="522" key="find.popup/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1605869425976" />
     <state x="653" y="253" key="run.anything.popup" timestamp="1598366708975">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
