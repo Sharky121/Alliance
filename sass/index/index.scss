@@ -1,6 +1,10 @@
+.index__section-header {
+  margin-top: -68px;
+  z-index: 0;
+}
+
 @include tablet-size {
   .index__section-header {
     margin-top: -135px;
-    z-index: 0;
   }
 }

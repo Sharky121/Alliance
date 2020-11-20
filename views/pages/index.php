@@ -1,13 +1,13 @@
 <?php
 $link = @mysqli_connect(
-//      'localhost',
-//      'root',
-//      '12345678',
-//      'alliance'
-  'p530117.mysql.ihc.ru',
-  'p530117_alliance',
-  'frutWYeStC',
-  'p530117_alliance'
+      'localhost',
+      'root',
+      '12345678',
+      'alliance'
+//  'p530117.mysql.ihc.ru',
+//  'p530117_alliance',
+//  'frutWYeStC',
+//  'p530117_alliance'
 ) or die('Ошибка: Невозможно подключиться к MySQL '. mysqli_connect_error());
 @mysqli_set_charset($link, "utf8");
 
@@ -21,7 +21,6 @@ foreach ($data as $val) {
 }
 
 $day = date("d", strtotime($news_date));
-
 ?>
 
 <h1 class="visually-hidden">Альянс-пром</h1>
@@ -133,7 +132,7 @@ $day = date("d", strtotime($news_date));
 
     <div>
       <h2 class="section__title title-bg title-bg--about">Лучшее оборудование</h2>
-      <p class="about__text">Оборудование под маркой Titan и Сhrome для литья пластмасс и серии Lanson-Alliance для литья цветных металлов под давлением.</p>
+      <p class="about__text">Оборудование под маркой Titan и Сhrome для литья пластмасс и серии L.K.  MACHINERY MANUFACTURING CO., LTD для литья цветных металлов под давлением.</p>
 
       <ul class="about__list">
         <li class="about__item">Ведущий поставщик оборудования в сфере переработки пластмасс и цветных металлов</li>
