@@ -11,7 +11,7 @@ $link = @mysqli_connect(
 ) or die('Ошибка: Невозможно подключиться к MySQL '. mysqli_connect_error());
 @mysqli_set_charset($link, "utf8");
 
-$sql = "SELECT id, title, author, created_at, news_date, content, small_content FROM news ORDER BY id DESC LIMIT 4";
+$sql = "SELECT id, title, author, created_at, news_date, content, small_content FROM news ORDER BY news_date DESC LIMIT 4";
 $result = mysqli_query($link, $sql) or die(mysqli_error($link));
 $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
 

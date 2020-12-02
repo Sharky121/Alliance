@@ -42,6 +42,8 @@
 
         <div class="news__content">
             <?= $news_content; ?>
+
+
         </div>
     </div>
 </main>
