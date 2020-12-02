@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parts/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/index/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/index/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/layout/footer-about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/footer-about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/news.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/news.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +211,11 @@
       <workItem from="1599724125962" duration="25000" />
       <workItem from="1605726738288" duration="1892000" />
       <workItem from="1605775130742" duration="23000" />
-      <workItem from="1605868999531" duration="486000" />
+      <workItem from="1605868999531" duration="1539000" />
+      <workItem from="1606159761112" duration="1435000" />
+      <workItem from="1606221859514" duration="156000" />
+      <workItem from="1606248818604" duration="24000" />
+      <workItem from="1606874021181" duration="1230000" />
     </task>
     <servers />
   </component>
@@ -218,27 +223,27 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1605775151341">
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606248841106">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
     <state x="2656" y="290" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597833931991" />
-    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1605775151341" />
-    <state width="1815" height="190" key="GridCell.Tab.0.bottom" timestamp="1598530510890">
+    <state x="772" y="310" width="424" height="484" key="FileChooserDialogImpl/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1606248841106" />
+    <state width="1815" height="190" key="GridCell.Tab.0.bottom" timestamp="1605870538442">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
-    <state width="1815" height="190" key="GridCell.Tab.0.bottom/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598530510890" />
-    <state width="1815" height="190" key="GridCell.Tab.0.center" timestamp="1598530510890">
+    <state width="1815" height="190" key="GridCell.Tab.0.bottom/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1605870538442" />
+    <state width="1815" height="190" key="GridCell.Tab.0.center" timestamp="1605870538441">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
-    <state width="1815" height="190" key="GridCell.Tab.0.center/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598530510890" />
-    <state width="1815" height="190" key="GridCell.Tab.0.left" timestamp="1598530510890">
+    <state width="1815" height="190" key="GridCell.Tab.0.center/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1605870538441" />
+    <state width="1815" height="190" key="GridCell.Tab.0.left" timestamp="1605870538441">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
-    <state width="1815" height="190" key="GridCell.Tab.0.left/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598530510890" />
-    <state width="1815" height="190" key="GridCell.Tab.0.right" timestamp="1598530510890">
+    <state width="1815" height="190" key="GridCell.Tab.0.left/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1605870538441" />
+    <state width="1815" height="190" key="GridCell.Tab.0.right" timestamp="1605870538441">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>
-    <state width="1815" height="190" key="GridCell.Tab.0.right/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1598530510890" />
+    <state width="1815" height="190" key="GridCell.Tab.0.right/59.27.1861.1053/1920.0.1920.1080@59.27.1861.1053" timestamp="1605870538441" />
     <state x="680" y="291" width="618" height="522" key="find.popup" timestamp="1605869425976">
       <screen x="59" y="27" width="1861" height="1053" />
     </state>

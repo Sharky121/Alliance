@@ -46,8 +46,8 @@
 
     <div class="form-group question-form__form-group">
       <p>
-        <label class="form-label form-label--grey" for="name">Представьтесь</label>
-        <input class="form-input form-input--grey" id="name" name="name" type="text" placeholder="Иванов Александр Сергеевич" required>
+        <label class="form-label form-label--grey" for="name">Ваше имя</label>
+        <input class="form-input form-input--grey" id="name" name="name" type="text" placeholder="Александр Сергеевич" required>
       </p>
 
       <p>
