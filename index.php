@@ -5,6 +5,7 @@ require_once 'parts/init.php';
 define("INDEX_ID", 1, true);
 define("PRESSFORM_ID", 2, true);
 define("SERVICE_ID", 3, true);
+define("CONTACTS_ID", 6, true);
 
 $view = empty($_GET['view']) ? 'index' : $_GET['view'];
 
@@ -26,6 +27,8 @@ function get_pageData(string $page, $link) {
           return getIndex($link, INDEX_ID);
           break;
         case 'contacts.php':
+          return getIndex($link, CONTACTS_ID);
+          break;
         case 'customer-service.php':
         case 'bio.php':
         case 'service.php':
