@@ -1,11 +1,14 @@
 .breadcrumbs-list {
+  @include list-reset;
   display: flex;
   flex-wrap: wrap;
 
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.products-breadcrumbs { margin: 20px 0 60px 0; }
+.products-breadcrumbs {
+  margin-bottom: 60px;
+}
 
 .breadcrumbs-list__link {
   font-weight: 300;

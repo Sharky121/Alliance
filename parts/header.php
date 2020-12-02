@@ -53,7 +53,7 @@
               <a class="site-list__link" href="?view=video">Наши работы</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="/#section-map">Контакты</a>
+              <a class="site-list__link" href="?view=contacts">Контакты</a>
             </li>
           </ul>
 

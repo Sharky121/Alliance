@@ -1,0 +1,22 @@
+.contacts-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+.contacts-table__tr {
+  &:nth-child(odd) {
+    background-color: rgba(51, 51, 51, 0.03);
+  }
+}
+
+.contacts-table__td {
+  padding: 5px;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #000000;
+
+  border: 1px solid #999;
+}

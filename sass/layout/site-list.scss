@@ -46,7 +46,7 @@
   }
 
   .site-list__item {
-    margin-right: 10px;
+    margin-right: 15px;
 
     border-top: none;
 
@@ -101,4 +101,10 @@
       }
     }
   }
+}
+
+@include desktop-size {
+
+
+
 }

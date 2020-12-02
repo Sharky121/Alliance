@@ -12,10 +12,10 @@
 
   <p>Компания Альянс-Пром официальными представителями известных мировых производителей оборудования для литья цветных металлов и пластмасс под давлением, включая пресс-формы, роботизацию и периферию:</p>
 
-  <ul>
-    <li>L.K.  MACHINERY MANUFACTURING CO., LTD</li>
-    <li>NINGBO HAIXING MACHINERY MANUFACTURING CO., LTD</li>
-    <li>WENSUI INTELLIGENT EQUIPMENT GROUP</li>
+  <ul class="collection">
+    <li class="collection-item">L.K.  MACHINERY MANUFACTURING CO., LTD</li>
+    <li class="collection-item">NINGBO HAIXING MACHINERY MANUFACTURING CO., LTD</li>
+    <li class="collection-item">WENSUI INTELLIGENT EQUIPMENT GROUP</li>
   </ul>
 
   <p>Продукция заводов, которые мы представляем, произведена с учетом всех основных требований российских производителей и сертифицирована ISO 9001 и ISO14001, а так же имеет сертификаты европейского стандарта качества.</p>

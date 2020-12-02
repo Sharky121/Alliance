@@ -1,0 +1,36 @@
+.owl-carousel--product-videos {
+  .owl-item {
+    transform: scale(.82, .8);
+    opacity: .6;
+    transition: all .3s ease;
+  }
+
+  .owl-item.active.center {
+    width: 380px;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+
+  .owl-dots {
+    margin-top: 20px;
+  }
+}
+
+.product-videos__link {
+  position: relative;
+
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-videos__item--title {
+  margin: 0;
+  padding-right: 24px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: #777777;
+}
+

@@ -25,6 +25,7 @@ function get_pageData(string $page, $link) {
         case 'index.php':
           return getIndex($link, INDEX_ID);
           break;
+        case 'contacts.php':
         case 'customer-service.php':
         case 'bio.php':
         case 'service.php':

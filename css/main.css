@@ -34,6 +34,9 @@ html {
   box-sizing: border-box; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -68,6 +71,17 @@ ul {
 *::before,
 *::after {
   box-sizing: inherit; }
+
+.main-content {
+  flex: 1;
+  padding-top: 20px;
+  padding-bottom: 40px; }
+
+.main-content__product-videos {
+  margin-bottom: 100px; }
+
+.main-content__product-info {
+  margin-bottom: 100px; }
 
 .container {
   margin-right: auto;
@@ -287,7 +301,7 @@ ul {
     flex-wrap: wrap;
     align-items: center; }
   .site-list__item {
-    margin-right: 10px;
+    margin-right: 15px;
     border-top: none; }
     .site-list__item:last-child {
       margin-right: 0; }
@@ -499,8 +513,7 @@ ul {
     display: none; }
   .footer-about__text {
     margin-top: 0;
-    margin-bottom: 10px;
-    font-weight: bold; }
+    margin-bottom: 10px; }
   .footer-about__social {
     display: flex; } }
 
@@ -577,12 +590,15 @@ ul {
     margin-bottom: 40px; } }
 
 .breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0; }
+  margin-bottom: 20px; }
 
 .products-breadcrumbs {
-  margin: 20px 0 60px 0; }
+  margin-bottom: 60px; }
 
 .breadcrumbs-list__link {
   font-weight: 300;
@@ -630,6 +646,60 @@ ul {
   .question-form__form-group p {
     flex: 0 32%;
     margin: 0; } }
+
+.callback {
+  text-align: center; }
+
+.callback__form {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center; }
+
+.callback__text {
+  margin-bottom: 40px; }
+
+.owl-carousel--product-videos .owl-item {
+  transform: scale(0.82, 0.8);
+  opacity: .6;
+  transition: all .3s ease; }
+
+.owl-carousel--product-videos .owl-item.active.center {
+  width: 380px;
+  opacity: 1;
+  transform: scale(1, 1); }
+
+.owl-carousel--product-videos .owl-dots {
+  margin-top: 20px; }
+
+.product-videos__link {
+  position: relative;
+  display: block;
+  margin-bottom: 10px; }
+
+.product-videos__item--title {
+  margin: 0;
+  padding-right: 24px;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+  color: #777777; }
+
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse; }
+
+.contacts-table__tr:nth-child(odd) {
+  background-color: rgba(51, 51, 51, 0.03); }
+
+.contacts-table__td {
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #000000;
+  border: 1px solid #999; }
 
 .index__section-header {
   margin-top: -68px;

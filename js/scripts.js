@@ -70,7 +70,7 @@ $(document).ready(function () {
       center: true,
       autoplay: false,
       dots: true,
-      nav: true
+      nav: false
     });
   }
 

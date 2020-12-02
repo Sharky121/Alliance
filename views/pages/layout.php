@@ -5,7 +5,7 @@
   <body>
     <?php include ('parts/header.php') ?>
 
-    <main>
+    <main class="main-content">
         <?= $content ?>
     </main>
 
