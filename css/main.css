@@ -1,3 +1,16 @@
+.center {
+  margin: 0 auto;
+  text-align: center; }
+
+.w100 {
+  width: 100%; }
+
+.w50 {
+  width: 50%; }
+
+.w25 {
+  width: 25%; }
+
 @font-face {
   font-family: 'OpenSans';
   font-style: normal;
@@ -301,7 +314,7 @@ ul {
     flex-wrap: wrap;
     align-items: center; }
   .site-list__item {
-    margin-right: 15px;
+    margin-right: 10px;
     border-top: none; }
     .site-list__item:last-child {
       margin-right: 0; }
@@ -701,13 +714,24 @@ ul {
   color: #000000;
   border: 1px solid #999; }
 
+.convert-currency {
+  display: none; }
+
+@media (min-width: 768px) {
+  .convert-currency {
+    position: fixed;
+    right: 0;
+    bottom: 2.5%;
+    display: block;
+    z-index: 9999; } }
+
 .index__section-header {
   margin-top: -68px;
   z-index: 0; }
 
 @media (min-width: 768px) {
   .index__section-header {
-    margin-top: -135px; } }
+    margin-top: -155px; } }
 
 .section-header {
   position: relative;
@@ -1073,43 +1097,43 @@ ul {
     font-size: 16px;
     line-height: normal; } }
 
-.product {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 60px; }
-
-.product__img,
-.product__info {
-  width: 48%;
-  margin-bottom: 2%; }
-
-.product__img {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .product-info__title {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.2; }
 
-.product-info__small_desc {
-  padding: 0;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #777777; }
+.product-info__btn {
+  width: 100%;
+  text-align: center; }
 
-.product-advantage-list {
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #777777; }
-
-.product-advantage-list__item {
-  position: relative;
-  margin-bottom: 5px; }
+@media (min-width: 1280px) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px; }
+  .product__img,
+  .product__info {
+    width: 48%;
+    margin-bottom: 2%; }
+  .product__img {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .product-info__small_desc {
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #777777; }
+  .product-advantage-list {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #777777; }
+  .product-advantage-list__item {
+    position: relative;
+    margin-bottom: 5px; } }
 
 .video-title {
   position: relative;

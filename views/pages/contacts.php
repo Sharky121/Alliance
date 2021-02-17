@@ -3,7 +3,7 @@
 
   <ul class="breadcrumbs-list">
     <li class="breadcrumbs-list__item">
-      <a class="breadcrumbs-list__link" href="../../index.php">Главная</a>
+      <a class="breadcrumbs-list__link" href="/">Главная</a>
     </li>
     <li class="breadcrumbs-list__item breadcrumbs-list__item--active">
       <a class="breadcrumbs-list__link">Контакты</a>

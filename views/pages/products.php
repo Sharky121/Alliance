@@ -25,24 +25,40 @@
   <p>Наша задача не просто продать, но обеспечить российские предприятия качественным, долговечным, технологичным оборудованием по оптимальной цене. Качество – залог долгосрочного сотрудничества!</p>
 
   <ul class="product-list">
-    <?php foreach ($data as $catalog_item): ?>
-      <li class="product-list__item product-list__item--category">
-        <a class="product-list__link" href="?view=catalog&cat=<?= $catalog_item['id'] ?>">
+    <li class="product-list__item product-list__item--category">
+        <a class="product-list__link" href="?view=catalog&cat=1">
           <div class="product-list__box">
-            <img class="product-list__img" src="<?= $catalog_item['image_path']; ?>" alt="<?= $catalog_item['title']; ?>">
+            <img class="product-list__img" src="/img/catalog/prod1.png" alt="Литье пластмасс">
           </div>
 
-          <h4 class="product-list__title"><?= $catalog_item['title']; ?></h4>
+          <h4 class="product-list__title">Литье пластмасс</h4>
         </a>
       </li>
-    <?php endforeach; ?>
+    <li class="product-list__item product-list__item--category">
+      <a class="product-list__link" href="?view=catalog&cat=2">
+        <div class="product-list__box">
+          <img class="product-list__img" src="/img/catalog/impress.png" alt="">
+        </div>
+
+        <h4 class="product-list__title">Литье цветных металлов</h4>
+      </a>
+    </li>
+    <li class="product-list__item product-list__item--category">
+      <a class="product-list__link" href="?view=catalog&cat=3">
+        <div class="product-list__box">
+          <img class="product-list__img" src="/img/catalog/drob.jpg" alt="">
+        </div>
+
+        <h4 class="product-list__title">Периферийное оборудование</h4>
+      </a>
+    </li>
   </ul>
 
   <h3 class="sub-title">Бесплатная консультация</h3>
   <p class="grey-text">Звоните по телефону +7 (800) 222-48-13 (звонок бесплатный), +7 (4912) 70-19-81 или заполните форму обратной связи</p>
 
   <form class="question-form">
-    <input name="product_title" type="hidden" value="<?= $catalog_item['title']; ?>">
+    <input name="product_title" type="hidden" value="">
 
     <div class="form-group question-form__form-group">
       <p>

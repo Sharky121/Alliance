@@ -11,7 +11,7 @@ foreach ($data as $product) {
 ?>
 
 <div class="container">
-  <ul class="breadcrumbs-list products-breadcrumbs">
+  <ul class="main-content__product-breadcrumbs breadcrumbs-list">
     <li class="breadcrumbs-list__item">
       <a class="breadcrumbs-list__link" href="index.php">Главная</a>
     </li>
@@ -25,7 +25,6 @@ foreach ($data as $product) {
       <a class="breadcrumbs-list__link"><?= $product_title; ?></a>
     </li>
   </ul>
-
   <section class="main-content__product-info">
     <h2 class="visually-hidden">Информация о продукте</h2>
     <div class="product-wrapper product">

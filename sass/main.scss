@@ -1,5 +1,6 @@
 @import "sass/variables.scss";
 @import "sass/mixins.scss";
+@import "sass/helpers.scss";
 
 // Layout
 @import "sass/layout/fonts.scss";
@@ -25,8 +26,9 @@
 @import "sass/layout/breadcrumbs.scss";
 @import "sass/layout/question-form.scss";
 @import "sass/layout/callback.scss";
-@import "sass/layout/product-videos";
-@import "sass/layout/contacts-table";
+@import "sass/layout/product-videos.scss";
+@import "sass/layout/contacts-table.scss";
+@import "sass/layout/convert-currency.scss";
 
 
 // index

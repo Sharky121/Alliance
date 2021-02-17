@@ -7,12 +7,12 @@
 
       <div class="address main-header__address main-header__address--warehouse">
         <a class="address__title">Наш склад</a>
-        <a class="address__location" href="/">г. Рязань, ул.Связи, 25 стр. 2</a>
+        <a class="address__location" href="?view=contacts">г. Рязань, ул.Связи, 25 стр. 2</a>
       </div>
 
       <div class="address main-header__address main-header__address--office">
         <a class="address__title" href="mailto:sales@aliance-prom.ru">sales@aliance-prom.ru</a>
-        <a class="address__location" href="/">г. Рязань, ул. Петрова, 10 (офис)</a>
+        <a class="address__location" href="?view=contacts">г. Рязань, ул. Петрова, 10 (офис)</a>
       </div>
 
       <div class="main-header__phone phone">
@@ -52,6 +52,9 @@
             <li class="site-list__item">
               <a class="site-list__link" href="?view=video">Наши работы</a>
             </li>
+<!--            <li class="site-list__item">-->
+<!--              <a class="site-list__link" href="?view=articles">Полезное</a>-->
+<!--            </li>-->
             <li class="site-list__item">
               <a class="site-list__link" href="?view=contacts">Контакты</a>
             </li>

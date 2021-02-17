@@ -54,6 +54,16 @@ CREATE TABLE news (
   seo_description VARCHAR(255)
 );
 
+CREATE TABLE articles (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(128) NOT NULL UNIQUE,
+  small_image_path VARCHAR(255),
+  small_content TEXT,
+  content LONGTEXT,
+  seo_title VARCHAR(255),
+  seo_description VARCHAR(255)
+);
+
 -- ДОБАВЛЕНИЕ СТРАНИЦ
 --
 INSERT INTO pages SET title = 'Главная';
@@ -65,6 +75,7 @@ INSERT INTO pages SET title = 'Контакты';
 INSERT INTO pages SET title = 'Продукция';
 INSERT INTO pages SET title = 'Запасные части';
 INSERT INTO pages SET title = 'Биоразлагаемое сырье';
+INSERT INTO pages SET title = 'Полезное';
 
 -- ДОБАВЛЕНИЕ КАТЕГОРИЙ
 --
@@ -75,9 +86,4 @@ INSERT INTO category SET title = 'Литье цветных металлов',
 INSERT INTO category SET title = 'Периферийное оборудование',
                          image_path ='/img/catalog/drob.jpg';
 
-
-
-
-
-
-
+INSERT INTO articles SET title = 'Литье изделий из биоразлагаемых материалов';

@@ -1,13 +1,13 @@
 <?php
 $link = @mysqli_connect(
-//      'localhost',
-//      'root',
-//      '12345678',
-//      'alliance'
-  'p530117.mysql.ihc.ru',
-  'p530117_alliance',
-  'frutWYeStC',
-  'p530117_alliance'
+      'localhost',
+      'root',
+      '12345678',
+      'alliance'
+//  'p530117.mysql.ihc.ru',
+//  'p530117_alliance',
+//  'frutWYeStC',
+//  'p530117_alliance'
 ) or die('Ошибка: Невозможно подключиться к MySQL '. mysqli_connect_error());
 @mysqli_set_charset($link, "utf8");
 
@@ -24,6 +24,7 @@ $day = date("d", strtotime($news_date));
 ?>
 
 <h1 class="visually-hidden">Альянс-пром</h1>
+
 <section class="index__section-header section-header">
   <div class="container section-header__container">
     <h2 class="section-header__title">15 лет на рынке оборудования<br> по переработке пластмасс и цветных металлов</h2>
@@ -34,6 +35,7 @@ $day = date("d", strtotime($news_date));
     </p>
   </div>
 </section>
+
 <section class="section section-features">
   <div class="container">
     <h2 class="section__title title-bg">
@@ -126,6 +128,7 @@ $day = date("d", strtotime($news_date));
     </ul>
   </div>
 </section>
+
 <section class="section about">
   <div class="container about__container">
     <img class="about__img" src="/img/products/prod1.png" alt="">
@@ -143,6 +146,7 @@ $day = date("d", strtotime($news_date));
     </div>
   </div>
 </section>
+
 <section class="section section-works">
   <div class="container">
     <h2 class="section__title title-bg">
@@ -225,6 +229,7 @@ $day = date("d", strtotime($news_date));
     </div>
   </div>
 </section>
+
 <section class="section section-news">
   <div class="container">
     <h2 class="section__title title-bg">
@@ -263,6 +268,7 @@ $day = date("d", strtotime($news_date));
     </div>
   </div>
 </section>
+
 <section class="section-map" id="section-map">
   <div class="container">
     <h2 class="section__title title-bg">

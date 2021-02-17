@@ -1,0 +1,15 @@
+.convert-currency {
+  display: none;
+}
+
+@include tablet-size {
+  .convert-currency {
+    position: fixed;
+    right: 0;
+    bottom: 2.5%;
+
+    display: block;
+
+    z-index: 9999;
+  }
+}

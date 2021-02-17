@@ -16,21 +16,16 @@ function getIndex($link, $id): array
 
 function getCategories($link): array
 {
-    $sql = 'SELECT id, title, image_path, seo_title, seo_description FROM category ORDER BY id ASC';
+  $sql = 'SELECT id, title, image_path, seo_title, seo_description FROM category ORDER BY id ASC';
 
-    return fetchData($link, $sql);
-}
-
-function getNews($link): array
-{
-    $sql = "SELECT id, title, author, created_at, content, small_content FROM news ORDER BY id ASC LIMIT 4";
+//    $sql = "SELECT id, seo_title, seo_description FROM pages WHERE id = '$id'";
 
     return fetchData($link, $sql);
 }
 
 function getAllNews($link): array
 {
-    $sql = "SELECT id, news_date, title, author, created_at, content, small_content, seo_title, seo_description FROM news ORDER BY news_date DESC";
+    $sql = "SELECT id, news_date, title, author, created_at, content, small_content, seo_title, seo_description FROM news ORDER BY news_date ASC";
 
     return fetchData($link, $sql);
 }
@@ -68,4 +63,18 @@ function getProduct($link, $id): array
                     WHERE p.id = '$id'";
 
     return fetchData($link, $sql);
+}
+
+function getArticles($link): array
+{
+  $sql = "SELECT id, title, small_image_path, small_content, content, seo_title, seo_description FROM articles ORDER BY id DESC";
+
+  return fetchData($link, $sql);
+}
+
+function getCurrentArticle($link, $id): array
+{
+  $sql = "SELECT id, title, content, seo_title, seo_description FROM articles WHERE id ='$id'";
+
+  return fetchData($link, $sql);
 }

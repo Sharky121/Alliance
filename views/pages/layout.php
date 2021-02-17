@@ -7,6 +7,9 @@
 
     <main class="main-content">
         <?= $content ?>
+        <section class="convert-currency">
+          <div id='gcw_mainFuBcKt8Ll' class='gcw_mainFuBcKt8Ll'></div>
+        </section>
     </main>
 
     <?php include ('parts/footer.php') ?>
@@ -330,7 +333,23 @@
         </symbol>
       </svg>
     </div>
+    <!--Currency Converter widget by FreeCurrencyRates.com -->
+    <script>function reloadFuBcKt8Ll(){
+        var sc = document.getElementById('scFuBcKt8Ll');
+        if (sc) sc.parentNode.removeChild(sc);
 
+        sc = document.createElement('script');
+        sc.type = 'text/javascript';
+        sc.charset = 'UTF-8';
+        sc.async = true;
+        sc.id='scFuBcKt8Ll';
+        sc.src = 'https://freecurrencyrates.com/ru/widget-vertical?iso=RUB-USD-EUR&df=2&p=FuBcKt8Ll&v=fts&source=cbr&width=200&width_title=0&firstrowvalue=1&thm=4DB6AC,ffffff,4DB6AC,4DB6AC,ffffff,dddddd,ffffff,4DB6AC,000000&title=%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82&tzo=-180';
+        var div = document.getElementById('gcw_mainFuBcKt8Ll');
+        div.parentNode.insertBefore(sc, div);
+      } reloadFuBcKt8Ll();
+    </script>
+    <!-- put custom styles here: .gcw_mainFuBcKt8Ll{}, .gcw_headerFuBcKt8Ll{}, .gcw_ratesFuBcKt8Ll{}, .gcw_sourceFuBcKt8Ll{} -->
+    <!--End of Currency Converter widget by FreeCurrencyRates.com -->
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/jquery.easing.min.js"></script>
     <script src="/js/jquery.maskedinput.min.js"></script>
