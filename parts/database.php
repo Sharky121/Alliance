@@ -25,7 +25,7 @@ function getCategories($link): array
 
 function getAllNews($link): array
 {
-    $sql = "SELECT id, news_date, title, author, created_at, content, small_content, seo_title, seo_description FROM news ORDER BY news_date ASC";
+    $sql = "SELECT id, news_date, title, author, created_at, content, small_content, seo_title, seo_description FROM news ORDER BY news_date DESC";
 
     return fetchData($link, $sql);
 }
