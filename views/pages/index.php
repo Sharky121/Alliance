@@ -1,13 +1,13 @@
 <?php
 $link = @mysqli_connect(
-      'localhost',
-      'root',
-      '12345678',
-      'alliance'
-//  'p530117.mysql.ihc.ru',
-//  'p530117_alliance',
-//  'frutWYeStC',
-//  'p530117_alliance'
+//      'localhost',
+//      'root',
+//      '12345678',
+//      'alliance'
+  'p530117.mysql.ihc.ru',
+  'p530117_alliance',
+  'frutWYeStC',
+  'p530117_alliance'
 ) or die('Ошибка: Невозможно подключиться к MySQL '. mysqli_connect_error());
 @mysqli_set_charset($link, "utf8");
 
@@ -131,6 +131,12 @@ $day = date("d", strtotime($news_date));
 
 <section class="section about">
   <div class="container about__container">
+<!--    <video width="480" controls poster="">-->
+<!--      <source src="/video/video.mp4" type="video/mp4">-->
+<!--      <source src="/video/video.ogv" type="video/ogg">-->
+<!--      <source src="/video/video.webm" type="video/webm">-->
+<!--      Your browser doesn't support HTML5 video tag.-->
+<!--    </video>-->
     <img class="about__img" src="/img/products/prod1.png" alt="">
 
     <div>
