@@ -24,8 +24,6 @@
   <h4>Для получения расчета заполните приложенную форму:</h4>
 
   <form class="press-form">
-    <p>Обязательно для заполнения</p>
-
     <div class="form-group question-form__form-group">
       <p>
         <label class="form-label form-label--grey" for="name">Представьтесь</label>

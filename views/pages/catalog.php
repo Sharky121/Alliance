@@ -40,6 +40,9 @@
           <a class="product-item__link" href="?view=product&id=<?= $category['id'] ?>">
             <img class="product-item__img" src="<?= $category['image_path']; ?>" alt="<?= $category['title']; ?>">
             <h4 class="product-item__title"><?= $category['title']; ?></h4>
+            <?php if ($category['price'] !== NULL): ?>
+              <p class="product-item__price">Цена от <?= $category['price']; ?>$</p>
+            <?php endif; ?>
           </a>
         </li>
       <?php endforeach; ?>

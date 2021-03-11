@@ -10,6 +10,24 @@
   text-align: center;
 }
 
+.product-item__title {
+  margin-bottom: 10px;
+}
+
+.product-item__price {
+  margin: 0;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-green;
+}
+
+.product-info__price {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-green;
+}
+
 @include tablet-size {
 
 }
@@ -34,8 +52,6 @@
     justify-content: center;
     align-items: center;
   }
-
-
 
   .product-info__small_desc {
     padding: 0;

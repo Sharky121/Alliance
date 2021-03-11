@@ -33,6 +33,7 @@ CREATE TABLE products (
   id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(128) NOT NULL UNIQUE,
   category_id INT NOT NULL,
+  price INT,
   small_desc TEXT,
   content LONGTEXT,
   image_path VARCHAR(255),

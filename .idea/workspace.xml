@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/catalog/product-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/catalog/product-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/alliance.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/alliance.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/products.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/products.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/catalog.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/catalog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/pressform.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/pressform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/product.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +53,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -223,7 +240,14 @@
       <workItem from="1613637305344" duration="957000" />
       <workItem from="1614112860459" duration="2596000" />
       <workItem from="1614156679579" duration="606000" />
-      <workItem from="1614248248460" duration="610000" />
+      <workItem from="1614248248460" duration="1731000" />
+      <workItem from="1615071626883" duration="1879000" />
+      <workItem from="1615121104837" duration="2436000" />
+      <workItem from="1615146098206" duration="621000" />
+      <workItem from="1615228047578" duration="603000" />
+      <workItem from="1615306216284" duration="1054000" />
+      <workItem from="1615369235495" duration="79000" />
+      <workItem from="1615452600511" duration="3257000" />
     </task>
     <servers />
   </component>
@@ -233,18 +257,9 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/parts/database.php</url>
-          <line>46</line>
-          <properties>
-            <option name="className" value="" />
-            <option name="methodName" value="\getCatalog" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/views/pages/product.php</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

@@ -234,4 +234,11 @@ $(document).ready(function () {
   //   Node.PRICE_FORM.addEventListener(`submit`, onPriceFormSubmit);
   // };
 
+  fetch('https://www.fillmurray.com/200/300')
+    .then((response) => response.blob())
+    .then((imageBlob) => {
+      const newImage = document.createElement('img');
+      newImage.src = URL.createObjectURL(imageBlob);
+      document.body.appendChild(newImage)
+    });
 });

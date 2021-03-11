@@ -1106,6 +1106,20 @@ ul {
   width: 100%;
   text-align: center; }
 
+.product-item__title {
+  margin-bottom: 10px; }
+
+.product-item__price {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4db6ac; }
+
+.product-info__price {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4db6ac; }
+
 @media (min-width: 1280px) {
   .product {
     display: flex;

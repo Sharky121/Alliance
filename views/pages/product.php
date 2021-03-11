@@ -7,6 +7,7 @@ foreach ($data as $product) {
   $content = $product['content'];
   $big_image_path = $product['big_image_path'];
   $image_path = $product['image_path'];
+  $price = $product['price'];
 };
 ?>
 
@@ -37,7 +38,9 @@ foreach ($data as $product) {
       </div>
       <div class="product__info product-info">
         <h1 class="product-info__title"><?= $product_title; ?></h1>
-
+        <?php if ($price !== NULL): ?>
+          <span class="product-info__price">Цена от <?= $price; ?>$</span>
+        <?php endif; ?>
         <p class="product-info__small_desc">
           <?php if (empty($small_desc)): ?>
             Наша компания по праву занимает место среди ведущих поставщиков оборудования в сфере переработки пластмасс и цветных металлов
