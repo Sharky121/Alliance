@@ -41,7 +41,7 @@
             <img class="product-item__img" src="<?= $category['image_path']; ?>" alt="<?= $category['title']; ?>">
             <h4 class="product-item__title"><?= $category['title']; ?></h4>
             <?php if ($category['price'] !== NULL): ?>
-              <p class="product-item__price">Цена от <?= $category['price']; ?>$</p>
+              <p class="product-item__price">Цена от <?= number_format($category['price'], 0, '', ' '); ?>$</p>
             <?php endif; ?>
           </a>
         </li>

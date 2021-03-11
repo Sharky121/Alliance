@@ -39,7 +39,7 @@ foreach ($data as $product) {
       <div class="product__info product-info">
         <h1 class="product-info__title"><?= $product_title; ?></h1>
         <?php if ($price !== NULL): ?>
-          <span class="product-info__price">Цена от <?= $price; ?>$</span>
+          <span class="product-info__price">Цена от <?= number_format($price, 0, '', ' '); ?>$</span>
         <?php endif; ?>
         <p class="product-info__small_desc">
           <?php if (empty($small_desc)): ?>
