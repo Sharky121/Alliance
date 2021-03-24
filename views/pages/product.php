@@ -135,6 +135,7 @@ foreach ($data as $product) {
       <button class="form-btn form-btn--green" onclick="ym(33475678,'reachGoal','sendQuestion'); return true;">Отправить</button>
     </form>
   </section>
+
 </div>
 
 <!-- modal -->
