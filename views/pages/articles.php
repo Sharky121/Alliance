@@ -16,25 +16,28 @@
     </li>
   </ul>
 
-  <ul class="news-list page-news-list">
-    <?php foreach ($data as $articles): ?>
-      <li class="news-list__item">
-        <div class="news-list__inner">
-          <div class="news__img">
-            <img src="<?= $articles['small_image_path']; ?>" alt="">
-          </div>
+  <section class="articles">
+    <h2 class="visually-hidden">Статьи</h2>
 
-          <h3 class="news__title">
-            <a href="?view=article-page&id=<?= $articles['id'] ?>" class="news__link">
-              <?= $articles['title']; ?>
-            </a>
-          </h3>
+    <ul class="articles__list">
+      <?php foreach ($data as $articles): ?>
+        <li class="articles__item">
+          <article class="article">
+            <img class="article__img" src="<?= $articles['small_image_path']; ?>" alt="">
+            <div class="article__inner">
+              <h3 class="article__title">
+                <a href="?view=article-page&id=<?= $articles['id'] ?>" class="news__link">
+                  <?= $articles['title']; ?>
+                </a>
+              </h3>
+              <p class="article__text">
 
-          <p class="news__text">
-            <?= $articles['small_content']; ?>
-          </p>
-        </div>
-      </li>
-    <?php endforeach; ?>
-  </ul>
+                <?= cutText( $articles['small_content'], $articles['id'], 300, 'text'); ?>
+              </p>
+            </div>
+          </article>
+        </li>
+      <?php endforeach; ?>
+    </ul>
+  </section>
 </div>

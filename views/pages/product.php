@@ -48,8 +48,6 @@ foreach ($data as $product) {
             <?= $small_desc; ?>
           <?php endif; ?>
         </p>
-
-        <!-- <button class="btn">Скачать технические характеристики</button>-->
         <a class="product-info__btn btn btn--green-border-hover" id="demo01" href="#animatedModal">Узнать цену</a>
       </div>
     </div>
@@ -135,7 +133,11 @@ foreach ($data as $product) {
       <button class="form-btn form-btn--green" onclick="ym(33475678,'reachGoal','sendQuestion'); return true;">Отправить</button>
     </form>
   </section>
+  <section class="temp">
+    <div class="specification">
 
+    </div>
+  </section>
 </div>
 
 <!-- modal -->

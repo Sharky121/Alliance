@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c909e3c-17e1-4e46-8fa2-3b358f86104b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/sass/articles/article.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sass/articles/articles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/parts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/news.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/news.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql/products.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/products.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/articles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/pages/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/pages/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/pages/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +75,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -88,8 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +252,12 @@
       <workItem from="1615885334479" duration="860000" />
       <workItem from="1615886334238" duration="29000" />
       <workItem from="1616352983171" duration="2231000" />
-      <workItem from="1616582943331" duration="663000" />
+      <workItem from="1616582943331" duration="1141000" />
+      <workItem from="1616589394444" duration="53000" />
+      <workItem from="1616951809531" duration="4925000" />
+      <workItem from="1616959055206" duration="19000" />
+      <workItem from="1617306023357" duration="4386000" />
+      <workItem from="1618844839932" duration="2208000" />
     </task>
     <servers />
   </component>

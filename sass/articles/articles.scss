@@ -1,0 +1,11 @@
+.articles__list {
+  @include list-reset;
+}
+
+.articles__item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

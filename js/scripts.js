@@ -96,20 +96,12 @@ $(document).ready(function () {
       });
 
       // Собственное изображение для метки с контентом
-      var placemark1 = new ymaps.Placemark([54.582000, 39.766990], {
-        hintContent: 'Собственный значок метки с контентом',
+      var placemark1 = new ymaps.Placemark([54.585032, 39.781434], {
+        hintContent: 'Склад Альянс-Пром',
       }, {
-        // Опции.
-
-        // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
-
-        // Своё изображение иконки метки.
         iconImageHref: '/img/placemarker.png',
-        // Размеры метки.
         iconImageSize: [100, 77],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
         iconImageOffset: [-35, -35]
       });
 
@@ -117,19 +109,11 @@ $(document).ready(function () {
 
       // Собственное изображение для метки с контентом
       var placemark2 = new ymaps.Placemark([54.634386, 39.742331], {
-        hintContent: 'Собственный значок метки с контентом',
+        hintContent: 'Офис Альянс-Пром',
       }, {
-        // Опции.
-
-        // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
-
-        // Своё изображение иконки метки.
         iconImageHref: '/img/placemarker.png',
-        // Размеры метки.
         iconImageSize: [100, 77],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
         iconImageOffset: [-35, -35]
       });
 
@@ -233,12 +217,4 @@ $(document).ready(function () {
   // if(Node.PRICE_FORM) {
   //   Node.PRICE_FORM.addEventListener(`submit`, onPriceFormSubmit);
   // };
-
-  fetch('https://www.fillmurray.com/200/300')
-    .then((response) => response.blob())
-    .then((imageBlob) => {
-      const newImage = document.createElement('img');
-      newImage.src = URL.createObjectURL(imageBlob);
-      document.body.appendChild(newImage)
-    });
 });
