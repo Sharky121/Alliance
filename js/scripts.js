@@ -43,7 +43,7 @@ $(document).ready(function () {
     });
   }
 
-  if (complexPriceModalButton) {
+  if (complexPriceModalButton.length) {
     complexPriceModalButton.animatedModal({
       afterClose: function () {
         $('.complex-price-modal .form-btn').text('Получить цену');
