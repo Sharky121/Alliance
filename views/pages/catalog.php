@@ -19,8 +19,10 @@
 
   <?php if ($category_id === '2'): ?>
     <p class="text-products quote">Альянс-Пром эксклюзивный представитель крупнейшего мирового производителя оборудования для литья под давлением цветных металлов и сплавов - <b>L.K. MACHINERY MANUFACTURING CO., LTD.</b>
-      Предлагаем наиболее оптимальную линейку оборудования по соотношению цена-качество, которую оценили не только ведущие российские производители, но и такие мировые гиганты как <b>Toyota Motor Corporation.</b> </p>
-    <p class="text-products">Машины произведены с учетом всех основных требований российских производителей и сертифицированы <b>ISO 9001</b> и <b>ISO14001</b>, а так же имеют <b>сертификат европейского стандарта качества.</b>
+      Предлагаем наиболее оптимальную линейку оборудования по соотношению цена-качество, которую оценили не только ведущие российские производители, но и такие мировые гиганты как <b>Toyota Motor Corporation.</b>
+    </p>
+    <p class="text-products">
+      Машины произведены с учетом всех основных требований российских производителей и сертифицированы <b>ISO 9001</b> и <b>ISO14001</b>, а так же имеют <b>сертификат европейского стандарта качества.</b>
     </p>
   <?php elseif ($category_id == '3'): ?>
     <p class="text-products quote">
@@ -35,6 +37,14 @@
 
   <div class="products">
     <ul class="product__list">
+      <?php if ($category_id === '2'): ?>
+        <li class="product__item products-item">
+          <a class="product-item__link" id="openComplexPriceModal" href="#animatedModal">
+            <img class="product-item__img" src="img/catalog/complex.png">
+            <h4 class="product-item__title">Комплексные решения</h4>
+          </a>
+        </li>
+      <?php endif; ?>
       <?php foreach ($data as $category): ?>
         <li class="product__item products-item">
           <a class="product-item__link" href="?view=product&id=<?= $category['id'] ?>">
@@ -47,5 +57,31 @@
         </li>
       <?php endforeach; ?>
     </ul>
+  </div>
+</div>
+
+<!-- modal -->
+<div id="animatedModal" class="complex-price-modal">
+  <div class="close-animatedModal">
+    <img class="closebt" src="/img/closebt.svg">
+  </div>
+
+  <div class="modal-content">
+    <h3 class="price-modal__title">Заполните форму и мы вышлем коммерческое предложение</h3>
+
+    <form class="price-form">
+      <input name="product_title" type="hidden" value="complex">
+
+      <label class="form-label" for="name">Представьтесь</label>
+      <input class="form-input" id="name" name="name" type="text" placeholder="Ваше имя" required>
+
+      <label class="form-label" for="email">Введите ваш email</label>
+      <input class="form-input" id="email" name="email" type="email" placeholder="Ваша электронная почта" required>
+
+      <label class="form-label" for="footer-phone">Введите ваш номер телефона</label>
+      <input class="form-input" id="footer-phone" name="phone" type="phone" placeholder="Номер телефона" required>
+
+      <button class="form-btn" onclick="ym(33475678,'reachGoal','getPriceComplex'); return true;">Получить цену</button>
+    </form>
   </div>
 </div>

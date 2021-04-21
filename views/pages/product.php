@@ -1,14 +1,14 @@
 <?php
-foreach ($data as $product) {
-  $product_title =  $product['title'];
-  $category_id = $product['cat_id'];
-  $category_title = $product['cat_title'];
-  $small_desc = $product['small_desc'];
-  $content = $product['content'];
-  $big_image_path = $product['big_image_path'];
-  $image_path = $product['image_path'];
-  $price = $product['price'];
-};
+  foreach ($data as $product) {
+    $product_title =  $product['title'];
+    $category_id = $product['cat_id'];
+    $category_title = $product['cat_title'];
+    $small_desc = $product['small_desc'];
+    $content = $product['content'];
+    $big_image_path = $product['big_image_path'];
+    $image_path = $product['image_path'];
+    $price = $product['price'];
+  };
 ?>
 
 <div class="container">

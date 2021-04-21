@@ -26,7 +26,7 @@
             <img class="article__img" src="<?= $articles['small_image_path']; ?>" alt="">
             <div class="article__inner">
               <h3 class="article__title">
-                <a href="?view=article-page&id=<?= $articles['id'] ?>" class="news__link">
+                <a class="news__link">
                   <?= $articles['title']; ?>
                 </a>
               </h3>

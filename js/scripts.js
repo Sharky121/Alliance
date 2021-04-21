@@ -7,6 +7,8 @@ $(document).ready(function () {
     NAV_BUTTON_TOGGLE: document.querySelector(`.main-nav__toggle`),
     PRICE_FORM: document.querySelector(`.price-form`)
   }
+  const demo1 = $('#demo01');
+  const complexPriceModalButton = $('#openComplexPriceModal');
 
   const navButtonClickHandler = () => {
     if (Node.MAIN_NAV.classList.contains(`main-nav--closed`)) {
@@ -31,8 +33,6 @@ $(document).ready(function () {
     }
   });
 
-  let demo1 = $('#demo01');
-
   if (demo1.length) {
     demo1.animatedModal({
       color: '#4db6ac',
@@ -40,6 +40,15 @@ $(document).ready(function () {
       afterClose: function() {
         $('.price-modal__btn').text('Отправить');
       }
+    });
+  }
+
+  if (complexPriceModalButton) {
+    complexPriceModalButton.animatedModal({
+      afterClose: function () {
+        $('.complex-price-modal .form-btn').text('Получить цену');
+        $('.complex-price-modal .form-btn').attr('disabled', false);
+      },
     });
   }
 
@@ -121,18 +130,24 @@ $(document).ready(function () {
     }
   }
 
-  $('.price-form').submit(function(event) {
-    event.preventDefault();
-    let msg  = $(this).serialize();
+  $('.price-form').submit(function(evt) {
+    evt.preventDefault();
+
+    const $form = $(this);
+    const $data  = $form.serialize();
+    const $button = $form.find('.form-btn');
 
     $.ajax({
       type: 'POST',
       url: 'send.php',
-      data: msg,
+      data: $data,
 
       success: function(data) {
-        $('.price-modal .form-btn').text('Ваш запрос отправлен!');
-        $('.price-modal .form-btn').attr('disabled');
+        $button.text('Ваш запрос отправлен!');
+        $button.attr('disabled', true);
+        setTimeout(() => {
+          $('.complex-price-modal .closebt').trigger('click');
+        }, 2000);
       },
       error: function(xhr, str){
         console.log(xhr);
