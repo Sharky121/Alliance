@@ -99,7 +99,8 @@
       <form class="footer-feedback__phone-form footer-feedback-form">
         <div class="footer-feedback-form__form-group">
           <input name="product_title" type="hidden" value="Обратный звонок">
-          <input class="footer-feedback-form__input" id="footer-phone" type="phone" name="phone" placeholder="Ваш телефон" required autocomplete="off">
+
+          <input class="footer-feedback-form__input" id="footer-phone" type="tel" name="phone" placeholder="Ваш телефон" required autocomplete="off">
           <button class="footer-feedback-form__button send-btn" type="submit">
             <svg class="send-btn__ico" viewBox="0 0 469.335 469.335" width="16" height="16">
               <path d="M464.761,1.918c-3.385-2.365-7.813-2.552-11.385-0.51l-448,256c-3.656,2.083-5.74,6.125-5.323,10.313
