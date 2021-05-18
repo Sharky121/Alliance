@@ -41,7 +41,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="https://telegram.im/@alliancegrouprzn" aria-label="Telegram" target="_blank">
+          <a class="social-list__link" href="https://t.me/alliancegrouprzn" aria-label="Telegram" target="_blank">
             <span class="visually-hidden">Telegram</span>
             <svg class="social-list__icon" viewBox="0 0 511.933 511.933" role="img" width="38" height="38">
               <path xmlns="http://www.w3.org/2000/svg" d="m491.638 33.873-491.638 198.879v28.747l140.811 43.47 44.533 142.87 35.549-.006 57.315-58.642 120.991 88.869 23.55-8.96 89.185-418.193zm-93.388 406.267-159.347-117.041-17.76 24.178 32.646 23.979-46.372 46.58-36.387-116.734 210.759-125.839-15.379-25.758-213.86 127.69-103.462-31.939 427.614-172.979z"/>
