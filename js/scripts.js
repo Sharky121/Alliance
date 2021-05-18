@@ -154,6 +154,7 @@ $(document).ready(function () {
       }
     });
   });
+
   $('.phone-form').submit(function(event) {
     event.preventDefault();
     let msg  = $(this).serialize();
@@ -177,6 +178,7 @@ $(document).ready(function () {
       }
     });
   });
+
   $('.question-form').submit(function(event) {
     event.preventDefault();
     let msg  = $(this).serialize();
@@ -200,6 +202,7 @@ $(document).ready(function () {
       }
     });
   });
+
   $('.press-form').submit(function(event) {
     event.preventDefault();
     let msg  = $(this).serialize();

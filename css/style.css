@@ -352,6 +352,10 @@
 
 /* tabs
    ========================================================================== */
+.tabs {
+  overflow-x: auto;
+}
+
 .tab-header {
   display: flex;
   flex-wrap: wrap;

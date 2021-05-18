@@ -49,9 +49,9 @@
             <li class="site-list__item">
               <a class="site-list__link" href="?view=news">Новости</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="?view=articles">Статьи</a>
-            </li>
+<!--            <li class="site-list__item">-->
+<!--              <a class="site-list__link" href="?view=articles">Статьи</a>-->
+<!--            </li>-->
             <li class="site-list__item">
               <a class="site-list__link" href="?view=video">Наши работы</a>
             </li>

@@ -60,7 +60,7 @@
   </div>
 </div>
 
-<!-- modal -->
+<?php if ($category_id === '2'): ?>
 <div id="animatedModal" class="complex-price-modal">
   <div class="close-animatedModal">
     <img class="closebt" src="/img/closebt.svg">
@@ -78,10 +78,11 @@
       <label class="form-label" for="email">Введите ваш email</label>
       <input class="form-input" id="email" name="email" type="email" placeholder="Ваша электронная почта" required>
 
-      <label class="form-label" for="footer-phone">Введите ваш номер телефона</label>
-      <input class="form-input" id="footer-phone" name="phone" type="tel" placeholder="Номер телефона" required>
+      <label class="form-label" for="phone">Введите ваш номер телефона</label>
+      <input class="form-input" id="phone" name="phone" type="tel" placeholder="Номер телефона" required>
 
       <button class="form-btn" onclick="ym(33475678,'reachGoal','getPriceComplex'); return true;">Получить цену</button>
     </form>
   </div>
 </div>
+<?php endif; ?>

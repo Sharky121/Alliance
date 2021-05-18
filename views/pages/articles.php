@@ -32,7 +32,7 @@
               </h3>
               <p class="article__text">
 
-                <?= cutText( $articles['small_content'], $articles['id'], 300, 'text'); ?>
+                <?= cutText($articles['small_content'], $articles['id'], 300, 'text'); ?>
               </p>
             </div>
           </article>

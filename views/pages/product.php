@@ -133,11 +133,6 @@
       <button class="form-btn form-btn--green" onclick="ym(33475678,'reachGoal','sendQuestion'); return true;">Отправить</button>
     </form>
   </section>
-  <section class="temp">
-    <div class="specification">
-
-    </div>
-  </section>
 </div>
 
 <!-- modal -->
