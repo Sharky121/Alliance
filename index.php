@@ -2,12 +2,12 @@
 
 require_once 'parts/init.php';
 
-define("INDEX_ID", 1, true);
-define("PRESSFORM_ID", 2, true);
-define("SERVICE_ID", 3, true);
-define("CONTACTS_ID", 6, true);
-define("ARTICLES_ID", 10, true);
-define("PRODUCTION_ID", 7, true);
+define("INDEX_ID", 1);
+define("PRESSFORM_ID", 2);
+define("SERVICE_ID", 3);
+define("CONTACTS_ID", 6);
+define("ARTICLES_ID", 10);
+define("PRODUCTION_ID", 7);
 
 $view = empty($_GET['view']) ? 'index' : $_GET['view'];
 

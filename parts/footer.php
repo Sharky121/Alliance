@@ -2,7 +2,6 @@
   <div class="container main-footer__container">
     <section class="main-footer__about footer-about">
       <h3 class="main-footer__title">О нас</h3>
-
       <p class="footer-about__text">Наша компания по праву занимает место <br> среди ведущих поставщиков оборудования<br>
         в сфере переработки пластмасс и цветных металлов
       </p>
@@ -50,7 +49,6 @@
         </li>
       </ul>
     </section>
-
     <section class="main-footer__contacts footer-contacts">
       <h3 class="main-footer__title">Контакты</h3>
       <ul class="footer-contacts__list footer-contacts-list">
@@ -114,7 +112,6 @@
         </li>
       </ul>
     </section>
-
     <section class="main-footer__feedback footer-feedback">
       <h3 class="main-footer__title">Свяжитесь с нами</h3>
       <p class="footer-feedback__subtitle">Оставьте номер своего телефона и наш менеджер свяжется с вами!</p>
@@ -139,7 +136,6 @@
       </form>
     </section>
   </div>
-
   <section class="main-footer__copyright copyright">
     <span class="copyright__text">© ООО «Альянс-Пром», 2006−2021</span>
   </section>

@@ -148,10 +148,10 @@
       <input name="product_title" type="hidden" value="<?= $product_title; ?>">
 
       <label class="form-label" for="name">Представьтесь</label>
-      <input class="form-input" id="name" name="name" type="text" placeholder="Иванов Александр Сергеевич" required>
+      <input class="form-input" id="name" name="name" type="text" placeholder="Ваше имя" required>
 
       <label class="form-label" for="name">Введите ваш email</label>
-      <input class="form-input" id="email" name="email" type="email" placeholder="email@email.ru" required>
+      <input class="form-input" id="email" name="email" type="email" placeholder="Ваш email" required>
 
       <label class="form-label" for="name">Введите ваш номер телефона</label>
       <input class="form-input" id="footer-phone" name="phone" type="phone" placeholder="+7 000 000 00 00" required>

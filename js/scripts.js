@@ -1,5 +1,9 @@
+import {createVideoTag} from './create-video-tag.js'
+import {onYouTubeIframeAPIReady} from './yt-video-api.js';
+
 $(document).ready(function () {
   const headerMain = $('.js-main-header');
+  const videoElement = document.querySelector('.bg-video');
   const headerMainHeight = headerMain.innerHeight();
 
   const Node = {
@@ -93,6 +97,7 @@ $(document).ready(function () {
     $('.js-tab-content.active').removeClass('active');
     content.addClass('active');
   });
+
   $('a[data-rel^=lightcase]').lightcase();
 
   if($('#map').length) {
@@ -227,12 +232,11 @@ $(document).ready(function () {
     });
   });
 
-  // const onPriceFormSubmit = (evt) => {
-  //   evt.preventDefault();
-  // };
-  //
-  // // ОТПРАВКА ФОРМ
-  // if(Node.PRICE_FORM) {
-  //   Node.PRICE_FORM.addEventListener(`submit`, onPriceFormSubmit);
-  // };
+  if (videoElement) {
+    createVideoTag();
+
+    window.onYouTubePlayerAPIReady = function () {
+      onYouTubeIframeAPIReady();
+    };
+  }
 });

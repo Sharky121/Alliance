@@ -359,6 +359,6 @@
     <script src="/js/lightcase.js"></script>
     <script src="/js/animatedModal.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=<3fe62757-4b7d-4e2d-a29d-8ae84937c4fb>&lang=ru_RU" type="text/javascript"></script>
-    <script src="/js/scripts.js"></script>
+    <script type="module" src="/js/scripts.js"></script>
   </body>
 </html>

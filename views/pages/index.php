@@ -26,6 +26,10 @@ $day = date("d", strtotime($news_date));
 <h1 class="visually-hidden">Альянс-пром</h1>
 
 <section class="index__section-header section-header">
+  <div class="section-header__video">
+    <div class="bg-video" id="player"></div>
+  </div>
+
   <div class="container section-header__container">
     <h2 class="section-header__title">15 лет на рынке оборудования<br> по переработке пластмасс и цветных металлов</h2>
     <p class="section-header__text">Тщательный выбор поставщиков позволил нам подобрать для Вас оптимальную линейку оборудования по соотношению цена-качество</p>
